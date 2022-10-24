@@ -1,15 +1,17 @@
 export enum AppRoute {
   HOME = "",
-  ABOUT = "About",
-  HELP = "Help",
+  ABOUT = "O mnie",
+  OFFER = "Oferta",
+  MENUS = "Jadłospisy",
   KALKULATOR = "Kalkulator",
   CONTACT = "Kontakt",
 }
 
 export const AppRoutes = [
   { title: AppRoute.ABOUT, url: "/about" },
-  { title: AppRoute.HELP, url: "/pomoc" },
-  { title: AppRoute.KALKULATOR, url: "/kalkulator" },
+  { title: AppRoute.OFFER, url: "/offer" },
+  { title: AppRoute.MENUS, url: "/menus" },
+  // { title: AppRoute.KALKULATOR, url: "/kalkulator" },
   { title: AppRoute.CONTACT, url: "/kontakt" },
   { title: AppRoute.HOME, url: "/" },
 ];

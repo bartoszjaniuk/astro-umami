@@ -31,7 +31,7 @@ export const Nav = () => {
           {AppRoutes.map((route, index) => (
             <li key={index} className={styles["nav-list__item"]}>
               <a className={styles["nav-list__link"]} href={route.url}>
-                {route.title}
+                {route.title.toUpperCase()}
               </a>
             </li>
           ))}
@@ -39,8 +39,8 @@ export const Nav = () => {
       </nav>
 
       <div className={styles["button-group"]}>
-        <Button isInverted>{AppRoute.CONTACT}</Button>
-        <Button>{AppRoute.KALKULATOR}</Button>
+        <Button isInverted>Napisz do mnie</Button>
+        <Button>Oblicz, ile masz jeść !</Button>
       </div>
       <div className={styles["instagram-icons"]}>
         <FacebookIcon width="24px" height="24px" />

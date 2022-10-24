@@ -11,6 +11,8 @@ header {
 
   @include mediaQ(md) {
     gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -22,9 +24,9 @@ nav {
   z-index: 20;
   background: white;
   color: var(--c-primary);
-  @include mediaQ(md) {
-    display: none;
-  }
+  // @include mediaQ(md) {
+  //   display: none;
+  // }
 }
 
 .burger {
@@ -88,6 +90,9 @@ nav {
   list-style: none;
   display: flex;
   gap: 1rem;
+  // border: 1px solid purple;
+  z-index: 100;
+
   @include mediaQ(md) {
     display: none;
   }
@@ -133,7 +138,10 @@ nav {
 }
 
 .instagram-icons {
-  @include mediaQ(xsm) {
+  // @include mediaQ(xsm) {
+  //   display: none;
+  // }
+  @include mediaQ(md) {
     display: none;
   }
   display: flex;
