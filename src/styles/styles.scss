@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+  --c-black: #05091e;
+  --c-blue: #46b4ff;
+  --c-gray: #90aab7;
+  --c-green: #9ef2cb;
+  --c-pink: #ffb8d9;
+  --c-orange: #ffb7a3;
+  --c-yellow: #ffdace;
+  --c-white: #fff;
+
+  --c-primary: #57463c;
+}
+
+body {
+  margin: 0;
+  color: var(--t-fg);
+  font-family: "Inter", "system-ui", sans-serif;
+}
+
+* {
+  position: relative;
+  box-sizing: content-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

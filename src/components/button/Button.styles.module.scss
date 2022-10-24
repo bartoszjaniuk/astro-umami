@@ -1,0 +1,27 @@
+.button {
+  background: var(--c-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background: white;
+    color: var(--c-primary);
+    border: 1px solid var(--c-primary);
+  }
+  &--inverted {
+    background: white;
+    color: var(--c-primary);
+    border: 1px solid var(--c-primary);
+
+    &:hover {
+      background: var(--c-primary);
+      color: white;
+      border: 1px solid transparent;
+    }
+  }
+}
