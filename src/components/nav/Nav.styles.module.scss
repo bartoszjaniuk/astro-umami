@@ -1,5 +1,5 @@
 @import "./../../styles/mixins";
-header {
+.header {
   position: relative;
   z-index: 25;
   overflow: hidden;
@@ -10,13 +10,22 @@ header {
   background-color: white;
 
   @include mediaQ(md) {
+    padding: 1rem 0;
     gap: 1rem;
     flex-direction: column;
     align-items: flex-start;
   }
+
+  &__inner {
+    @include mediaQ(md) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   position: sticky;
@@ -24,9 +33,14 @@ nav {
   z-index: 20;
   background: white;
   color: var(--c-primary);
-  // @include mediaQ(md) {
-  //   display: none;
-  // }
+  width: 100%;
+  @include mediaQ(md) {
+    display: none;
+  }
+
+  &--open {
+    display: flex;
+  }
 }
 
 .burger {
@@ -40,15 +54,11 @@ nav {
   padding: 4px;
   border: none;
   cursor: pointer;
-  position: absolute;
-  z-index: 30;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
   padding: 1.25rem;
 
   @include mediaQ(md) {
     display: flex;
+    padding-right: 2.5rem;
   }
 
   &__line {
@@ -81,6 +91,12 @@ nav {
   }
 }
 
+.link {
+  padding-right: 3rem;
+  @include mediaQ(md) {
+    padding-left: 2.5rem;
+  }
+}
 .logo {
   width: 160px;
   min-width: 160px;
@@ -90,12 +106,16 @@ nav {
   list-style: none;
   display: flex;
   gap: 1rem;
-  // border: 1px solid purple;
   z-index: 100;
+  padding-left: 0;
 
   @include mediaQ(md) {
-    display: none;
+    // display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
+
   &__item {
     display: block;
     transition: all 0.3s ease;
@@ -117,11 +137,12 @@ nav {
   }
   margin-left: auto;
   display: flex;
+  align-items: center;
   gap: 1rem;
   padding: 0 1rem;
   &__button {
-    background: var(--c-primary);
-    color: white;
+    // background: var(--c-primary);
+    // color: white;
     padding: 0.5rem 1rem;
     border-radius: 2px;
     border: 1px solid transparent;
@@ -143,9 +164,16 @@ nav {
   // }
   @include mediaQ(md) {
     display: none;
+    justify-content: center;
+    width: 100%;
+    gap: 0.4rem;
   }
   display: flex;
   gap: 0.2rem;
   padding-right: 0.2rem;
   z-index: 26;
+}
+
+.active {
+  display: flex;
 }

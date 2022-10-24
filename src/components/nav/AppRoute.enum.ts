@@ -11,7 +11,7 @@ export const AppRoutes = [
   { title: AppRoute.ABOUT, url: "/about" },
   { title: AppRoute.OFFER, url: "/offer" },
   { title: AppRoute.MENUS, url: "/menus" },
-  // { title: AppRoute.KALKULATOR, url: "/kalkulator" },
+  { title: AppRoute.KALKULATOR, url: "/kalkulator" },
   { title: AppRoute.CONTACT, url: "/kontakt" },
   { title: AppRoute.HOME, url: "/" },
 ];
