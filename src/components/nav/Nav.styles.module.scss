@@ -1,89 +1,36 @@
+@import "./../../styles/mixins";
 header {
   position: relative;
   z-index: 25;
   overflow: hidden;
   display: flex;
   align-items: center;
-  // width: 100%;
   padding: 1rem 5rem;
-  // padding-left: 5rem;
-  // justify-content: space-evenly;
+
   background-color: white;
+
+  @include mediaQ(md) {
+    gap: 1rem;
+  }
 }
 
 nav {
   display: flex;
   align-items: center;
-  // border: 1px solid purple;
   position: sticky;
   top: 0;
   z-index: 20;
-  // padding: 1rem 5rem;
   background: white;
   color: var(--c-primary);
-}
-
-.logo {
-  width: 160px;
-  // border: 1px solid purple;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  &__item {
-    display: block;
-    transition: all 0.3s ease;
-    &:hover {
-      color: var(--c-secondary);
-    }
+  @include mediaQ(md) {
+    display: none;
   }
-  &__link {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--c-primary);
-    text-decoration: none;
-  }
-}
-
-.button-group {
-  // border: 1px solid purple;
-  margin-left: auto;
-  display: flex;
-  gap: 1rem;
-  &__button {
-    background: var(--c-primary);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 2px;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    &:hover {
-      background: white;
-      color: var(--c-primary);
-      border: 1px solid var(--c-primary);
-    }
-  }
-}
-
-.instagram-icons {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  gap: 0.2rem;
-  padding-right: 0.2rem;
-  z-index: 26;
 }
 
 .burger {
+  display: none;
   width: 30px;
   height: 30px;
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
@@ -97,6 +44,11 @@ nav {
   right: 0;
   transform: translateY(-50%);
   padding: 1.25rem;
+
+  @include mediaQ(md) {
+    display: flex;
+  }
+
   &__line {
     width: 100%;
     height: 2px;
@@ -125,4 +77,67 @@ nav {
       }
     }
   }
+}
+
+.logo {
+  width: 160px;
+  min-width: 160px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  @include mediaQ(md) {
+    display: none;
+  }
+  &__item {
+    display: block;
+    transition: all 0.3s ease;
+    &:hover {
+      color: var(--c-secondary);
+    }
+  }
+  &__link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--c-primary);
+    text-decoration: none;
+  }
+}
+
+.button-group {
+  @include mediaQ(md) {
+    display: none;
+  }
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  &__button {
+    background: var(--c-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background: white;
+      color: var(--c-primary);
+      border: 1px solid var(--c-primary);
+    }
+  }
+}
+
+.instagram-icons {
+  @include mediaQ(xsm) {
+    display: none;
+  }
+  display: flex;
+  gap: 0.2rem;
+  padding-right: 0.2rem;
+  z-index: 26;
 }
