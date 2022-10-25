@@ -12,26 +12,30 @@ export const Nav = () => {
   const $isMenuOpen = useStore(isMenuOpen);
 
   return (
-    <header>
-      <a href="/" className={styles.link}>
-        <img src="/assets/logo.jpeg" alt="logo" className={styles.logo} />
-      </a>
-      <button
-        className={`${styles.burger} ${
-          $isMenuOpen ? styles["burger--open"] : ""
-        }`}
-        onClick={() => isMenuOpen.set(!$isMenuOpen)}
+    <header className={styles.header}>
+      <div className={styles["header__inner"]}>
+        <a href="/" className={styles.link}>
+          <img src="/assets/logo.jpeg" alt="logo" className={styles.logo} />
+        </a>
+        <button
+          className={`${styles.burger} ${
+            $isMenuOpen ? styles["burger--open"] : ""
+          }`}
+          onClick={() => isMenuOpen.set(!$isMenuOpen)}
+        >
+          <span className={styles["burger__line"]} />
+          <span className={styles["burger__line"]} />
+          <span className={styles["burger__line"]} />
+        </button>
+      </div>
+      <nav
+        className={`${styles.nav} ${$isMenuOpen ? styles["nav--open"] : ""}`}
       >
-        <span className={styles["burger__line"]} />
-        <span className={styles["burger__line"]} />
-        <span className={styles["burger__line"]} />
-      </button>
-      <nav>
         <ul className={styles["nav-list"]}>
           {AppRoutes.map((route, index) => (
             <li key={index} className={styles["nav-list__item"]}>
               <a className={styles["nav-list__link"]} href={route.url}>
-                {route.title}
+                {route.title.toUpperCase()}
               </a>
             </li>
           ))}
@@ -39,10 +43,14 @@ export const Nav = () => {
       </nav>
 
       <div className={styles["button-group"]}>
-        <Button isInverted>{AppRoute.CONTACT}</Button>
-        <Button>{AppRoute.KALKULATOR}</Button>
+        <Button isInverted>Napisz do mnie</Button>
+        <Button>Kalkulator</Button>
       </div>
-      <div className={styles["instagram-icons"]}>
+      <div
+        className={`${styles["instagram-icons"]} ${
+          $isMenuOpen ? styles.active : ""
+        }`}
+      >
         <FacebookIcon width="24px" height="24px" />
         <InstagramIcon width="24px" height="24px" />
       </div>
