@@ -2,7 +2,7 @@ import React from "react";
 import { useStore } from "@nanostores/react";
 
 import styles from "./Nav.styles.module.scss";
-import { AppRoute, AppRoutes } from "./AppRoute.enum";
+import { AppRoutes, AppRoute } from "./AppRoute.enum";
 import { isMenuOpen } from "./navStore";
 import { FacebookIcon } from "../facebook-icon/FacebookIcon";
 import { InstagramIcon } from "../instagram-icon/InstagramIcon";
@@ -32,13 +32,21 @@ export const Nav = () => {
         className={`${styles.nav} ${$isMenuOpen ? styles["nav--open"] : ""}`}
       >
         <ul className={styles["nav-list"]}>
-          {AppRoutes.map((route, index) => (
-            <li key={index} className={styles["nav-list__item"]}>
-              <a className={styles["nav-list__link"]} href={route.url}>
-                {route.title.toUpperCase()}
-              </a>
-            </li>
-          ))}
+          <li className={styles["nav-list__item"]}>
+            <a className={styles["nav-list__link"]} href="/">
+              {AppRoute.ABOUT}
+            </a>
+          </li>
+          <li className={styles["nav-list__item"]}>
+            <a className={styles["nav-list__link"]} href="/">
+              {AppRoute.CONTACT}
+            </a>
+          </li>
+          <li className={styles["nav-list__item"]}>
+            <a className={styles["nav-list__link"]} href="/">
+              {AppRoute.KALKULATOR}
+            </a>
+          </li>
         </ul>
       </nav>
 
