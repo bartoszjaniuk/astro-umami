@@ -6,4 +6,7 @@ export default defineConfig({
   site: "https://bartoszjaniuk.github.io",
   base: "/astro-umami",
   integrations: [react()],
+  vite: {
+    ssr: { noExternal: ["styled-components"] },
+  },
 });

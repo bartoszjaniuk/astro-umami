@@ -21,7 +21,7 @@ const { title } = Astro.props;
   </head>
   <Nav client:load />
   <body>
-    <div class="container">
+    <div class="content">
       <slot />
     </div>
     <style is:global>
@@ -43,10 +43,11 @@ const { title } = Astro.props;
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
 
-      .container {
+      .content {
         width: 100%;
-        min-height: calc(100vh - 164px);
-        /* background-color: cyan; */
+        height: 100%;
+        /* min-height: 100vh; */
+        /* overflow-x: hidden; */
       }
     </style>
   </body>

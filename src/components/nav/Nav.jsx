@@ -15,7 +15,7 @@ export const Nav = () => {
     <header className={styles.header}>
       <div className={styles["header__inner"]}>
         <a href="/" className={styles.link}>
-          <img src="assets/logo.jpeg" alt="logo" className={styles.logo} />
+          <img src="assets/logo.jpg" alt="logo" className={styles.logo} />
         </a>
         <button
           className={`${styles.burger} ${

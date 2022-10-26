@@ -21,7 +21,9 @@
     @include mediaQ(md) {
       display: flex;
       justify-content: space-between;
+      padding: 0 1.5rem;
       width: 100%;
+      align-items: center;
     }
   }
 }
@@ -51,21 +53,20 @@
 }
 
 .burger {
-  display: none;
-  width: 30px;
+  width: 40px;
   height: 30px;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content: space-between;
   background: transparent;
   padding: 4px;
   border: none;
   cursor: pointer;
-  padding: 1.25rem;
+  position: relative;
 
   @include mediaQ(md) {
     display: flex;
-    padding-right: 1.5rem;
   }
 
   &__line {
@@ -101,7 +102,7 @@
 .link {
   padding-right: 3rem;
   @include mediaQ(md) {
-    padding-left: 1.5rem;
+    // padding-left: 1.5rem;
   }
 }
 .logo {

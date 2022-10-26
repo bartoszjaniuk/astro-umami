@@ -10,6 +10,7 @@
   --c-white: #fff;
 
   --c-primary: #57463c;
+  --c-primary-dark: #3b2f29;
 }
 
 body {
@@ -20,10 +21,12 @@ body {
 
 * {
   position: relative;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }

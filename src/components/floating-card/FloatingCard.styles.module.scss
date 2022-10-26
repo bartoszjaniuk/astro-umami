@@ -1,0 +1,225 @@
+@import "../../styles/mixins";
+.card {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 510px;
+  width: 340px;
+
+  &__side {
+    font-size: 2rem;
+    height: 510px;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(var(--c-black), 0.15);
+
+    &--front {
+      background-color: var(--c-white);
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right,
+          var(--c-primary),
+          var(--c-primary)
+        );
+      }
+      //   &-2 {
+      //     background-image: linear-gradient(
+      //       to right,
+      //       $color-primary-light,
+      //       $color-primary-dark
+      //     );
+      //   }
+      //   &-3 {
+      //     background-image: linear-gradient(
+      //       to right,
+      //       $color-yellow-light,
+      //       $color-yellow-dark
+      //     );
+      //   }
+    }
+  }
+
+  // .card:hover .card__side {}
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+  //FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    // height: 23rem;
+    background-blend-mode: screen;
+
+    &--1 {
+      background-image: linear-gradient(
+          to right,
+          var(--c-primary),
+          var(--c-primary-dark)
+        ),
+        url("/assets/woman.jpg");
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    // &--2 {
+    //   background-image: linear-gradient(
+    //       to right,
+    //       $color-primary-light,
+    //       $color-primary-dark
+    //     ),
+    //     url(../img/mountainer.jpg);
+    //   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+    // }
+
+    // &--3 {
+    //   background-image: linear-gradient(
+    //       to right,
+    //       $color-yellow-light,
+    //       $color-yellow-dark
+    //     ),
+    //     url(../img/vietnam.jpg);
+    //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    // }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: var();
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    left: 0;
+  }
+
+  &__heading-span {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &--1 {
+      background-image: linear-gradient(
+        to right,
+        rgba(var(--c-primary), 0.85),
+        rgba(var(--c-primary-dark), 0.85)
+      );
+    }
+
+    // &--2 {
+    //   background-image: linear-gradient(
+    //     to right,
+    //     rgba($color-primary-light, 0.85),
+    //     rgba($color-primary-dark, 0.85)
+    //   );
+    // }
+
+    // &--3 {
+    //   background-image: linear-gradient(
+    //     to right,
+    //     rgba($color-yellow-light, 0.85),
+    //     rgba($color-yellow-dark, 0.85)
+    //   );
+    // }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+    }
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--c-gray);
+      }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: var();
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  @include mediaQ(md) {
+    height: auto;
+
+    &__side {
+      font-size: 2rem;
+      height: auto;
+      position: relative;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba(var(--c-black), 0.15);
+
+      &--back {
+        transform: rotateY(0);
+      }
+    }
+
+    // .card:hover .card__side {}
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      text-align: center;
+      padding: 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+    &__price-only {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+    &__price-value {
+      font-size: 4rem;
+      font-weight: 100;
+    }
+  }
+}
