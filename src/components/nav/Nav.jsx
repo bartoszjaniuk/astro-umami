@@ -14,8 +14,8 @@ export const Nav = () => {
   const $isMenuOpen = useStore(isMenuOpen);
 
   return (
-    <header className={styles.header}>
-      <div className={styles["header__inner"]}>
+    <nav className={styles.nav}>
+      <div className={styles["nav__inner"]}>
         <a href="/" className={styles.link}>
           <img src="assets/logo.jpg" alt="logo" className={styles.logo} />
         </a>
@@ -30,8 +30,10 @@ export const Nav = () => {
           <span className={styles["burger__line"]} />
         </button>
       </div>
-      <nav
-        className={`${styles.nav} ${$isMenuOpen ? styles["nav--open"] : ""}`}
+      <div
+        className={`${styles.container} ${
+          $isMenuOpen ? styles["container--open"] : ""
+        }`}
       >
         <ul className={styles["nav-list"]}>
           {AppRoutes.map((route, index) => (
@@ -42,7 +44,7 @@ export const Nav = () => {
             </li>
           ))}
         </ul>
-      </nav>
+      </div>
 
       <div className={styles["button-group"]}>
         <Button
@@ -64,6 +66,6 @@ export const Nav = () => {
         <FacebookIcon width="24px" height="24px" />
         <InstagramIcon width="24px" height="24px" />
       </div>
-    </header>
+    </nav>
   );
 };
