@@ -7,6 +7,8 @@ import { isMenuOpen } from "./navStore";
 import { FacebookIcon } from "../facebook-icon/FacebookIcon";
 import { InstagramIcon } from "../instagram-icon/InstagramIcon";
 import { Button } from "../button/Button";
+import { MessageIcon } from "../message-icon/MessageIcon";
+import { CalculatorIcon } from "../calculator-icon/CalculatorIcon";
 
 export const Nav = () => {
   const $isMenuOpen = useStore(isMenuOpen);
@@ -43,8 +45,16 @@ export const Nav = () => {
       </nav>
 
       <div className={styles["button-group"]}>
-        <Button isInverted>Napisz do mnie</Button>
-        <Button>Kalkulator</Button>
+        <Button
+          isInverted
+          size="sm"
+          icon={<MessageIcon width="36px" height="36px" />}
+        >
+          Napisz do mnie
+        </Button>
+        <Button icon={<CalculatorIcon width="36px" height="36px" />}>
+          Kalkulator
+        </Button>
       </div>
       <div
         className={`${styles["instagram-icons"]} ${

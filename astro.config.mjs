@@ -3,7 +3,5 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  // site: "https://bartoszjaniuk.github.io",
-  // base: "/astro-umami",
   integrations: [react()],
 });

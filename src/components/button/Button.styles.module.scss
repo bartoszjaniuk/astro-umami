@@ -1,3 +1,5 @@
+@import "./../../styles/mixins";
+
 .button {
   background: var(--c-primary);
   color: white;
@@ -6,9 +8,15 @@
   border: 1px solid transparent;
   font-size: 1rem;
   font-weight: 500;
-  min-width: 115px;
+  min-width: 145px;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  @include mediaQ(xxl) {
+    font-size: 0.9rem;
+    min-width: 120px;
+    padding: 0.5rem 0.1rem !important;
+  }
   &:hover {
     background: white;
     color: var(--c-primary);
