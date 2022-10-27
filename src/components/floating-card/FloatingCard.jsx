@@ -1,6 +1,5 @@
 import React from "react";
-// import styles from "./FloatingCard.styles.module.scss";
-import { Styled } from "./FloatingCard.styles";
+import styles from "./FloatingCard.styles.module.scss";
 
 // import { Button } from "./../button/Button";
 
@@ -13,41 +12,43 @@ export const FloatingCard = () => {
   const gradientColor2 = "purple";
 
   return (
-    <Styled.Card>
-      <Styled.FrontSide>
-        <Styled.CardPicture
-          gradientColor1={gradientColor1}
-          gradientColor2={gradientColor2}
-          backgroundUrl={backgroundUrl}
-        />
-        <Styled.CardHeading>
-          <Styled.HeadingSpan
-            gradientColor1={gradientColor1}
-            gradientColor2={gradientColor2}
+    <div className={styles.card}>
+      <div className={`${styles["card__side"]} ${styles["card__side--front"]}`}>
+        <div
+          className={`${styles["card__picture"]} ${styles["card__picture--1"]}`}
+        >
+          &nbsp;
+        </div>
+        <h4 className={styles["card__heading"]}>
+          <span
+            className={`${styles["card__heading-span"]} ${styles["card__heading-span--1"]}`}
           >
-            {title}
-          </Styled.HeadingSpan>
-        </Styled.CardHeading>
-        <Styled.CardDetails>
-          <Styled.DetailsList>
-            <Styled.ListItem>1</Styled.ListItem>
-            <Styled.ListItem>2</Styled.ListItem>
-            <Styled.ListItem>3</Styled.ListItem>
-            <Styled.ListItem>4</Styled.ListItem>
-          </Styled.DetailsList>
-        </Styled.CardDetails>
-      </Styled.FrontSide>
-      <Styled.BackSide
-        gradientColor1={gradientColor1}
-        gradientColor2={gradientColor2}
+            The Hiking Hero
+          </span>
+        </h4>
+        <div className={styles["card__details"]}>
+          <ul>
+            <li>3 day tour</li>
+            <li>Up to 30 people</li>
+            <li>2 tour guides</li>
+            <li>Sleep in cozy hotels</li>
+            <li>Difficulty: easy</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        className={`${styles["card__side"]} ${styles["card__side--back"]} ${styles["card__side--back-1"]}`}
       >
-        <Styled.Content>
-          <Styled.PriceContainer>
-            <Styled.PriceHeading>Teraz tylko</Styled.PriceHeading>
-            <Styled.PriceValue>100 zł</Styled.PriceValue>
-          </Styled.PriceContainer>
-        </Styled.Content>
-      </Styled.BackSide>
-    </Styled.Card>
+        <div className={styles["card__cta"]}>
+          <div className={styles["card__price-box"]}>
+            <p className={styles["card__price-only"]}>Only</p>
+            <p className={styles["card__price-value"]}>$199</p>
+          </div>
+          <a href="#popup" className="btn btn--white">
+            Book now!
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };

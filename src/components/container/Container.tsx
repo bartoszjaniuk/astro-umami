@@ -1,7 +1,5 @@
 import type { ReactNode } from "react";
 
-import { Styled } from "./Container.styles";
-
 type ContainerProps = {
   children: ReactNode;
 };
