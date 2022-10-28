@@ -20,15 +20,19 @@ export const Landing = () => {
         />
       </div>
       <div className={styles["container__modal"]}>
-        <div className={styles["container__modal--content"]}>
-          <h1>Resilence Coaching and Strategy For The Modern Woman</h1>
-          <p>
+        <div className={styles["modal-content"]}>
+          <h1 className={styles["modal-content__heading"]}>
+            Resilence Coaching and Strategy For The Modern Woman
+          </h1>
+          <p className={styles["modal-content__text"]}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
             aut totam laborum praesentium nisi unde ipsam esse numquam,
             inventore quidem explicabo quis ea eum necessitatibus voluptatum.
             Debitis, recusandae illo? Reprehenderit.
           </p>
-          <Button size="md">Dowiedz się więcej</Button>
+          <button className={styles["modal-content__button"]}>
+            Dowiedz się więcej
+          </button>
         </div>
       </div>
     </main>

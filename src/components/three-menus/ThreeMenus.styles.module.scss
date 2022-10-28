@@ -1,0 +1,81 @@
+@import "../../styles//mixins";
+.container {
+  min-height: 1000px;
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mediaQ(xxl) {
+    padding: 5rem 1.5rem;
+  }
+
+  background-color: #f7f7f7;
+  gap: 5rem;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // text-transform: uppercase;
+
+    &--inner {
+      font-size: 2.5rem;
+
+      text-transform: uppercase;
+      font-weight: 700;
+      display: inline-block;
+
+      background-image: linear-gradient(
+        to left,
+        rgba(165, 42, 42, 0.394),
+        var(--c-primary)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 1px;
+
+      @include mediaQ(md) {
+        font-size: 2rem;
+      }
+
+      @include mediaQ(sm) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    width: 100%;
+    flex-wrap: wrap;
+
+    @include mediaQ(lg) {
+      gap: 3rem;
+    }
+  }
+}
+
+.button {
+  color: white;
+  background-color: var(--c-primary);
+  padding: 1rem 3rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.3rem;
+  &:hover {
+    transform: skewY(1deg) scale(1.1);
+    background-color: white;
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+  }
+}

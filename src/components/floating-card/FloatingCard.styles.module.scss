@@ -3,12 +3,12 @@
   position: relative;
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 510px;
-  width: 340px;
-
+  height: 600px;
+  width: 400px;
   &__side {
     font-size: 2rem;
-    height: 510px;
+    height: 600px;
+
     transition: all 1s ease;
     position: absolute;
     top: 0;
@@ -20,33 +20,15 @@
     box-shadow: 0 1.5rem 4rem rgba(var(--c-black), 0.15);
 
     &--front {
-      background-color: var(--c-white);
+      background-color: #ffff;
     }
 
     &--back {
       transform: rotateY(180deg);
 
       &-1 {
-        background-image: linear-gradient(
-          to right,
-          var(--c-primary),
-          var(--c-primary)
-        );
+        background-image: linear-gradient(to bottom, var(--c-primary), #603813);
       }
-      //   &-2 {
-      //     background-image: linear-gradient(
-      //       to right,
-      //       $color-primary-light,
-      //       $color-primary-dark
-      //     );
-      //   }
-      //   &-3 {
-      //     background-image: linear-gradient(
-      //       to right,
-      //       $color-yellow-light,
-      //       $color-yellow-dark
-      //     );
-      //   }
     }
   }
 
@@ -61,7 +43,7 @@
   //FRONT SIDE STYLING
   &__picture {
     background-size: cover;
-    // height: 23rem;
+    height: 18rem;
     background-blend-mode: screen;
 
     &--1 {
@@ -76,27 +58,6 @@
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
     }
-
-    // &--2 {
-    //   background-image: linear-gradient(
-    //       to right,
-    //       $color-primary-light,
-    //       $color-primary-dark
-    //     ),
-    //     url(../img/mountainer.jpg);
-    //   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
-    // }
-
-    // &--3 {
-    //   background-image: linear-gradient(
-    //       to right,
-    //       $color-yellow-light,
-    //       $color-yellow-dark
-    //     ),
-    //     url(../img/vietnam.jpg);
-    //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    // }
   }
 
   &__heading {
@@ -104,9 +65,9 @@
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
-    color: var();
+    color: white;
     position: absolute;
-    top: 12rem;
+    top: 7rem;
     right: 0;
     left: 0;
   }
@@ -116,9 +77,9 @@
     box-decoration-break: clone;
     &--1 {
       background-image: linear-gradient(
-        to right,
-        rgba(var(--c-primary), 0.85),
-        rgba(var(--c-primary-dark), 0.85)
+        to left,
+        rgba(96, 56, 19, 0.85),
+        rgba(178, 159, 148, 0.85)
       );
     }
 
@@ -140,7 +101,7 @@
   }
 
   &__details {
-    padding: 3rem;
+    // padding: 3rem;
     ul {
       list-style: none;
       width: 80%;
@@ -148,11 +109,12 @@
     }
     li {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       padding: 1rem;
+      color: var(--c-primary);
 
       &:not(:last-child) {
-        border-bottom: 1px solid var(--c-gray);
+        border-bottom: 1px solid #f7f7f7;
       }
     }
   }
@@ -163,13 +125,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
   }
 
   &__price-box {
-    text-align: center;
-    color: var();
-    margin-bottom: 8rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   &__price-only {
     font-size: 1.4rem;
@@ -195,7 +163,6 @@
       }
     }
 
-    // .card:hover .card__side {}
     &:hover &__side--front {
       transform: rotateY(0);
     }
@@ -221,5 +188,23 @@
       font-size: 4rem;
       font-weight: 100;
     }
+  }
+}
+
+.button {
+  color: var(--c-primary);
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 250px;
+  &:hover {
+    background-color: var(--c-primary);
+    color: white;
+    border-color: white;
   }
 }

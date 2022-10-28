@@ -4,6 +4,7 @@
   height: 90vh;
   display: flex;
   position: relative;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75vh);
 
   @include mediaQ(lg) {
     height: 100%;
@@ -28,7 +29,7 @@
   }
   &__modal {
     background-color: white;
-    width: 450px;
+    width: 500px;
     height: 400px;
     border-radius: 2px;
     padding: 3rem;
@@ -46,12 +47,43 @@
       transform: translate(-50%, -50%);
       background-color: transparent;
     }
+  }
+}
 
-    &--content {
-      @include mediaQ(md) {
-        padding: 1.5rem;
-        background-color: white;
-      }
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  @include mediaQ(md) {
+    padding: 1.5rem;
+    background-color: white;
+  }
+
+  &__heading {
+    font-weight: 900;
+    font-size: 2.1rem;
+  }
+
+  &__button {
+    color: white;
+    background-color: var(--c-primary);
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.3rem;
+    width: 230px;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    &:hover {
+      background-color: white;
+      color: var(--c-primary);
+      border-color: var(--c-primary);
     }
   }
 }

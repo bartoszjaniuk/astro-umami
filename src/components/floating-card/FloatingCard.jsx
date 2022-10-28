@@ -1,38 +1,34 @@
 import React from "react";
 import styles from "./FloatingCard.styles.module.scss";
 
-// import { Button } from "./../button/Button";
-
-export const FloatingCard = () => {
-  const title = "Title";
-  const backgroundUrl =
-    "https://v.wpimg.pl/MWZiLmpwYjY7CzpeXwxvI3hTbgQZVWF1L0t2T19Gf29qEWMAXhwiOjUbJwIdFiM-O0c8AV8EPTYoHS0OBQRgOzUOI0AeEjp6PAh5VEkRdGduWX0LElknJz1LMQ";
-
-  const gradientColor1 = "blue";
-  const gradientColor2 = "purple";
+export const FloatingCard = ({ card }) => {
+  const styledPicture = {
+    backgroundImage: `linear-gradient(to right, ${card.gradientColor1} 0%, ${card.gradientColor2} 51%, ${card.gradientColor1} 100%), url(${card.backgroundUrl})`,
+    WebkitClipPath: `${card.picturePose}`,
+    clipPath: `${card.picturePose}`,
+    borderTopLeftRadius: "3px",
+    borderTopRightRadius: "3px",
+  };
 
   return (
     <div className={styles.card}>
       <div className={`${styles["card__side"]} ${styles["card__side--front"]}`}>
-        <div
-          className={`${styles["card__picture"]} ${styles["card__picture--1"]}`}
-        >
+        <div className={`${styles["card__picture"]}`} style={styledPicture}>
           &nbsp;
         </div>
         <h4 className={styles["card__heading"]}>
           <span
             className={`${styles["card__heading-span"]} ${styles["card__heading-span--1"]}`}
           >
-            The Hiking Hero
+            {card.title}
           </span>
         </h4>
         <div className={styles["card__details"]}>
           <ul>
-            <li>3 day tour</li>
-            <li>Up to 30 people</li>
-            <li>2 tour guides</li>
-            <li>Sleep in cozy hotels</li>
-            <li>Difficulty: easy</li>
+            <li>{card.details.size}</li>
+            {card.details.opisy.map((detail) => (
+              <li>{detail}</li>
+            ))}
           </ul>
         </div>
       </div>
@@ -41,12 +37,10 @@ export const FloatingCard = () => {
       >
         <div className={styles["card__cta"]}>
           <div className={styles["card__price-box"]}>
-            <p className={styles["card__price-only"]}>Only</p>
-            <p className={styles["card__price-value"]}>$199</p>
+            <p className={styles["card__price-only"]}>Teraz tylko</p>
+            <p className={styles["card__price-value"]}>79.99 zł</p>
           </div>
-          <a href="#popup" className="btn btn--white">
-            Book now!
-          </a>
+          <button className={styles["button"]}>Kup teraz</button>
         </div>
       </div>
     </div>
