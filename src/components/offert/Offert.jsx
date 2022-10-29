@@ -10,7 +10,10 @@ export const Offert = () => {
     <article className={styles.container}>
       <div className={styles["introduction"]}>
         <h2 className={styles["introduction__heading"]}>
-          Dyplomowany Dietetyk Online <br /> Aleksandra Kajstura
+          Dyplomowany Dietetyk Online <br />{" "}
+          <span className={styles["introduction__heading--highlight"]}>
+            Aleksandra Kajstura
+          </span>
         </h2>
         <p className={styles["introduction__content"]}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam

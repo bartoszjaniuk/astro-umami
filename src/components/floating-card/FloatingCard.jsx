@@ -25,7 +25,7 @@ export const FloatingCard = ({ card }) => {
         </h4>
         <div className={styles["card__details"]}>
           <ul>
-            <li>{card.details.size}</li>
+            <li className={styles["kcal-heading"]}>{card.details.size}</li>
             {card.details.opisy.map((detail) => (
               <li>{detail}</li>
             ))}

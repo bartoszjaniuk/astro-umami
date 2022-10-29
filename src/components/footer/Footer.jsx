@@ -3,6 +3,6 @@ import styles from "./Footer.module.scss";
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>Created with ❤️‍🔥 by Bartosz Janiuk</footer>
+    <footer className={styles.footer}>Created with ❤️‍🔥 Bartosz Janiuk</footer>
   );
 };

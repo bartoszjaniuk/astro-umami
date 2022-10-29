@@ -5,6 +5,14 @@
   -moz-perspective: 150rem;
   height: 600px;
   width: 400px;
+
+  @include mediaQ(xxxl) {
+    width: 380px;
+  }
+
+  @include mediaQ(xxl) {
+    width: 400px;
+  }
   &__side {
     font-size: 2rem;
     height: 600px;
@@ -254,4 +262,9 @@
 
     min-width: 100%;
   }
+}
+
+.kcal-heading {
+  font-weight: 700;
+  font-size: 2rem !important;
 }

@@ -3,14 +3,16 @@
   position: relative;
   max-height: 1260px;
   min-height: 600px;
-  padding: 1.5rem 15rem 0 15rem;
-  display: flex;
+  padding: 1.5rem 5rem 0 5rem;
   z-index: 2;
   background-color: #f7f7f7;
-  flex-wrap: wrap;
 
-  @include mediaQ(xxl) {
-    padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include mediaQ(lg) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
 
   &::before {
@@ -38,11 +40,27 @@
   align-items: start;
   flex-direction: column;
   padding-bottom: 2rem;
-  width: 850px;
+  flex: 3;
 
   &__heading {
-    padding: 0.5rem 0;
+    padding: 3rem;
+    width: 100%;
     font-size: 3rem;
+    position: relative;
+    // border: 1px solid purple;
+    &--highlight {
+      font-family: "Caveat", cursive;
+
+      font-size: 1.8rem;
+      position: absolute;
+      top: 70%;
+      left: 25%;
+      // transform: scale(1.2) skew(20deg, 0deg);
+      transform: rotate(-5deg);
+      overflow-wrap: normal;
+      word-wrap: normal;
+      word-break: normal;
+    }
   }
   &__content {
     font-size: 1.2rem;
@@ -64,21 +82,16 @@
 }
 
 .photo {
-  @include mediaQ(lg) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  @include mediaQ(md) {
+  @include mediaQ(xxl) {
     display: none;
   }
-  // border: 1px solid red;
-  padding-bottom: 7rem;
-  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  flex: 2;
+  padding-bottom: 8rem;
+
   &__img {
     min-width: 5rem;
     max-width: 35rem;
-    // height: 300px;
   }
 }
