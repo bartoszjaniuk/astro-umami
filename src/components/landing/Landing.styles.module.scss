@@ -12,6 +12,10 @@
     flex-direction: column;
   }
 
+  @include mediaQ(md) {
+    clip-path: none;
+  }
+
   &__left {
     width: 40%;
     background-color: rgba(224, 178, 178, 0.211);
