@@ -5,6 +5,7 @@
   display: flex;
   position: relative;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75vh);
+  background-color: white;
 
   @include mediaQ(lg) {
     height: 100%;
