@@ -116,7 +116,7 @@
 }
 
 .isMobile {
-  @include mediaQ(xxxl) {
+  @include mediaQ(xxl) {
     display: none;
   }
 

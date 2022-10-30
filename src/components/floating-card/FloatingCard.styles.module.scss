@@ -4,15 +4,15 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 600px;
-  width: 400px;
+  width: 300px;
 
   @include mediaQ(xxxl) {
-    width: 380px;
+    width: 360px;
   }
 
-  @include mediaQ(xxl) {
-    width: 400px;
-  }
+  // @include mediaQ(xxl) {
+  //   width: 400px;
+  // }
   &__side {
     font-size: 2rem;
     height: 600px;

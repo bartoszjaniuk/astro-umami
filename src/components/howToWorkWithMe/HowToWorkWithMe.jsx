@@ -7,7 +7,7 @@ export const HowToWorkWithMe = () => {
   return (
     <section className={styles.container}>
       <h1 className={styles["container__heading"]}>
-        Jak rozpocząć ze mną współpracę w pięciu krokach 🥳
+        Jak rozpocząć ze mną współpracę w pięciu krokach
       </h1>
       <div className={styles["container__content"]}>
         {cards.map((card, index) => (
