@@ -18,7 +18,7 @@ export const ThreeMenus = () => {
       <div className={styles["container__content"]}>
         <FloatingCard card={firstCard} />
         <FloatingCard card={secondCard} />
-        <FloatingCard card={thirdCard} />
+        <FloatingCard card={thirdCard} className={styles["isMobile"]} />
       </div>
 
       <button className={styles["button"]}>Zobacz więcej</button>

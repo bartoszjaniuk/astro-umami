@@ -1,6 +1,7 @@
 import React from "react";
+import type { IconProps } from "../Icon.types";
 
-export const CalculatorIcon = (width, height, className) => {
+export const CalculatorIcon = ({ width, height, className }: IconProps) => {
   return (
     <svg
       className={className}

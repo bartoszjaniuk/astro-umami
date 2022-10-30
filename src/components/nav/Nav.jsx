@@ -4,11 +4,11 @@ import { useStore } from "@nanostores/react";
 import styles from "./Nav.styles.module.scss";
 import { AppRoutes } from "./AppRoute.enum";
 import { isMenuOpen } from "./navStore";
-import { FacebookIcon } from "../facebook-icon/FacebookIcon";
-import { InstagramIcon } from "../instagram-icon/InstagramIcon";
+import { FacebookIcon } from "../icons/facebook-icon/FacebookIcon";
+import { InstagramIcon } from "../icons/instagram-icon/InstagramIcon";
 import { Button } from "../button/Button";
-import { MessageIcon } from "../message-icon/MessageIcon";
-import { CalculatorIcon } from "../calculator-icon/CalculatorIcon";
+import { MessageIcon } from "../icons/message-icon/MessageIcon";
+import { CalculatorIcon } from "../icons/calculator-icon/CalculatorIcon";
 
 export const Nav = () => {
   const $isMenuOpen = useStore(isMenuOpen);

@@ -1,6 +1,7 @@
 import React from "react";
+import type { IconProps } from "../Icon.types";
 
-export const FacebookIcon = ({ width, height, className }) => {
+export const FacebookIcon = ({ width, height, className }: IconProps) => {
   return (
     <svg
       className={className}

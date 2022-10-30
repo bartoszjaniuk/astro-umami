@@ -1,0 +1,53 @@
+@import "../../../styles//mixins";
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 290px;
+  // height: 100%;
+
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+
+  @include mediaQ(xxxl) {
+    width: 17%;
+  }
+
+  @include mediaQ(xxl) {
+    width: 40%;
+  }
+
+  @include mediaQ(sm) {
+    height: 300px;
+    width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 1.5rem;
+    @include mediaQ(lg) {
+      font-size: 1.7rem;
+    }
+  }
+  &__description {
+    text-align: center;
+
+    @include mediaQ(lg) {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+}

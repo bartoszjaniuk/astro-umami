@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./FloatingCard.styles.module.scss";
 
-export const FloatingCard = ({ card }) => {
+export const FloatingCard = ({ card, className }) => {
   const styledPicture = {
     backgroundImage: `linear-gradient(to right, ${card.gradientColor1} 0%, ${card.gradientColor2} 51%, ${card.gradientColor1} 100%), url(${card.backgroundUrl})`,
     WebkitClipPath: `${card.picturePose}`,
@@ -11,7 +11,7 @@ export const FloatingCard = ({ card }) => {
   };
 
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${className}`}>
       <div className={`${styles["card__side"]} ${styles["card__side--front"]}`}>
         <div className={`${styles["card__picture"]}`} style={styledPicture}>
           &nbsp;

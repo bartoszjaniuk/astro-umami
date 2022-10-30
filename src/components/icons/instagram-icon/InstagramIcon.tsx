@@ -1,6 +1,7 @@
 import React from "react";
+import type { IconProps } from "../Icon.types";
 
-export const InstagramIcon = ({ width, height, className }) => {
+export const InstagramIcon = ({ width, height, className }: IconProps) => {
   return (
     <svg
       className={className}
