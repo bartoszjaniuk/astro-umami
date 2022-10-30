@@ -13,6 +13,12 @@
   background-color: #f7f7f7;
   gap: 5rem;
 
+  @include mediaQ(md) {
+    &:last-child {
+      gap: 3rem;
+    }
+  }
+
   &__heading {
     display: flex;
     align-items: center;

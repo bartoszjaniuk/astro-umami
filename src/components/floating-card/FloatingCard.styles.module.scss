@@ -157,7 +157,7 @@
   }
 
   @include mediaQ(md) {
-    max-height: 600px;
+    max-height: 500px;
 
     &__side {
       font-size: 2rem;
