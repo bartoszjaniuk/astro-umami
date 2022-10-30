@@ -1,16 +1,26 @@
 import React from "react";
 import styles from "./Offert.styles.module.scss";
+import { useInView } from "react-intersection-observer";
 
 export const Offert = () => {
+  const { ref: introductionRef, inView: introductionInView } = useInView({
+    triggerOnce: true,
+  });
+
   const image =
     // "https://akopszostak.com/wp-content/uploads/2022/02/akop-wskazuje-lewo-1-1-326x415.png";
     "assets/acia.png";
 
   return (
     <article className={styles.container}>
-      <div className={styles["introduction"]}>
+      <div
+        ref={introductionRef}
+        className={`${styles["introduction"]} ${
+          introductionInView ? "slide-from-left" : ""
+        }`}
+      >
         <h2 className={styles["introduction__heading"]}>
-          Dyplomowany Dietetyk Online <br />{" "}
+          Dyplomowany Dietetyk Online <br />
           <span className={styles["introduction__heading--highlight"]}>
             Aleksandra Kajstura
           </span>
@@ -37,7 +47,11 @@ export const Offert = () => {
           <li>spalić tłuszcz z brzucha</li>
         </ul>
       </div>
-      <div className={styles["photo"]}>
+      <div
+        className={`${styles["photo"]} ${
+          introductionInView ? "slide-from-right" : ""
+        }`}
+      >
         <img
           className={styles["photo__img"]}
           src={image}
