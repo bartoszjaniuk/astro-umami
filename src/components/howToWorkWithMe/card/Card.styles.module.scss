@@ -1,12 +1,11 @@
-@import "../../../styles//mixins";
+@import "../../../styles/mixins";
 
 .card {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 290px;
-  // height: 100%;
+  width: 16.75rem;
 
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: transform 0.3s;
 
   display: flex;
@@ -14,6 +13,7 @@
   padding: 1.5rem;
   align-items: center;
   gap: 1rem;
+  font-weight: 300;
 
   @include mediaQ(xxxl) {
     width: 17%;
@@ -23,8 +23,12 @@
     width: 40%;
   }
 
+  @include mediaQ(md) {
+    width: 45%;
+  }
+
   @include mediaQ(sm) {
-    height: 300px;
+    height: 100%;
     width: 100%;
   }
 
@@ -37,6 +41,8 @@
     justify-content: center;
   }
   &__title {
+    font-family: Merriweather;
+    // font-family: Caveat;
     font-size: 1.5rem;
     @include mediaQ(lg) {
       font-size: 1.7rem;

@@ -3,7 +3,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 1rem 10rem;
 
   position: fixed;
   top: 0;
@@ -12,6 +12,10 @@
   width: 100%;
 
   background-color: white;
+
+  @include mediaQ(xxxl) {
+    padding: 1rem 5rem;
+  }
 
   @include mediaQ(lg) {
     padding: 1rem 1.5rem !important;

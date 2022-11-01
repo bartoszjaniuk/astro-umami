@@ -12,7 +12,7 @@ export const Offert = () => {
     "assets/acia.png";
 
   return (
-    <article className={styles.container}>
+    <section className={styles.container}>
       <div
         ref={introductionRef}
         className={`${styles["introduction"]} ${
@@ -58,6 +58,6 @@ export const Offert = () => {
           alt="Człowiek wskazujący palcem na opis"
         />
       </div>
-    </article>
+    </section>
   );
 };

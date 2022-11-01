@@ -1,7 +1,7 @@
 @import "../../styles//mixins";
 .container {
   min-height: 1200px;
-  padding: 5rem 5rem;
+  padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +9,16 @@
   background-color: #f7f7f7;
   gap: 4rem;
 
+  @include mediaQ(xxxl) {
+    padding: 1rem 5rem;
+  }
+
   @include mediaQ(xxl) {
     padding: 5rem 1.5rem;
+  }
+
+  @include mediaQ(lg) {
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
   }
 
   @include mediaQ(md) {

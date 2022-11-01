@@ -3,13 +3,17 @@
   position: relative;
   max-height: 1260px;
   min-height: 600px;
-  padding: 1.5rem 5rem 0 5rem;
+  padding: 1.5rem 10rem 0 10rem;
   z-index: 2;
   background-color: #f7f7f7;
 
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  @include mediaQ(xxxl) {
+    padding: 1rem 5rem;
+  }
 
   @include mediaQ(lg) {
     padding: 1.5rem 1.5rem 0 1.5rem;
@@ -41,7 +45,6 @@
   flex-direction: column;
   padding-bottom: 2rem;
   flex: 3;
-  // opacity: 0;
 
   &__heading {
     padding: 3rem;
@@ -53,10 +56,11 @@
     @include mediaQ(md) {
       padding: 5rem 0;
       text-align: center;
+      font-size: 2.5rem;
     }
     &--highlight {
       font-family: "Caveat", cursive;
-      font-size: 1.8rem;
+      font-size: 2rem;
       position: absolute;
       top: 70%;
       left: 25%;
@@ -67,6 +71,11 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
+      }
+
+      @include mediaQ(sm) {
+        top: 75%;
+        font-size: 2.3rem;
       }
     }
   }
@@ -107,5 +116,7 @@
   &__img {
     min-width: 5rem;
     max-width: 35rem;
+    // border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    // background-color: var(--c-primary);
   }
 }
