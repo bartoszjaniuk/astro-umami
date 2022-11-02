@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 :root {
   /* Colors */
   --c-black: #05091e;
@@ -15,12 +19,14 @@
 
   --c-primary: #57463c;
   --c-primary-dark: #3b2f29;
+  --c-secondary: #d2bfa3;
 }
 
 body {
   margin: 0;
   color: var(--t-fg);
-  font-family: "Lato", sans-serif;
+  font-family: "Playfair Display", serif;
+
   color: var(--c-primary);
 }
 
@@ -29,6 +35,10 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+button {
+  font-family: "Playfair Display", serif;
 }
 .content {
   background-color: white;

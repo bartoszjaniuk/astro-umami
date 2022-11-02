@@ -41,15 +41,16 @@
     justify-content: center;
   }
   &__title {
-    font-family: Merriweather;
-    // font-family: Caveat;
     font-size: 1.5rem;
+    letter-spacing: 2px;
     @include mediaQ(lg) {
       font-size: 1.7rem;
     }
   }
   &__description {
     text-align: center;
+    font-family: "Lato";
+    font-size: 1.2rem;
 
     @include mediaQ(lg) {
       font-size: 1.2rem;

@@ -28,7 +28,6 @@
     flex-direction: column;
   }
 }
-// #57463ce8
 
 .description {
   display: flex;
@@ -36,16 +35,39 @@
   align-items: center;
   gap: 3rem;
   justify-content: center;
+  position: relative;
+  padding: 2rem;
+  z-index: 10;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    height: 50%;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-color: var(--c-secondary);
+    border-radius: 30% 70% 70% 30% / 30% 50% 20% 70%;
+
+    @include mediaQ(xxxl) {
+      bottom: 10%;
+    }
+  }
   flex: 1;
 
   @include mediaQ(md) {
     padding-bottom: 2rem;
   }
+  @include mediaQ(md) {
+    padding: 0;
+    padding-bottom: 4rem;
+  }
 
   &__heading {
-    font-family: "Merriweather", serif;
-
+    text-transform: uppercase;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     background-color: var(--c-primary);
     color: var(--c-primary);
@@ -55,8 +77,10 @@
     font-size: 2.3rem;
     position: relative;
     z-index: 100;
+    @include mediaQ(xxxl) {
+      font-size: 2rem;
+    }
 
-    // #D2BFA3
     &::before {
       z-index: -1;
       content: "";
@@ -74,12 +98,29 @@
     font-size: 1rem;
     flex: 1;
     padding: 1rem 3rem;
+    @include mediaQ(md) {
+      padding: 1.5rem 3rem !important;
+      font-size: 1.5rem;
+    }
+    @include mediaQ(sm) {
+      padding: 1rem 3rem !important;
+      font-size: 1.2rem;
+    }
   }
 
   &__content {
-    // max-width: 500px;
     font-size: 1.2rem;
     font-weight: 300;
+    position: relative;
+    z-index: 10;
+
+    @include mediaQ(md) {
+      padding: 0 2.5rem;
+    }
+
+    @include mediaQ(sm) {
+      padding: 1.5rem;
+    }
   }
 
   &__buttons {
@@ -87,6 +128,9 @@
     gap: 1rem;
     width: 100%;
     // border: 1px solid red;
+    @include mediaQ(md) {
+      flex-direction: column;
+    }
   }
 }
 .picture {
@@ -129,7 +173,6 @@
       top: 50%;
       left: 47%;
       z-index: -1;
-      // transform: translateY(-70%);
     }
     &--big {
       width: 160px;
@@ -140,7 +183,11 @@
       top: 15%;
       left: 70%;
       z-index: -1;
-      // transform: translateY(-70%);
+
+      @include mediaQ(sm) {
+        top: 60%;
+        left: 50%;
+      }
     }
   }
 }

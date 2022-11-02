@@ -18,7 +18,7 @@
 
   &__left {
     min-width: 40%;
-    background-color: rgba(224, 178, 178, 0.211);
+    background-color: var(--c-secondary);
     padding: 3rem 5rem 3rem 0;
 
     @include mediaQ(lg) {
@@ -68,7 +68,12 @@
   &__heading {
     font-weight: 900;
     font-size: 2.1rem;
-    font-family: "Merriweather", serif;
+    // font-family: "Merriweather", serif;
+  }
+
+  &__text {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
   }
 
   &__button {
@@ -78,7 +83,6 @@
     border: 1px solid transparent;
     font-size: 1.2rem;
     font-weight: 500;
-    font-family: "Lato", sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 0.3rem;
