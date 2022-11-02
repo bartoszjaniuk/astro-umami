@@ -7,7 +7,14 @@ export const Calculator = () => {
     <section className={styles.container}>
       <div className={styles["description"]}>
         <h3 className={styles["description__heading"]}>
-          Która dieta będzie idealna <br /> dla Ciebie?
+          Która{" "}
+          <span className={styles["description__heading--highlight"]}>
+            dieta
+          </span>{" "}
+          będzie <br /> dla Ciebie{" "}
+          <span className={styles["description__heading--highlight"]}>
+            idealna
+          </span>
         </h3>
         <p className={styles["description__content"]}>
           Skorzystaj z kalkulatora, aby dowiedzieć się, jakie obecnie masz
