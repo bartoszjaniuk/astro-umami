@@ -108,9 +108,6 @@
 
 .link {
   padding-right: 2rem;
-  @include mediaQ(xxl) {
-    padding-right: 1rem;
-  }
 }
 .logo {
   width: 160px;

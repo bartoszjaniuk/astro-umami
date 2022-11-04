@@ -35,10 +35,21 @@
   padding-bottom: 4rem;
   background-color: white;
   z-index: 10;
+  @include mediaQ(xxl) {
+    padding-top: 3rem;
+  }
+
+  @include mediaQ(md) {
+    gap: 1rem;
+  }
   &__heading-one {
     font-size: 3rem;
     font-weight: 900;
     color: var(--c-primary);
+    @include mediaQ(md) {
+      padding-top: 2rem;
+      text-align: center;
+    }
   }
   &__heading-two {
     font-size: 1.2rem;

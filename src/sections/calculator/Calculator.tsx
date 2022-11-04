@@ -13,7 +13,7 @@ export const Calculator = () => {
           </span>{" "}
           będzie <br /> dla Ciebie{" "}
           <span className={styles["description__heading--highlight"]}>
-            idealna
+            idealna?
           </span>
         </h3>
         <p className={styles["description__content"]}>

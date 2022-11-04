@@ -35,6 +35,10 @@
       background-color: var(--c-primary);
       border-radius: 100rem;
     }
+
+    @include mediaQ(md) {
+      display: none;
+    }
   }
 
   @include mediaQ(xxxl) {
