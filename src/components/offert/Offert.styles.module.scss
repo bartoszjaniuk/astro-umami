@@ -4,12 +4,38 @@
   max-height: 1260px;
   min-height: 600px;
   padding: 1.5rem 10rem 0 10rem;
-  z-index: 2;
+  z-index: 10;
   background-color: #f7f7f7;
 
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  &__inner-element {
+    position: absolute;
+    bottom: -2rem;
+    left: -20rem;
+    width: 25rem;
+    height: 25rem;
+
+    border-radius: 100rem;
+
+    border: 1px solid var(--c-primary);
+    &::after {
+      position: absolute;
+
+      content: "";
+
+      width: 98%;
+      height: 98%;
+      opacity: 0.7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--c-primary);
+      border-radius: 100rem;
+    }
+  }
 
   @include mediaQ(xxxl) {
     padding: 1rem 5rem;
@@ -118,7 +144,5 @@
   &__img {
     min-width: 5rem;
     max-width: 35rem;
-    // border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    // background-color: var(--c-primary);
   }
 }

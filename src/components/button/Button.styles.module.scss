@@ -11,6 +11,7 @@
   min-width: 9.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 10;
 
   @include mediaQ(xxl) {
     font-size: 0.9rem;

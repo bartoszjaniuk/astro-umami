@@ -11,8 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@hookform/error-message": "^2.0.0",
     "astro": "^1.5.2",
     "astro-icon": "^0.7.3",
+    "react-hook-form": "^7.39.1",
     "react-intersection-observer": "^9.4.0"
   },
   "devDependencies": {

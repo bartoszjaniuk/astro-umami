@@ -13,6 +13,9 @@ export const Offert = () => {
 
   return (
     <section className={styles.container}>
+      <span className={styles["container__inner-element"]} />
+      <span className={styles["container__inner-element--medium"]} />
+      <span className={styles["container__inner-element--big"]} />
       <div
         ref={introductionRef}
         className={`${styles["introduction"]} ${
