@@ -87,6 +87,17 @@
     position: relative;
     z-index: 100;
 
+    @include mediaQ(xxl) {
+      font-size: 3rem;
+    }
+
+    @include mediaQ(lg) {
+      font-size: 2.5rem;
+    }
+    @include mediaQ(md) {
+      font-size: 3.5rem;
+    }
+
     &--highlight {
       position: relative;
       color: white;
@@ -142,6 +153,7 @@
     display: flex;
     gap: 1rem;
     width: 100%;
+    padding-bottom: 12rem;
     @include mediaQ(sm) {
       flex-direction: column;
     }

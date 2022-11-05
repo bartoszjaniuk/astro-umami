@@ -57,6 +57,7 @@ $radius: 0.5rem;
 .error-message {
   color: red;
   font-size: 0.7rem;
+  z-index: 10;
 }
 
 .form-input:focus ~ .textarea-label,

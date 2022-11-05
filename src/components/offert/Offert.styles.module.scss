@@ -18,6 +18,22 @@
     width: 25rem;
     height: 25rem;
 
+    @include mediaQ(xxxl) {
+      width: 24rem;
+      height: 24rem;
+    }
+
+    @include mediaQ(lg) {
+      width: 13rem;
+      height: 13rem;
+      left: 10%;
+      top: -20%;
+    }
+
+    @include mediaQ(md) {
+      display: none;
+    }
+
     border-radius: 100rem;
 
     border: 1px solid var(--c-primary);
@@ -34,10 +50,6 @@
       justify-content: center;
       background-color: var(--c-primary);
       border-radius: 100rem;
-    }
-
-    @include mediaQ(md) {
-      display: none;
     }
   }
 

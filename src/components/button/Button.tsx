@@ -7,15 +7,18 @@ export const Button = ({
   size = "none",
   className,
   type = "button",
+  disabled,
 }: {
   children: ReactNode;
   isInverted?: boolean;
   size?: "sm" | "md" | "lg" | "none";
   className?: string;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 }) => {
   return (
     <button
+      disabled={disabled}
       type={type}
       style={{
         padding:
@@ -29,7 +32,7 @@ export const Button = ({
       }}
       className={`${styles.button} ${
         isInverted && styles["button--inverted"]
-      } ${className}`}
+      } ${className} ${disabled ? styles["button--disabled"] : ""}`}
     >
       {children}
     </button>

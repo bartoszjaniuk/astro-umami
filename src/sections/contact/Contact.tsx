@@ -12,18 +12,39 @@ export type ContactFormProps = {
 
 const emailPattern = {
   value: new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$", "ig"),
-  message: "Proszę podaj poprawny adres email",
+  message: "Podaj poprawny adres email",
 };
 
 export const Contact = () => {
   const {
+    reset,
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm<ContactFormProps>({ mode: "onSubmit" });
+    formState: { errors, isValid, isSubmitting },
+  } = useForm<ContactFormProps>({ mode: "all" });
 
-  const onSubmit = (data: any) => {
-    console.log({ data });
+  const onSubmit = async (formData: ContactFormProps) => {
+    try {
+      const response = await fetch(
+        "https://umami-get-mailed.onrender.com/api/v1/email/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            email: formData.email,
+            subject: formData.thread,
+            message: formData.message,
+          }),
+        }
+      );
+      await response.json();
+    } catch (error) {
+      console.log(error);
+    }
+    reset();
   };
 
   return (
@@ -92,7 +113,12 @@ export const Contact = () => {
               }}
               errors={errors}
             />
-            <Button type="submit">Wyślij wiadomość</Button>
+
+            <Button disabled={!isValid} type="submit">
+              {isSubmitting
+                ? "Trwa wysyłanie wiadomości..."
+                : "Wyślij wiadomość"}
+            </Button>
           </form>
         </div>
       </div>

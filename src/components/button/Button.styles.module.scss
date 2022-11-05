@@ -18,7 +18,7 @@
     min-width: 120px;
     padding: 0.5rem 0.1rem !important;
   }
-  &:hover {
+  &:hover :not(:disabled) {
     background: white;
     color: var(--c-primary);
     border: 1px solid var(--c-primary);
@@ -33,5 +33,10 @@
       color: white;
       border: 1px solid transparent;
     }
+  }
+
+  &--disabled {
+    background: var(--c-primary-light);
+    cursor: not-allowed;
   }
 }
