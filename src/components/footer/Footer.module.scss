@@ -1,9 +1,158 @@
+@import "../../styles/_mixins.scss";
 .footer {
-  background-color: var(--c-primary);
-  color: #fff;
-  padding: 1.25rem 5rem;
-  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  // border: 1px solid red;
+  border-top: 1px solid rgba(99, 99, 99, 0.2);
+
+  &__top {
+    background-color: var(--c-primary);
+    color: var(--c-primary);
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 10rem 2rem 10rem;
+    flex-wrap: wrap;
+
+    @include mediaQ(xxxl) {
+      padding: 1rem 5rem;
+    }
+
+    @include mediaQ(xxl) {
+      padding: 0 1.5rem 5rem 1.5rem;
+    }
+
+    @include mediaQ(lg) {
+      padding: 0 1.5rem 5rem 1.5rem;
+    }
+
+    @include mediaQ(md) {
+      padding-top: 2rem;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  &__bottom {
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem 0 10rem;
+
+    @include mediaQ(xxxl) {
+      padding: 0rem 5rem;
+    }
+
+    @include mediaQ(xxl) {
+      padding: 0 1.5rem 0 1.5rem;
+    }
+
+    @include mediaQ(lg) {
+      padding: 0 1.5rem 0 1.5rem;
+    }
+
+    @include mediaQ(sm) {
+      flex-direction: column;
+    }
+  }
+}
+
+.logo {
+  width: 160px;
+  min-width: 160px;
+}
+
+.column {
+  color: white;
+  flex: 1;
+  // border: 1px solid white;
+  border-radius: 7px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  @include mediaQ(md) {
+    padding: 0.5rem;
+  }
+  &__heading {
+    font-size: 1.5rem;
+    font-family: "Lato";
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+}
+
+.column-list {
+  list-style: none;
+  &__item {
+    font-family: "Lato";
+    font-weight: 500;
+    padding: 0.3rem 0;
+  }
+
+  &__contact {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    border-radius: 4px;
+    color: var(--c-primary);
+    border-color: transparent;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.media-list {
+  list-style: none;
+  display: flex;
+  gap: 0.3rem;
+  &__item {
+    padding: 0.3rem 0;
+  }
+}
+
+.copyright {
+  color: #7f7f7f;
+
+  font-family: "Lato";
+  font-weight: 500;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  @include mediaQ(sm) {
+    justify-content: start;
+    padding: 0;
+  }
+  &--first {
+    @include mediaQ(sm) {
+      // justify-content: start;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &--last {
+    @include mediaQ(sm) {
+      // justify-content: center;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.rights {
+  display: flex;
+  gap: 1rem;
+
+  @include mediaQ(sm) {
+    flex-direction: column;
+  }
 }
