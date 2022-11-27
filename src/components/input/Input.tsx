@@ -1,20 +1,23 @@
 import { ErrorMessage } from "@hookform/error-message";
-import type { DetailedHTMLProps, InputHTMLAttributes } from "react";
+import type { DetailedHTMLProps, InputHTMLAttributes, ReactNode } from "react";
 import type { DeepMap, FieldError, RegisterOptions } from "react-hook-form";
 import type { ContactFormProps } from "../../sections/contact/Contact";
 import { FormErrorMessage } from "./ErrorMessage";
 import styles from "./Input.styles.module.scss";
 
-export type InputProps = {
+export type InputProps<T> = {
   id: string;
   name: string;
-  label: string;
+  label: string | ReactNode;
   className?: string;
-  type?: "text" | "email";
+  type?: "text" | "email" | "radio" | "number";
   register: any;
   rules?: RegisterOptions;
-  errors?: Partial<DeepMap<ContactFormProps, FieldError>>;
+  errors?: Partial<DeepMap<T, FieldError>>;
   isTextArea?: boolean;
+  value?: string;
+  useFormGroup?: boolean;
+  options?: { value: number; label: string; description?: string }[];
 } & Omit<
   DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>,
   "size"
@@ -31,8 +34,9 @@ export const Input = ({
   register,
   rules,
   isTextArea,
+  value,
   ...props
-}: InputProps) => {
+}: InputProps<ContactFormProps>) => {
   const hasError = !!errors;
   return (
     <div>
@@ -55,7 +59,7 @@ export const Input = ({
       {isTextArea && (
         <div className={styles["group"]}>
           <textarea
-            rows={5}
+            rows={3}
             className={styles["form-input"]}
             id={id}
             name={name}

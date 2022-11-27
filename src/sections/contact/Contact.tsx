@@ -49,6 +49,10 @@ export const Contact = () => {
 
   return (
     <section className={styles.container}>
+      <span className={styles["background-shape"]} />
+      <span className={styles["background-shape--small"]} />
+      <span className={styles["background-shape--very-small"]} />
+      <span className={styles["background-shape--medium"]} />
       <div className={styles.contact}>
         <h2 className={styles["contact__heading-one"]}>
           Skontaktuj się ze mną
@@ -67,10 +71,6 @@ export const Contact = () => {
           />
         </div>
         <div className={styles["container-inner__form-container"]}>
-          <span className={styles["background-shape"]} />
-          <span className={styles["background-shape--small"]} />
-          <span className={styles["background-shape--very-small"]} />
-          <span className={styles["background-shape--medium"]} />
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <h3 className={styles["form__heading"]}>Napisz do mnie</h3>
             <Input
@@ -125,3 +125,5 @@ export const Contact = () => {
     </section>
   );
 };
+// https://dribbble.com/shots/13667794-Mortgage-calculator
+// undraw- chilling

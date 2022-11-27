@@ -1,0 +1,22 @@
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  font-weight: 300;
+  font-family: "Lato";
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.label {
+  opacity: 0.5;
+}
+
+.radio-input + .label {
+  cursor: pointer;
+}
+
+.radio-input:checked + .label {
+  opacity: 1;
+}

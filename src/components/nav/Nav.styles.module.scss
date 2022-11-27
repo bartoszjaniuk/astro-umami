@@ -12,6 +12,7 @@
   width: 100%;
 
   background-color: white;
+  border-bottom: 1px solid #f7f7f7;
 
   @include mediaQ(xxxl) {
     padding: 1rem 5rem;
