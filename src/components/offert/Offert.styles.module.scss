@@ -156,6 +156,8 @@
   display: flex;
   align-items: flex-start;
   flex: 2;
+  background: var(--c-primary);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   // padding-bottom: 8rem;
 
   &__img {
