@@ -2,7 +2,7 @@ import React from "react";
 import { useStore } from "@nanostores/react";
 
 import styles from "./Nav.styles.module.scss";
-import { AppRoutes } from "./AppRoute.enum";
+import { AppRoute, AppRoutes } from "./AppRoute.enum";
 import { isMenuOpen } from "./navStore";
 import { FacebookIcon } from "../icons/facebook-icon/FacebookIcon";
 import { InstagramIcon } from "../icons/instagram-icon/InstagramIcon";
@@ -11,7 +11,7 @@ import { MessageIcon } from "../icons/message-icon/MessageIcon";
 import { CalculatorIcon } from "../icons/calculator-icon/CalculatorIcon";
 import imgReference from "/assets/logo.jpg";
 
-export const Nav = () => {
+export const Nav = ({ currentPath }) => {
   const $isMenuOpen = useStore(isMenuOpen);
 
   return (
@@ -38,7 +38,14 @@ export const Nav = () => {
       >
         <ul className={styles["nav-list"]}>
           {AppRoutes.map((route, index) => (
-            <li key={index} className={styles["nav-list__item"]}>
+            <li
+              key={index}
+              className={`${styles["nav-list__item"]} ${
+                currentPath === route.url.slice(1)
+                  ? styles["nav-list__item--active"]
+                  : ""
+              }`}
+            >
               <a className={styles["nav-list__link"]} href={route.url}>
                 {route.title.toUpperCase()}
               </a>
@@ -48,16 +55,20 @@ export const Nav = () => {
       </div>
 
       <div className={styles["button-group"]}>
-        <Button
-          isInverted
-          size="sm"
-          icon={<MessageIcon width="36px" height="36px" />}
-        >
-          Napisz do mnie
-        </Button>
-        <Button icon={<CalculatorIcon width="36px" height="36px" />}>
-          Kalkulator
-        </Button>
+        <a href="#contact-form">
+          <Button
+            isInverted
+            size="sm"
+            icon={<MessageIcon width="36px" height="36px" />}
+          >
+            Napisz do mnie
+          </Button>
+        </a>
+        <a href="/kalkulator">
+          <Button icon={<CalculatorIcon width="36px" height="36px" />}>
+            Kalkulator
+          </Button>
+        </a>
       </div>
       <div
         className={`${styles["instagram-icons"]} ${

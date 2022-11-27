@@ -53,7 +53,7 @@ export const Contact = () => {
       <span className={styles["background-shape--small"]} />
       <span className={styles["background-shape--very-small"]} />
       <span className={styles["background-shape--medium"]} />
-      <div className={styles.contact}>
+      <div className={styles.contact} id="contact-form">
         <h2 className={styles["contact__heading-one"]}>
           Skontaktuj się ze mną
         </h2>

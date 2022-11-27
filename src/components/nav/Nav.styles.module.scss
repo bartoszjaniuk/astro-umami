@@ -144,6 +144,14 @@
     &:hover {
       color: var(--c-secondary);
     }
+
+    &--active {
+      & .nav-list__link {
+        border-top: 2px solid var(--c-primary);
+        padding-top: 0.2rem;
+        font-weight: 600;
+      }
+    }
   }
   &__link {
     font-size: 1rem;

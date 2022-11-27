@@ -1,0 +1,8 @@
+---
+import { Nav } from "./Nav";
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<Nav client:load currentPath={currentPath} />
