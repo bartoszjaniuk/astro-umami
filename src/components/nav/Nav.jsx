@@ -9,6 +9,7 @@ import { InstagramIcon } from "../icons/instagram-icon/InstagramIcon";
 import { Button } from "../button/Button";
 import { MessageIcon } from "../icons/message-icon/MessageIcon";
 import { CalculatorIcon } from "../icons/calculator-icon/CalculatorIcon";
+import imgReference from "/assets/logo.jpg";
 
 export const Nav = () => {
   const $isMenuOpen = useStore(isMenuOpen);
@@ -17,7 +18,7 @@ export const Nav = () => {
     <nav className={styles.nav}>
       <div className={styles["nav__inner"]}>
         <a href="/" className={styles.link}>
-          <img src="assets/logo.jpg" alt="logo" className={styles.logo} />
+          <img src={imgReference} alt="logo" className={styles.logo} />
         </a>
         <button
           className={`${styles.burger} ${

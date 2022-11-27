@@ -21,6 +21,9 @@ import type {
   CalculatorFormProps,
 } from "./CalculatorApp.types";
 
+import imgReadingReference from "/assets/reading.svg";
+import imgExamReference from "/assets/exam.svg";
+
 import { CalculatorAppData } from "./CalculatorApp.data";
 
 export const CalculatorApp = () => {
@@ -227,7 +230,7 @@ export const CalculatorApp = () => {
             <div className={styles.notes}>
               <img
                 className={styles["notes__image"]}
-                src="assets/reading.svg"
+                src={imgReadingReference}
                 alt="Kobieta czytająca instrukcję"
               />
             </div>
@@ -258,7 +261,7 @@ export const CalculatorApp = () => {
             <div className={styles["calculated__image-container"]}>
               <img
                 className={styles["calculated__image"]}
-                src="assets/exams.svg"
+                src={imgExamReference}
                 alt="Kobieta czytająca instrukcję"
               />
             </div>
