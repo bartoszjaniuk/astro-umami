@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Offert.styles.module.scss";
 import { useInView } from "react-intersection-observer";
+import introductionImgReference from "/assets/introduction.png";
 
 export const Offert = () => {
   const { ref: introductionRef, inView: introductionInView } = useInView({
@@ -23,24 +24,22 @@ export const Offert = () => {
         }`}
       >
         <h2 className={styles["introduction__heading"]}>
-          Dyplomowany Dietetyk Online <br />
+          <p>Aleksandra Kajstura</p>
           <span className={styles["introduction__heading--highlight"]}>
-            Aleksandra Kajstura
+            dyplomowany dietetyk online
           </span>
         </h2>
         <p className={styles["introduction__content"]}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
-          voluptatum esse nesciunt laboriosam accusamus repellendus eveniet
-          dolores, nemo placeat odio adipisci blanditiis numquam? Amet officia
-          quam cumque. Eos officia incidunt, possimus totam, minus aspernatur
-          hic, ex nemo mollitia dignissimos praesentium. Lorem ipsum, dolor sit
-          amet consectetur adipisicing elit. Similique, est laborum. Sunt
-          perferendis ipsam suscipit, blanditiis eaque facilis excepturi porro
-          doloribus, minus maxime, labore quidem rerum fugiat consequuntur
-          aliquid asperiores natus maiores ex sed exercitationem! Reprehenderit,
-          sequi aliquam. Fugit, aperiam.
+          Nazywam się Aleksandra Kajstura, jestem dietetykiem i nauczę Cię jak
+          zadbać o siebie i zacząć prowadzić zdrowy styl życia krok po kroku.
+          Jestem absolwentką Uniwersytetu Opolskiego, a dalszą naukę kontynuuję
+          w Wyższej Szkole Biznesu i Nauk o Zdrowiu w Łodzi na studiach
+          magisterskich. Cały czas szkolę się, uczę i zdobywam wiedzę na
+          studiach, praktykach zawodowych czy szkoleniach. Służę pomocą jeśli
+          zmagasz się z problemami zdrowotnymi, z nadmierną lub za niską masą
+          ciała lub po prostu chcesz zmienić swoje nawyki żywieniowe.
         </p>
-        <p className={styles["introduction__highlight"]}>
+        {/* <p className={styles["introduction__highlight"]}>
           Teraz swoje know-how zainwestuję w Twoją przemianę. Pokażę Ci, jak w
           praktyce:
         </p>
@@ -48,7 +47,7 @@ export const Offert = () => {
           <li>sami spełniamy marzenia</li>
           <li>pozbyć się złych nawyków</li>
           <li>spalić tłuszcz z brzucha</li>
-        </ul>
+        </ul> */}
       </div>
       <div
         className={`${styles["photo"]} ${
@@ -57,7 +56,7 @@ export const Offert = () => {
       >
         <img
           className={styles["photo__img"]}
-          src={image}
+          src={introductionImgReference}
           alt="Człowiek wskazujący palcem na opis"
         />
       </div>

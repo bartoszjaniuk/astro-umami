@@ -1,4 +1,4 @@
-import type { CalculatorFormProps } from "./CalculatorApp";
+import type { CalculatorFormProps } from "./CalculatorApp.types";
 
 const calculateManCPM = ({
   weight,
@@ -21,13 +21,15 @@ const calculateWomanCPM = ({
   height,
   age,
   activity,
+  goal,
 }: CalculatorFormProps) =>
   Math.round(
     (655.1 +
       9.565 * Number(weight) +
       1.85 * Number(height) -
       4.676 * Number(age)) *
-      Number(activity)
+      Number(activity) +
+      Number(goal)
   );
 
 export const calculateCPM = {

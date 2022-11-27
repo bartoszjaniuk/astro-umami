@@ -22,13 +22,12 @@ export const Landing = () => {
       <div className={styles["container__modal"]}>
         <div className={styles["modal-content"]}>
           <h1 className={styles["modal-content__heading"]}>
-            Resilence Coaching and Strategy For The Modern Woman
+            „Sukces jest jak drabina – nie wejdziesz na nią trzymając ręce w
+            kieszeni.” – Philip Wylie
           </h1>
           <p className={styles["modal-content__text"]}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-            aut totam laborum praesentium nisi unde ipsam esse numquam,
-            inventore quidem explicabo quis ea eum necessitatibus voluptatum.
-            Debitis, recusandae illo? Reprehenderit.
+            Tylko jeden krok dzieli Cię od zmiany na lepsze. Napisz do mnie już
+            teraz, a ja pomogę Ci w realizacji Twoich celów!
           </p>
           <button className={styles["modal-content__button"]}>
             Dowiedz się więcej

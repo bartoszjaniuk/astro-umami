@@ -6,7 +6,13 @@ type ContainerProps = {
 
 export const Container = ({ children }: ContainerProps) => {
   return (
-    <div style={{ width: "100%", minHeight: "calc(100vh - 100px)" }}>
+    <div
+      style={{
+        width: "100%",
+        minHeight: "calc(100vh - 100px)",
+        background: "#fff",
+      }}
+    >
       {children}
     </div>
   );
