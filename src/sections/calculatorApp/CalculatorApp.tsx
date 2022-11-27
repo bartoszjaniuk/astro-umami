@@ -22,7 +22,7 @@ import type {
 } from "./CalculatorApp.types";
 
 import imgReadingReference from "/assets/reading.svg";
-import imgExamReference from "/assets/exam.svg";
+import imgExamReference from "/assets/exams.svg";
 
 import { CalculatorAppData } from "./CalculatorApp.data";
 
