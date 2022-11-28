@@ -23,12 +23,14 @@ export const Offert = () => {
           introductionInView ? "slide-from-left" : ""
         }`}
       >
-        <h2 className={styles["introduction__heading"]}>
-          <p>Aleksandra Kajstura</p>
-          <span className={styles["introduction__heading--highlight"]}>
+        <div className={styles["introduction__heading"]}>
+          <h2 className={styles["introduction__heading--h2"]}>
+            Aleksandra Kajstura
+          </h2>
+          <h5 className={styles["introduction__heading--highlight"]}>
             dyplomowany dietetyk online
-          </span>
-        </h2>
+          </h5>
+        </div>
         <p className={styles["introduction__content"]}>
           Nazywam się Aleksandra Kajstura, jestem dietetykiem i nauczę Cię jak
           zadbać o siebie i zacząć prowadzić zdrowy styl życia krok po kroku.
