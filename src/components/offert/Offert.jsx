@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Offert.styles.module.scss";
 import { useInView } from "react-intersection-observer";
-import introductionImgReference from "/assets/mainOla.png";
+import introductionImgReference from "/assets/mainOla.PNG";
 
 export const Offert = () => {
   const { ref: introductionRef, inView: introductionInView } = useInView({

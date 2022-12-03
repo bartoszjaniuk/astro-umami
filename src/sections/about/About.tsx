@@ -1,4 +1,3 @@
-import React from "react";
 import { CertificatesGallery } from "../../components/certificatesGallery/CertificatesGallery";
 import styles from "./About.styles.module.scss";
 import introductionImageReference from "/assets/introduction.png";
