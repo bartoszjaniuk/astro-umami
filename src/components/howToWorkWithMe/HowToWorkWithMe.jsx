@@ -10,7 +10,7 @@ export const HowToWorkWithMe = () => {
   return (
     <section className={styles.container}>
       <h1 className={styles["container__heading"]}>
-        Jak rozpocząć ze mną współpracę w pięciu krokach
+        Jak rozpocząć ze mną współpracę w czterech krokach
       </h1>
       <div
         ref={ref}

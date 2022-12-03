@@ -1,0 +1,34 @@
+@import "../../styles//mixins";
+.certificates {
+  column-count: 4;
+  margin: 0 auto;
+
+  @include mediaQ(xxl) {
+    column-count: 3;
+  }
+
+  @include mediaQ(md) {
+    column-count: 2;
+  }
+
+  @include mediaQ(sm) {
+    column-count: 1;
+  }
+
+  &__item {
+    // border: 1px solid blue;
+    padding: 0.5rem;
+    // width: 20%;
+    // min-width: 250px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      // display: block;
+      // margin-bottom: 20px;
+      padding: 5px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+  }
+}
