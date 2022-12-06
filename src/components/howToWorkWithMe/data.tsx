@@ -9,13 +9,13 @@ export const cards = [
     title: "CEL",
     description:
       "Zastanów się co chcesz osiągnąć. Jaki jest Twój cel? Chcesz schudnąć, zredukować poziom tkanki tłuszczowej, a może przytyć?",
-    icon: <TargetIcon width="80px" height="80px" />,
+    icon: <TargetIcon width="80px" height="80px" color="#d2bfa3" />,
   },
   {
     title: "KONTAKT",
     description:
       "Napisz do mnie, a ja wyślę do Ciebie całą ofertę oraz dzienniczek i wywiad żywieniowy. Po wyborze pakietu odeślesz do mnie wypełniony dzienniczek i wywiad żywieniowy Jeśli posiadasz, wyniki badań krwi równie je wyślij.",
-    icon: <LaptopContactIcon width="80px" height="80px" />,
+    icon: <LaptopContactIcon width="80px" height="80px" color="#d2bfa3" />,
   },
   // {
   //   title: "DECYZJA",
@@ -27,7 +27,7 @@ export const cards = [
     title: "OPIEKA",
     description:
       "Wybierzesz czy chcesz współpracować ze mną mailowo czy spotykać się co jakiś czas na spotkaniu online.",
-    icon: <ProtectIcon width="80px" height="80px" />,
+    icon: <ProtectIcon width="80px" height="80px" color="#d2bfa3" />,
   },
   {
     title: "DZIAŁANIE",

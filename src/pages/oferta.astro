@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Container } from "../components/container/Container";
+import { About } from "../sections/about/About";
+import { OffertPage } from "../sections/offert/OffertPage";
+---
+
+<Layout title="UMAMI - Dietetyk Aleksandra Kajstura">
+  <Container>
+    <OffertPage client:load />
+  </Container>
+</Layout>

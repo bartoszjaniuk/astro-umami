@@ -9,6 +9,7 @@ export const WeightLifterIcon = ({ width, height, className }: IconProps) => {
       height={height}
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 24 24"
+      style={{ zIndex: "10" }}
     >
       <path
         fill="#57463c"
