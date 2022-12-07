@@ -37,15 +37,6 @@ export const Offert = () => {
           zmagasz się z problemami zdrowotnymi, z nadmierną lub za niską masą
           ciała lub po prostu chcesz zmienić swoje nawyki żywieniowe.
         </p>
-        {/* <p className={styles["introduction__highlight"]}>
-          Teraz swoje know-how zainwestuję w Twoją przemianę. Pokażę Ci, jak w
-          praktyce:
-        </p>
-        <ul className={styles["introduction__list"]}>
-          <li>sami spełniamy marzenia</li>
-          <li>pozbyć się złych nawyków</li>
-          <li>spalić tłuszcz z brzucha</li>
-        </ul> */}
       </div>
       <div
         className={`${styles["photo"]} ${
