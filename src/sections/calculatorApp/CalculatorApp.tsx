@@ -44,8 +44,6 @@ export const CalculatorApp = () => {
   const calculateBMI = (data: CalculatorFormProps) => {
     const { activity, age, goal, sex, weight, height } = data;
 
-    console.log("sex:", +sex);
-
     if (+sex) {
       setCalculations({
         isCalculated: true,

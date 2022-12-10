@@ -1,6 +1,4 @@
-import { Icon } from "@iconify/react";
-import React from "react";
-import { Button } from "../../../components/button/Button";
+import { useWindowSize } from "../../../hooks/useWindowSize";
 import styles from "./OffertItem.styles.module.scss";
 
 type OffertItem = {
@@ -9,6 +7,10 @@ type OffertItem = {
   activeTab: number;
   index: number;
   activateTab: () => void;
+  icon: JSX.Element;
+  listTitle?: string;
+  listItems_1?: string[];
+  listItems_2?: string[];
 };
 
 export const OffertItem = ({
@@ -17,29 +19,86 @@ export const OffertItem = ({
   activeTab,
   index,
   activateTab,
+  icon,
+  listTitle,
+  listItems_1,
+  listItems_2,
 }: OffertItem) => {
   const isActive = activeTab === index;
-  const innerStyle = {
-    height: `${isActive ? "300px" : 0}px`,
+  const { breakpoint } = useWindowSize();
+
+  const isTabWithLongText = isActive && activeTab === 1;
+
+  const getResForTabWithLongText = (breakpoint: string) => {
+    if (breakpoint === "VBIG") return 350;
+    if (breakpoint === "BIG") return 380;
+    if (breakpoint === "MEDIUM") return 450;
+    if (breakpoint === "SMALL") return 500;
+    if (breakpoint === "VSMALL") return 700;
   };
+
+  const getResForText = (breakpoint: string) => {
+    if (breakpoint === "VBIG") return 170;
+    if (breakpoint === "BIG") return 170;
+    if (breakpoint === "MEDIUM") return 190;
+    if (breakpoint === "SMALL") return 220;
+    if (breakpoint === "VSMALL") return 450;
+  };
+
   return (
-    <div className={styles.panel} role="tabpanel" aria-expanded={isActive}>
-      <div>
-        <button
-          className={styles["panel__label"]}
-          role="tab"
-          onClick={activateTab}
-        >
-          {label}
-        </button>
+    <div
+      id={index.toString()}
+      className={styles["panel"]}
+      style={{
+        height: isTabWithLongText
+          ? `${getResForTabWithLongText(breakpoint)}px`
+          : isActive
+          ? `${getResForText(breakpoint)}px`
+          : "initial",
+      }}
+      onClick={activateTab}
+      role="tab"
+    >
+      <div
+        className={styles["panel__label"]}
+        data-help-card-expanded={isActive}
+      >
+        <div className={styles["panel__label--icon"]}>{icon}</div>
+        <div className={styles["panel__label--title"]}>{label}</div>
+        <div className={styles["panel__label--chevron"]}>
+          <img
+            src="https://centrumrespo.pl/wp-content/themes/centrumrespo/resources/offer/chevron-icon.svg"
+            alt=""
+            height="24"
+            width="24"
+          />
+        </div>
       </div>
       <div
-        className={`${styles["panel__inner"]} ${
-          isActive ? styles["panel__inner--active"] : ""
-        }`}
-        aria-hidden={!isActive}
+        className={styles["panel__content"]}
+        data-help-card-content-expanded={isActive}
+        style={{
+          width: "100%",
+        }}
       >
-        <p className={styles["panel__content"]}>{content}</p>
+        {content}
+        {listTitle && (
+          <>
+            <p className={styles["list__title"]}>{listTitle}</p>
+            <div className={styles["list__items"]}>
+              <ul className={styles["list--1"]}>
+                {listItems_2?.map((i) => (
+                  <li>{i}</li>
+                ))}
+              </ul>
+              <ul>
+                {listItems_1?.map((i) => (
+                  <li>{i}</li>
+                ))}
+              </ul>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
