@@ -3,6 +3,8 @@ import imageOffertRef from "/assets/aleksandra_offert.png";
 import { Icon } from "@iconify/react";
 import { OffertItem } from "./offertItem/OffertItem";
 import { useState } from "react";
+import { LinkButton } from "../../components/linkButton/LinkButton";
+import { RoutePath } from "../../components/nav/AppRoute.enum";
 
 const panels = [
   {
@@ -79,7 +81,7 @@ export const OffertPage = () => {
             energii i polepszysz swoje samopoczucie oraz stan zdrowia!
           </div>
 
-          <button className={styles["content__button"]}>Sprawdź ofertę</button>
+          <LinkButton text="Sprawdź ofertę" navigateTo='/oferta/#moje-uslugi'  />
         </div>
         <div className={styles["image"]}>
           <img src={imageOffertRef} alt="Aleksandra Kajstura" />
@@ -103,8 +105,8 @@ export const OffertPage = () => {
       </section>
 
       <section className={styles.plan}>
-        <h2 className={styles["plan__heading"]}>Wybierz Twój plan</h2>
-        <p className={styles["plan__heading-secondary"]}>
+        <h2 className={styles["plan__heading"]}>Usługi</h2>
+        <p className={styles["plan__heading-secondary"]} id='moje-uslugi'>
           Nie wiesz co wybrać? Skontaktuj się ze mną i wszystko razem ustalimy.
         </p>
         <div className={styles["plan__content"]} role="tablist">
@@ -118,6 +120,11 @@ export const OffertPage = () => {
             />
           ))}
         </div>
+
+     <div className={styles['plan__footer']}>
+     <LinkButton text="Sprawdź dostępne opcje współpracy" navigateTo='/cennik' isInverted />
+     </div>
+
       </section>
     </main>
   );

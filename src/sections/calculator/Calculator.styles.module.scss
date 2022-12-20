@@ -122,17 +122,17 @@
     }
   }
 
-  &__button {
-    font-size: 1rem;
-    flex: 1;
-    padding: 1rem 3rem;
-    @include mediaQ(md) {
-      font-size: 1.1rem;
-    }
-    @include mediaQ(sm) {
-      font-size: 1.2rem;
-    }
-  }
+  // &__button {
+  //   // font-size: 1rem;
+  //   // flex: 1;
+  //   // padding: 1rem 3rem;
+  //   @include mediaQ(md) {
+  //     font-size: 1.1rem;
+  //   }
+  //   @include mediaQ(sm) {
+  //     font-size: 1.2rem;
+  //   }
+  // }
 
   &__content {
     font-size: 1.2rem;
@@ -220,4 +220,37 @@
       }
     }
   }
+}
+
+.button {
+  color: white;
+  background-color: var(--c-primary);
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.3rem;
+  width: 100%;
+  &:hover {
+    background-color: white;
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+  }
+  &--inverted {
+  color: var(--c-primary);
+  background-color: white;
+  border-color: 1px solid var(--c-primary);
+
+  &:hover {
+    background-color: var(--c-primary);
+    color: white;
+    border-color: white;
+  }
+  }
+}
+.link {
+  width: 100%;
 }

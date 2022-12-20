@@ -25,12 +25,14 @@ export const Calculator = () => {
           swój cel.
         </p>
         <div className={styles["description__buttons"]}>
-          <Button className={styles["description__button"]} isInverted>
-            Przejdź do kalkulatora
-          </Button>
-          <Button className={styles["description__button"]}>
+          <a href="/kalkulator" className={styles['link']}>
+           <button className={styles['button']}>Przejdź do kalkulatora</button>
+          </a>
+          <a href="/#napisz-do-mnie"  className={styles['link']}>
+            <button className={`${styles['button']} ${styles['button--inverted']}`}>
             Napisz do mnie
-          </Button>
+          </button>
+          </a>
         </div>
       </div>
       <div className={styles["picture"]}>

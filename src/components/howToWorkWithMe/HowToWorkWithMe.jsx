@@ -3,6 +3,7 @@ import { Card } from "./card/Card";
 import styles from "./HowToWorkWithMe.styles.module.scss";
 import { cards } from "./data";
 import { useInView } from "react-intersection-observer";
+import {LinkButton} from '../linkButton/LinkButton'
 
 export const HowToWorkWithMe = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -25,6 +26,7 @@ export const HowToWorkWithMe = () => {
           />
         ))}
       </div>
+      <LinkButton text="Napisz do mnie" navigateTo="/#napisz-do-mnie"/>
     </section>
   );
 };

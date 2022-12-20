@@ -48,7 +48,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='napisz-do-mnie'>
       <span className={styles["background-shape"]} />
       <span className={styles["background-shape--small"]} />
       <span className={styles["background-shape--very-small"]} />

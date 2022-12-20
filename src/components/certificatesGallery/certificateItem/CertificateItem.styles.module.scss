@@ -2,6 +2,10 @@
   padding: 0.5rem;
   height: auto;
   transition: all 0.4s ease;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -moz-perspective: 200px;
+  perspective: 200px;
 
   img {
     width: 100%;
@@ -10,10 +14,16 @@
     padding: 5px;
     background-color: #fff;
     box-sizing: border-box;
+    will-change: transform;
+    -moz-perspective: 200px;
+    perspective: 200px;
   }
   &--open {
     padding: 0.4rem;
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
     z-index: 10;
+    -moz-perspective: 200px;
+    perspective: 200px;
   }
 }

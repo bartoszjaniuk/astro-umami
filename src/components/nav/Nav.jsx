@@ -2,7 +2,7 @@ import React from "react";
 import { useStore } from "@nanostores/react";
 
 import styles from "./Nav.styles.module.scss";
-import { AppRoute, AppRoutes } from "./AppRoute.enum";
+import { AppRoutes } from "./AppRoute.enum";
 import { isMenuOpen } from "./navStore";
 import { FacebookIcon } from "../icons/facebook-icon/FacebookIcon";
 import { InstagramIcon } from "../icons/instagram-icon/InstagramIcon";

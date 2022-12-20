@@ -29,6 +29,7 @@
   }
 
   &__inner {
+    padding-right: 2rem;
     @include mediaQ(md) {
       display: flex;
       justify-content: space-between;
@@ -108,7 +109,6 @@
 }
 
 .link {
-  padding-right: 2rem;
 }
 .logo {
   width: 160px;
@@ -147,16 +147,15 @@
 
     &--active {
       & .nav-list__link {
-        border-top: 2px solid var(--c-primary);
-        padding-top: 0.2rem;
-        font-weight: 600;
+        color: var(--c-primary);
+        font-weight: 700;
       }
     }
   }
   &__link {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--c-primary);
+    color: var(--c-font);
     text-decoration: none;
     position: relative;
     padding-bottom: 0.5rem;

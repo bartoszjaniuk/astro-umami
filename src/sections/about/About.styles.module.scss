@@ -145,44 +145,53 @@
     }
   }
 
-  &__button-container {
-    padding: 3rem 0;
-    width: 100%;
-    @include mediaQ(md) {
+  &__buttons-group {
       display: flex;
-      justify-content: center;
+      gap: 1rem;
+      width: 100%;
+      padding-bottom: 12rem;
+      padding-top: 4rem;
+      @include mediaQ(sm) {
+        flex-direction: column;
+      }
+    
+  }
+
+
+  &__button {
+    color: white;
+    background-color: var(--c-primary);
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.3rem;
+    width: 100%;
+    &:hover {
+      background-color: white;
+      color: var(--c-primary);
+      border-color: var(--c-primary);
     }
-
-    button {
-      color: white;
+    &--inverted {
+    color: var(--c-primary);
+    background-color: white;
+    border-color: 1px solid var(--c-primary);
+  
+    &:hover {
       background-color: var(--c-primary);
-      padding: 1rem 3rem;
-      border-radius: 2px;
-      border: 1px solid transparent;
-      font-size: 1.2rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border-radius: 0.3rem;
-      &:hover {
-        transform: skewY(1deg) scale(1.1);
-        background-color: white;
-        color: var(--c-primary);
-        border-color: var(--c-primary);
-      }
-
-      @include mediaQ(md) {
-        padding: 1.5rem 3rem;
-        font-size: 1.8rem;
-      }
-
-      @include mediaQ(md) {
-        padding: 1rem 3rem;
-        font-size: 1.2rem;
-      }
+      color: white;
+      border-color: white;
+    }
     }
   }
+  &__link {
+    width: 100%;
+  }
 }
+
 
 .person {
   width: 50%;

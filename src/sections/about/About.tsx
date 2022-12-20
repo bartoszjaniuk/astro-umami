@@ -36,9 +36,6 @@ export const About = () => {
             </span>{" "}
             i poprawisz swoje samopoczucie!
           </p>
-          <div className={styles["content__button-container"]}>
-            <button>Przejdź do oferty</button>
-          </div>
         </div>
         <div className={styles["person"]}>
           {/* <h2 className={styles["person__heading"]}>Aleksandra Kajstura</h2> */}
@@ -98,8 +95,16 @@ export const About = () => {
             </span>{" "}
             i poprawisz swoje samopoczucie!
           </p>
-          <div className={styles["content__button-container"]}>
-            <button>Sprawdź jadłospisy</button>
+          
+          <div className={styles["content__buttons-group"]}>
+          <a href="/oferta" className={styles['content__link']}>
+           <button className={styles['content__button']}>Przejdź do oferty</button>
+          </a>
+          <a href="/diety"  className={styles['content__link']}>
+            <button className={`${styles['content__button']} ${styles['content__button--inverted']}`}>
+            Sprawdź jadłospisy
+          </button>
+          </a>
           </div>
         </div>
       </section>
@@ -109,27 +114,6 @@ export const About = () => {
           <CertificatesGallery />
         </div>
       </section>
-      {/* <section className={styles.outro}>
-        <span className={styles["background-shape"]} />
-        <span className={styles["background-shape--small"]} />
-        <span className={styles["background-shape--very-small"]} />
-        <span className={styles["background-shape--medium"]} />
-        <div className={styles["outro__heading"]}>U mnie nie ma diety cud!</div>
-        <div className={styles["outro__content"]}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          praesentium officiis iure ullam esse ipsa perspiciatis distinctio
-          harum dicta cum vel adipisci recusandae soluta deleniti, explicabo
-          perferendis quae est cumque maxime omnis voluptates? A, repudiandae
-          ut! Consequatur, saepe labore nemo quam aperiam, itaque pariatur
-          provident tenetur ex cum veniam recusandae alias consequuntur optio
-          eligendi quas dignissimos maiores id cupiditate reiciendis, magnam
-          explicabo? Ducimus vel impedit velit odio quaerat, illo inventore at
-          ut dolorem iure error tempore optio necessitatibus dignissimos
-          accusamus nostrum architecto assumenda doloribus sed minima? Delectus
-          ipsum sapiente expedita rerum nulla distinctio suscipit explicabo vero
-          voluptas possimus! Eum, error.
-        </div>
-      </section> */}
     </main>
   );
 };

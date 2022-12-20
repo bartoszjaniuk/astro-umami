@@ -18,7 +18,7 @@
     min-width: 120px;
     padding: 0.5rem 0.1rem !important;
   }
-  &:hover :not(:disabled) {
+  &:hover{
     background: white;
     color: var(--c-primary);
     border: 1px solid var(--c-primary);

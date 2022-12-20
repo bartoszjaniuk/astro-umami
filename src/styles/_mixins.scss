@@ -17,3 +17,53 @@ $media: (
     }
   }
 }
+
+@mixin mainRWD {
+  padding: 5rem 10rem 0 10rem;
+  gap: 2rem;
+  @include mediaQ(xxxl) {
+    padding: 5rem 5rem 0 5rem;
+  }
+
+  @include mediaQ(xxl) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(lg) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(md) {
+    display: flex;
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(sm) {
+    padding: 5rem 1.5rem 5rem 1.5rem;
+  }
+}
+
+@mixin secondaryRWD {
+  padding: 0rem 10rem 0 10rem;
+  gap: 2rem;
+  @include mediaQ(xxxl) {
+    padding: 0rem 5rem 0 5rem;
+  }
+
+  @include mediaQ(xxl) {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(lg) {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(md) {
+    display: flex;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(sm) {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}

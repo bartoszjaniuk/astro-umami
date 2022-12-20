@@ -7,6 +7,7 @@ import {
   thirdCard,
 } from "./../floating-card/FloatingCard.data";
 import { useInView } from "react-intersection-observer";
+import { LinkButton } from "../linkButton/LinkButton";
 
 export const ThreeMenus = () => {
   const { ref, inView } = useInView({
@@ -33,8 +34,7 @@ export const ThreeMenus = () => {
           className={`${styles["isMobile"]} ${inView ? "scale-up" : ""}`}
         />
       </div>
-
-      <button className={styles["button"]}>Zobacz więcej</button>
+      <LinkButton text="Zobacz więcej" navigateTo="/diety"/>
     </article>
   );
 };

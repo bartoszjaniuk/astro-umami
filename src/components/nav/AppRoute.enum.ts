@@ -10,6 +10,15 @@ export enum AppRoute {
 export const AppRoutes = [
   { title: AppRoute.ABOUT, url: "/omnie" },
   { title: AppRoute.OFFER, url: "/oferta" },
-  { title: AppRoute.MENUS, url: "/menus" },
+  { title: AppRoute.MENUS, url: "/diety" },
   { title: AppRoute.CONTACT, url: "/kontakt" },
 ];
+
+export enum RoutePath {
+  HOME = "/",
+  ABOUT = "/omnie",
+  OFFER = "/oferta",
+  MENUS = "/diety",
+  KALKULATOR = "/kalkulator",
+  CONTACT = "/kontakt",
+}

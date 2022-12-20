@@ -29,9 +29,6 @@ export const Landing = () => {
             Tylko jeden krok dzieli Cię od zmiany na lepsze. Napisz do mnie już
             teraz, a ja pomogę Ci w realizacji Twoich celów!
           </p>
-          <button className={styles["modal-content__button"]}>
-            Dowiedz się więcej
-          </button>
         </div>
       </div>
     </main>

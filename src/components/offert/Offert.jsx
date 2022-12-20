@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Offert.styles.module.scss";
 import { useInView } from "react-intersection-observer";
 import introductionImgReference from "/assets/ola.png";
+import { LinkButton } from "../linkButton/LinkButton";
+import { RoutePath } from "../nav/AppRoute.enum";
 
 export const Offert = () => {
   const { ref: introductionRef, inView: introductionInView } = useInView({
@@ -37,6 +39,7 @@ export const Offert = () => {
           zmagasz się z problemami zdrowotnymi, z nadmierną lub za niską masą
           ciała lub po prostu chcesz zmienić swoje nawyki żywieniowe.
         </p>
+        <LinkButton text="Dowiedz się więcej" navigateTo={RoutePath.ABOUT} />
       </div>
       <div
         className={`${styles["photo"]} ${
