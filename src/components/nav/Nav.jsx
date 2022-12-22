@@ -41,7 +41,7 @@ export const Nav = ({ currentPath }) => {
             <li
               key={index}
               className={`${styles["nav-list__item"]} ${
-                currentPath === route.url.slice(1)
+                currentPath === `${route.url.slice(1)}/`
                   ? styles["nav-list__item--active"]
                   : ""
               }`}
