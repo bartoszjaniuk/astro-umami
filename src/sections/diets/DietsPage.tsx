@@ -4,6 +4,8 @@ import { firstCard } from "../../components/floating-card/FloatingCard.data";
 
 import imageRefPancakes from "/assets/pancakes.png";
 import { LinkButton } from "../../components/linkButton/LinkButton";
+import { Diet } from "./diet/Diet";
+import { DietCard } from "./diet-card/DietCard";
 
 export const DietsPage = () => {
   return (
@@ -26,8 +28,10 @@ export const DietsPage = () => {
           </p>
         </div>
         <div className={styles["intro__button"]}>
-        <LinkButton text="Sprawdź jadłospisy" navigateTo="/diety/#jadlospisy" />
-
+          <LinkButton
+            text="Sprawdź jadłospisy"
+            navigateTo="/diety/#jadlospisy"
+          />
         </div>
 
         <div className={styles["intro__image"]}>
@@ -37,21 +41,10 @@ export const DietsPage = () => {
           />
         </div>
       </section>
-      <section  className={styles.diets} id='jadlospisy'>
-        <div className={styles.diet}>
-          <div className={styles["diet__image"]}>
-            <img src={imageRefPancakes} />
-          </div>
-          <div className={styles["diet__content"]}>
-            <h4 className={styles["diet__heading"]}>{firstCard.title}</h4>
-
-            <ul>
-              {firstCard.details.opisy.map((v) => (
-                <li>{v}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <section className={styles.diets} id="jadlospisy">
+        <DietCard />
+        <DietCard />
+        <DietCard />
       </section>
     </main>
   );
