@@ -1,6 +1,6 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "../../components/button/Button";
+import { CheckBox } from "../../components/checkbox/Checkbox";
 import { Input } from "../../components/input/Input";
 import styles from "./Contact.styles.module.scss";
 
@@ -8,6 +8,7 @@ export type ContactFormProps = {
   email: string;
   thread: string;
   message: string;
+  statute: boolean;
 };
 
 const emailPattern = {
@@ -48,7 +49,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className={styles.container} id='napisz-do-mnie'>
+    <section className={styles.container} id="napisz-do-mnie">
       <span className={styles["background-shape"]} />
       <span className={styles["background-shape--small"]} />
       <span className={styles["background-shape--very-small"]} />
@@ -110,6 +111,17 @@ export const Contact = () => {
               register={register}
               rules={{
                 required: "Podaj treść wiadomości",
+              }}
+              errors={errors}
+            />
+            <CheckBox
+              id="statute"
+              name="statute"
+              placeholder="Akceptuję regulamin"
+              className="mb-2"
+              register={register}
+              rules={{
+                required: "Proszę zaakceptować regulamin",
               }}
               errors={errors}
             />

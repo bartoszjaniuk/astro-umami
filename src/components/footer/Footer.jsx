@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import { FacebookIcon } from "../icons/facebook-icon/FacebookIcon";
 import { InstagramIcon } from "../icons/instagram-icon/InstagramIcon";
+import statuteReference from "/regulamin.pdf";
+import { AppRoute, RoutePath } from "../nav/AppRoute.enum";
 
 export const Footer = () => {
   return (
@@ -20,29 +22,53 @@ export const Footer = () => {
           </ul>
           <ul className={styles["media-list"]}>
             <li className={styles["media-list__item"]}>
-              <FacebookIcon width="24px" height="24px" color="white" />
+              <a
+                href="https://www.facebook.com/dietetyk.umami/"
+                target="_blank"
+              >
+                <FacebookIcon width="24px" height="24px" color="white" />
+              </a>
             </li>
             <li className={styles["media-list__item"]}>
-              <InstagramIcon width="24px" height="24px" color="white" />
+              <a
+                href="https://www.instagram.com/dietetyk_umami/"
+                target="_blank"
+              >
+                <InstagramIcon width="24px" height="24px" color="white" />
+              </a>
             </li>
           </ul>
         </div>
         <div className={styles["column"]}>
           <h3 className={styles["column__heading"]}>Oferta</h3>
           <ul className={styles["column-list"]}>
-            <li className={styles["column-list__item"]}>Porady dietetyczne</li>
-            <li className={styles["column-list__item"]}>Jadłospisy</li>
-            <li className={styles["column-list__item"]}>Dieta indywidualna</li>
-            <li className={styles["column-list__item"]}>Kalkulator</li>
+            <li className={styles["column-list__item"]}>
+              <a href={RoutePath.OFFER}>Porady dietetyczne</a>
+            </li>
+            <li className={styles["column-list__item"]}>
+              <a href={RoutePath.MENUS}>Jadłospisy</a>
+            </li>
+            <li className={styles["column-list__item"]}>
+              <a href={RoutePath.PRICE_LIST}>Dieta Indywidualna</a>a
+            </li>
+            <li className={styles["column-list__item"]}>
+              <a href={RoutePath.KALKULATOR}>Kalkulator</a>
+            </li>
           </ul>
         </div>
         <div className={styles["column"]}>
           <h3 className={styles["column__heading"]}>O mnie</h3>
           <ul className={styles["column-list"]}>
-            <li className={styles["column-list__item"]}>Wykształcenie</li>
-            <li className={styles["column-list__item"]}>Certyfikaty</li>
             <li className={styles["column-list__item"]}>
-              Jak rozpocząć współpracę
+              <a href={`${RoutePath.ABOUT}`}>Wykształcenie</a>
+            </li>
+            <li className={styles["column-list__item"]}>
+              <a href={`${RoutePath.ABOUT}#certyfikaty`}>Certyfikaty</a>
+            </li>
+            <li className={styles["column-list__item"]}>
+              <a href={`${RoutePath.HOME}#jak-rozpoczac-wspolprace`}>
+                Jak rozpocząć współpracę
+              </a>
             </li>
           </ul>
         </div>
@@ -53,9 +79,13 @@ export const Footer = () => {
           © 2022 Dietetyk Umami
         </span>
         <div className={styles.rights}>
-          <span className={styles.copyright}>Regulamin</span>
+          <span className={styles.copyright}>
+            <a href={statuteReference} target="_blank">
+              Regulamin i RODO
+            </a>
+          </span>
           <span className={`${styles.copyright} ${styles["copyright--last"]}`}>
-            <a href="/polityka-cookies">Polityka prywatności</a>
+            <a href="/polityka-cookies">Polityka prywatności i cookies</a>
           </span>
         </div>
       </div>

@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <main className={styles.container}>
       <section className={styles.about}>
-        <div className={styles["content"]}>
+        <div className={styles["content"]} id="wyksztalcenie">
           <span className={styles["content__profession"]}>DIETETYK</span>
           <h1 className={styles["content__heading"]}>Aleksandra Kajstura</h1>
           <p className={styles["content__description"]}>
@@ -95,20 +95,24 @@ export const About = () => {
             </span>{" "}
             i poprawisz swoje samopoczucie!
           </p>
-          
+
           <div className={styles["content__buttons-group"]}>
-          <a href="/oferta" className={styles['content__link']}>
-           <button className={styles['content__button']}>Przejdź do oferty</button>
-          </a>
-          <a href="/diety"  className={styles['content__link']}>
-            <button className={`${styles['content__button']} ${styles['content__button--inverted']}`}>
-            Sprawdź jadłospisy
-          </button>
-          </a>
+            <a href="/oferta" className={styles["content__link"]}>
+              <button className={styles["content__button"]}>
+                Przejdź do oferty
+              </button>
+            </a>
+            <a href="/diety" className={styles["content__link"]}>
+              <button
+                className={`${styles["content__button"]} ${styles["content__button--inverted"]}`}
+              >
+                Sprawdź jadłospisy
+              </button>
+            </a>
           </div>
         </div>
       </section>
-      <section className={styles.certificates}>
+      <section className={styles.certificates} id="certyfikaty">
         <div className={styles["certificates__heading"]}>Kwalifikacje</div>
         <div className={styles["certificates__content"]}>
           <CertificatesGallery />

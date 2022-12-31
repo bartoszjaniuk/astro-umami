@@ -8,7 +8,7 @@ import styles from "./Input.styles.module.scss";
 export type InputProps<T> = {
   id: string;
   name: string;
-  label: string | ReactNode;
+  label?: string | ReactNode;
   className?: string;
   type?: "text" | "email" | "radio" | "number";
   register: any;

@@ -5,11 +5,13 @@ export enum AppRoute {
   MENUS = "Jadłospisy",
   KALKULATOR = "Kalkulator",
   CONTACT = "Kontakt",
+  PRICE_LIST = "Cennik",
 }
 
 export const AppRoutes = [
   { title: AppRoute.ABOUT, url: "/o-mnie" },
   { title: AppRoute.OFFER, url: "/oferta" },
+  { title: AppRoute.PRICE_LIST, url: "/cennik" },
   { title: AppRoute.MENUS, url: "/diety" },
   { title: AppRoute.CONTACT, url: "/kontakt" },
 ];
@@ -21,4 +23,5 @@ export enum RoutePath {
   MENUS = "/diety",
   KALKULATOR = "/kalkulator",
   CONTACT = "/kontakt",
+  PRICE_LIST = "/cennik",
 }

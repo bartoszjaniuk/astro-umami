@@ -75,8 +75,12 @@ export const Nav = ({ currentPath }) => {
           $isMenuOpen ? styles.active : ""
         }`}
       >
-        <FacebookIcon width="24px" height="24px" />
-        <InstagramIcon width="24px" height="24px" />
+        <a href="https://www.facebook.com/dietetyk.umami/" target="_blank">
+          <FacebookIcon width="24px" height="24px" />
+        </a>
+        <a href="https://www.instagram.com/dietetyk_umami/" target="_blank">
+          <InstagramIcon width="24px" height="24px" />
+        </a>
       </div>
     </nav>
   );

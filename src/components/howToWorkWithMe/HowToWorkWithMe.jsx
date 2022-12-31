@@ -3,14 +3,17 @@ import { Card } from "./card/Card";
 import styles from "./HowToWorkWithMe.styles.module.scss";
 import { cards } from "./data";
 import { useInView } from "react-intersection-observer";
-import {LinkButton} from '../linkButton/LinkButton'
+import { LinkButton } from "../linkButton/LinkButton";
 
 export const HowToWorkWithMe = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <section className={styles.container}>
-      <h1 className={styles["container__heading"]}>
+      <h1
+        className={styles["container__heading"]}
+        id="jak-rozpoczac-wspolprace"
+      >
         Jak rozpocząć ze mną współpracę w czterech krokach
       </h1>
       <div
@@ -26,7 +29,7 @@ export const HowToWorkWithMe = () => {
           />
         ))}
       </div>
-      <LinkButton text="Napisz do mnie" navigateTo="/#napisz-do-mnie"/>
+      <LinkButton text="Napisz do mnie" navigateTo="/#napisz-do-mnie" />
     </section>
   );
 };
