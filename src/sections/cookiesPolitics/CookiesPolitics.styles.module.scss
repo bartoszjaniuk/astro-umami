@@ -1,0 +1,78 @@
+@import "../../styles//mixins";
+.container {
+  height: 100%;
+  min-height: 800px;
+  position: relative;
+}
+
+.wrapper {
+  background-color: #fff;
+  min-height: 450px;
+
+  padding: 1rem 10rem 2rem 10rem;
+
+  @include mediaQ(xxxl) {
+    padding: 5rem;
+  }
+
+  @include mediaQ(xxl) {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  @include mediaQ(lg) {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  @include mediaQ(md) {
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  @include mediaQ(sm) {
+    padding: 5rem 1.5rem 5rem 1.5rem;
+  }
+
+  &__heading {
+    font-weight: 300;
+    font-size: 3rem;
+    padding: 1rem 0;
+
+    @include mediaQ(sm) {
+      font-size: 2.8rem;
+    }
+    &--small {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem 0;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: var(--c-primary);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+  &__paragraph {
+    padding: 0.5rem 0;
+  }
+
+  &__list {
+    padding-left: 1rem;
+  }
+  &__list-item {
+    padding: 0.1rem 0;
+    a {
+      text-decoration: underline;
+      color: var(--c-primary);
+      transition: all 0.3s ease;
+      font-weight: 500;
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}

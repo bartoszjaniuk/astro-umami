@@ -9,7 +9,7 @@ import { InstagramIcon } from "../icons/instagram-icon/InstagramIcon";
 import { Button } from "../button/Button";
 import { MessageIcon } from "../icons/message-icon/MessageIcon";
 import { CalculatorIcon } from "../icons/calculator-icon/CalculatorIcon";
-import imgReference from "/assets/logo.jpg";
+import imgReference from "/assets/umami-logo.jpg";
 
 export const Nav = ({ currentPath }) => {
   const $isMenuOpen = useStore(isMenuOpen);

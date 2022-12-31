@@ -1,0 +1,49 @@
+@import "../../styles//mixins";
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f7f7f7;
+  z-index: 1000;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px -2px 8px 0px;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 10rem;
+
+  @include mediaQ(xxxl) {
+    padding: 1.5rem;
+  }
+}
+
+.cookie-button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.8rem;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.3rem;
+  font-family: "Lato";
+
+  background-color: var(--c-primary);
+  color: white;
+
+  &:hover {
+    color: var(--c-primary);
+    background-color: white;
+    border: 1px solid var(--c-primary);
+  }
+}
+
+.cookie-link {
+  color: var(--c-primary);
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: "Lato";
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: none;
+  }
+}

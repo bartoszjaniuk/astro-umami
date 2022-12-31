@@ -8,7 +8,7 @@ export enum AppRoute {
 }
 
 export const AppRoutes = [
-  { title: AppRoute.ABOUT, url: "/omnie" },
+  { title: AppRoute.ABOUT, url: "/o-mnie" },
   { title: AppRoute.OFFER, url: "/oferta" },
   { title: AppRoute.MENUS, url: "/diety" },
   { title: AppRoute.CONTACT, url: "/kontakt" },
@@ -16,7 +16,7 @@ export const AppRoutes = [
 
 export enum RoutePath {
   HOME = "/",
-  ABOUT = "/omnie",
+  ABOUT = "/o-mnie",
   OFFER = "/oferta",
   MENUS = "/diety",
   KALKULATOR = "/kalkulator",

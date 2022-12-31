@@ -55,7 +55,7 @@ export const Footer = () => {
         <div className={styles.rights}>
           <span className={styles.copyright}>Regulamin</span>
           <span className={`${styles.copyright} ${styles["copyright--last"]}`}>
-            Polityka prywatności
+            <a href="/polityka-cookies">Polityka prywatności</a>
           </span>
         </div>
       </div>
