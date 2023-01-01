@@ -57,7 +57,7 @@ export const ContactPage = () => {
           <img src={imageOffertRef} alt="Aleksandra Kajstura" />
         </div>
       </section>
-      <section className={styles.contact}>
+      <section className={styles.contact} id="formularz-kontaktowy">
         <div className={styles["contact__form"]}>
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <Input

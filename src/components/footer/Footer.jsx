@@ -15,9 +15,11 @@ export const Footer = () => {
             <li className={styles["column-list__item"]}>Numer telefonu</li>
             <li className={styles["column-list__item"]}>+ 48 570 498 067</li>
             <li className={styles["column-list__item"]}>
-              <button className={styles["column-list__contact"]}>
-                Napisz do mnie
-              </button>
+              <a href={`${RoutePath.CONTACT}#formularz-kontaktowy`}>
+                <button className={styles["column-list__contact"]}>
+                  Napisz do mnie
+                </button>
+              </a>
             </li>
           </ul>
           <ul className={styles["media-list"]}>

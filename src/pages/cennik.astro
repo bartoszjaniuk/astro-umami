@@ -1,11 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Container } from "../components/container/Container";
-import { PriceList } from "../sections/priceList/PriceList";
+import { PriceListContainer } from "../containers/PriceListContainer";
 ---
 
 <Layout title="UMAMI - Dietetyk Aleksandra Kajstura">
-  <Container>
-    <PriceList client:load />
-  </Container>
+  <PriceListContainer client:load />
 </Layout>

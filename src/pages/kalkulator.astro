@@ -1,11 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Container } from "../components/container/Container";
-import { CalculatorApp } from "../sections/calculatorApp/CalculatorApp";
+import { CalculatorContainer } from "../containers/CalculatorContainer";
 ---
 
 <Layout title="UMAMI - Dietetyk Aleksandra Kajstura">
-  <Container>
-    <CalculatorApp client:load />
-  </Container>
+  <CalculatorContainer client:load />
 </Layout>
