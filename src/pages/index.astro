@@ -1,18 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Landing } from "../components/landing/Landing";
 import { Container } from "../components/container/Container";
 import { ThreeMenus } from "../components/three-menus/ThreeMenus";
 import { Offert } from "../components/offert/Offert";
 import { HowToWorkWithMe } from "../components/howToWorkWithMe/HowToWorkWithMe";
 import { Calculator } from "../sections/calculator/Calculator";
 import { Contact } from "../sections/contact/Contact";
+import { Quote } from "../sections/quote/Quote";
 ---
 
 <Layout title="UMAMI - Dietetyk Aleksandra Kajstura">
   <Container>
-    <Landing />
     <Offert client:load />
+    <Quote />
     <ThreeMenus client:load />
     <HowToWorkWithMe client:load />
     <Calculator client:load />

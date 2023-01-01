@@ -1,0 +1,171 @@
+@import "../../styles/mixins";
+
+.offert {
+  height: 100%;
+  min-height: 800px;
+  position: relative;
+}
+
+.introduction {
+  background-color: #fff;
+  display: flex;
+  min-height: 450px;
+
+  padding: 2rem 10rem 0 10rem;
+  gap: 2rem;
+
+  @include mediaQ(xxxl) {
+    padding: 5rem 5rem 0 5rem;
+  }
+
+  @include mediaQ(xxl) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(lg) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(md) {
+    display: flex;
+    // flex-direction: column;
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(sm) {
+    padding: 5rem 1.5rem 0 1.5rem;
+    flex-direction: column;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+
+  @include mediaQ(md) {
+    max-width: 100%;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    &--secondary {
+      color: var(--c-primary);
+      font-size: 2rem;
+    }
+  }
+
+  &__description {
+    padding: 2rem 0;
+    font-size: 1.3rem;
+  }
+
+  &__button {
+    color: white;
+    background-color: var(--c-primary);
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.3rem;
+    width: 220px;
+    &:hover {
+      transform: skewY(1deg) scale(1.1);
+      background-color: white;
+      color: var(--c-primary);
+      border-color: var(--c-primary);
+    }
+  }
+}
+
+.image {
+  width: 500px;
+  max-height: 550px;
+
+  @include mediaQ(md) {
+    width: 115%;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  @include mediaQ(sm) {
+    width: 100%;
+    max-height: none;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.contact {
+  background-color: #f7f7f7;
+
+  padding: 2rem 10rem 2rem 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+
+  @include mediaQ(xxxl) {
+    padding: 5rem 5rem 0 5rem;
+  }
+
+  @include mediaQ(xxl) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(lg) {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(md) {
+    display: flex;
+    // flex-direction: column;
+    padding: 3rem 1.5rem 0 1.5rem;
+  }
+
+  @include mediaQ(sm) {
+    padding: 5rem 1.5rem 0 1.5rem;
+    flex-direction: column;
+  }
+
+  &__form {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  &__details {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+
+.form {
+  padding: 3rem;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  @include mediaQ(sm) {
+    padding: 1.5rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    z-index: 10;
+    color: var(--c-primary);
+    @include mediaQ(sm) {
+      font-size: 2rem;
+    }
+  }
+}

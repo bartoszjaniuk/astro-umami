@@ -84,3 +84,12 @@
     }
   }
 }
+
+.link {
+  text-decoration: underline;
+  color: var(--c-primary);
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: none;
+  }
+}

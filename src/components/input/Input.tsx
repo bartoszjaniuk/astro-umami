@@ -17,6 +17,7 @@ export type InputProps<T> = {
   isTextArea?: boolean;
   value?: string;
   useFormGroup?: boolean;
+  rows?: number;
   options?: { value: number; label: string; description?: string }[];
 } & Omit<
   DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>,
@@ -35,6 +36,7 @@ export const Input = ({
   rules,
   isTextArea,
   value,
+  rows = 3,
   ...props
 }: InputProps<ContactFormProps>) => {
   const hasError = !!errors;
@@ -59,7 +61,7 @@ export const Input = ({
       {isTextArea && (
         <div className={styles["group"]}>
           <textarea
-            rows={3}
+            rows={rows}
             className={styles["form-input"]}
             id={id}
             name={name}

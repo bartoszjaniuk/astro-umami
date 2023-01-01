@@ -3,18 +3,20 @@ import { LaptopContactIcon } from "../icons/laptop-contact-icon/LaptopContactIco
 import { TargetIcon } from "../icons/target-icon/TargetIcon";
 import { ProtectIcon } from "../icons/protect-icon/ProtectIcon";
 import { WeightLifterIcon } from "../icons/weightLifterIcon/WeightLifterIcon";
+import { RoutePath } from "../nav/AppRoute.enum";
+// import styles from "./HowToWorkWithMe.styles.module.scss";
 
 export const cards = [
   {
     title: "CEL",
     description:
-      "Zastanów się co chcesz osiągnąć. Jaki jest Twój cel? Chcesz schudnąć, zredukować poziom tkanki tłuszczowej, a może przytyć?",
+      "Zastanów się co chcesz osiągnąć. Jaki jest Twój cel? Może zmagasz się z jakimś schorzeniem? Chcesz schudnąć - zredukować poziom tkanki tłuszczowej, a może przytyć?",
     icon: <TargetIcon width="80px" height="80px" color="#d2bfa3" />,
   },
   {
     title: "KONTAKT",
     description:
-      "Napisz do mnie, a ja wyślę do Ciebie całą ofertę oraz dzienniczek i wywiad żywieniowy. Po wyborze pakietu odeślesz do mnie wypełniony dzienniczek i wywiad żywieniowy Jeśli posiadasz, wyniki badań krwi równie je wyślij.",
+      "Napisz do mnie lub zadzwoń, umówimy się na pierwszą konsultację. Wyślę do Ciebie dzienniczek i wywiad żywieniowy do wypełnienia, który musisz odesłać do mnie przynajmniej 24h przed wizytą. Jeśli posiadasz, wyniki badań krwi również je wyślij.",
     icon: <LaptopContactIcon width="80px" height="80px" color="#d2bfa3" />,
   },
   // {
@@ -25,14 +27,13 @@ export const cards = [
   // },
   {
     title: "OPIEKA",
-    description:
-      "Wybierzesz czy chcesz współpracować ze mną mailowo czy spotykać się co jakiś czas na spotkaniu online.",
+    description: `Po pierwszej konsultacji zdecydujesz jaki plan żywieniowy lub pakiet wybierasz. Ceny znajdziesz w zakładce cennik.`,
     icon: <ProtectIcon width="80px" height="80px" color="#d2bfa3" />,
   },
   {
     title: "DZIAŁANIE",
     description:
-      "Profil pacjenta online i aplikacja mobilna – to tam będzie udostępniony Twój jadłospis (istnieje również możliwość, aby wysłać go na Twojego maila). Teraz wszystko zależy od Ciebie, a ja będę Ci kibicować i wspierać.",
+      "Profil pacjenta online i aplikacja mobilna – to tam będzie udostępniony Twój jadłospis oraz postępy (istnieje również możliwość, aby wysłać go na Twojego maila). Teraz wszystko zależy od Ciebie, a ja będę Ci kibicować i wspierać!",
     icon: <WeightLifterIcon width="80px" height="80px" />,
   },
 ];

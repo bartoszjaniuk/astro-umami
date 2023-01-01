@@ -34,12 +34,12 @@ export const DietsPage = () => {
           />
         </div>
 
-        <div className={styles["intro__image"]}>
+        {/* <div className={styles["intro__image"]}>
           <img
             src={imageReference}
             alt="Ilustracja ludzi. Utworzono przez pch.vector / Freepik"
           />
-        </div>
+        </div> */}
       </section>
       <section className={styles.diets} id="jadlospisy">
         <DietCard />

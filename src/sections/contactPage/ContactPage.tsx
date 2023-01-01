@@ -1,22 +1,12 @@
+import imageOffertRef from "/assets/aleksandra_offert.png";
+import styles from "./ContactPage.styles.module.scss";
 import { useForm } from "react-hook-form";
-import { Button } from "../../components/button/Button";
-import { CheckBox } from "../../components/checkbox/Checkbox";
+import { ContactFormProps, emailPattern } from "../contact/Contact";
 import { Input } from "../../components/input/Input";
-import styles from "./Contact.styles.module.scss";
+import { CheckBox } from "../../components/checkbox/Checkbox";
+import { Button } from "../../components/button/Button";
 
-export type ContactFormProps = {
-  email: string;
-  thread: string;
-  message: string;
-  statute: boolean;
-};
-
-export const emailPattern = {
-  value: new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$", "ig"),
-  message: "Podaj poprawny adres email",
-};
-
-export const Contact = () => {
+export const ContactPage = () => {
   const {
     reset,
     register,
@@ -49,31 +39,26 @@ export const Contact = () => {
   };
 
   return (
-    <section className={styles.container} id="napisz-do-mnie">
-      <span className={styles["background-shape"]} />
-      <span className={styles["background-shape--small"]} />
-      <span className={styles["background-shape--very-small"]} />
-      <span className={styles["background-shape--medium"]} />
-      <div className={styles.contact} id="contact-form">
-        <h2 className={styles["contact__heading-one"]}>
-          Skontaktuj się ze mną
-        </h2>
-        <h5 className={styles["contact__heading-two"]}>
-          Potrzebujesz specjalistycznej porady? Napisz do mnie za pomocą
-          formularza lub zadzwoń.
-        </h5>
-      </div>
-      <div className={styles["container-inner"]}>
-        <div className={styles["container-inner__image-container"]}>
-          <img
-            className={styles["container-inner__image-container__image"]}
-            src="assets/personContactForm.svg"
-            alt="Osoba z telefonem"
-          />
+    <main className={styles.offert}>
+      <section className={styles.introduction}>
+        <div className={styles["content"]}>
+          <h2 className={styles["content__heading"]}>KONTAKT</h2>
+          <h5 className={styles["content__heading--secondary"]}>
+            Zapraszam do kontaktu
+          </h5>
+          <div className={styles["content__description"]}>
+            Chcesz zrobić pierwszy krok w kierunku sylwetki marzeń? Masz
+            pytania, wątpliwości jak schudnąć lub dorzucić więcej mięśni?
+            Śmiało, napisz do mnie! Odpowiem tak szybko, jak to możliwe.
+          </div>
         </div>
-        <div className={styles["container-inner__form-container"]}>
+        <div className={styles["image"]}>
+          <img src={imageOffertRef} alt="Aleksandra Kajstura" />
+        </div>
+      </section>
+      <section className={styles.contact}>
+        <div className={styles["contact__form"]}>
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-            <h3 className={styles["form__heading"]}>Napisz do mnie</h3>
             <Input
               id="email"
               type="email"
@@ -102,6 +87,7 @@ export const Contact = () => {
             />
 
             <Input
+              rows={6}
               isTextArea
               id="message"
               name="message"
@@ -133,9 +119,8 @@ export const Contact = () => {
             </Button>
           </form>
         </div>
-      </div>
-    </section>
+        <div className={styles["contact__details"]}></div>
+      </section>
+    </main>
   );
 };
-// https://dribbble.com/shots/13667794-Mortgage-calculator
-// undraw- chilling

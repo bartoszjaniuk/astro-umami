@@ -12,29 +12,24 @@ export const About = () => {
           <span className={styles["content__profession"]}>DIETETYK</span>
           <h1 className={styles["content__heading"]}>Aleksandra Kajstura</h1>
           <p className={styles["content__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            praesentium officiis iure ullam esse ipsa perspiciatis distinctio
-            harum dicta cum vel adipisci recusandae soluta deleniti, explicabo
-            perferendis quae est cumque maxime omnis voluptates? A, repudiandae
-            ut! Consequatur, saepe labore nemo quam aperiam, itaque pariatur
-            provident tenetur ex cum veniam recusandae alias consequuntur optio
-            eligendi quas dignissimos maiores id cupiditate reiciendis, magnam
-            explicabo? Ducimus vel impedit velit odio quaerat, illo inventore at
-            ut dolorem iure error tempore optio necessitatibus dignissimos
-            accusamus nostrum architecto assumenda doloribus sed minima?
-            Delectus ipsum sapiente expedita rerum nulla distinctio suscipit
-            explicabo vero voluptas possimus! Eum, error.
+            Nazywam się Aleksandra Kajstura, jestem dietetykiem i nauczę Cię jak
+            zadbać o siebie i zacząć prowadzić zdrowy styl życia krok po kroku.
+            Jestem absolwentką Uniwersytetu Opolskiego, a dalszą naukę
+            kontynuuję w Wyższej Szkole Biznesu i Nauk o Zdrowiu w Łodzi na
+            studiach magisterskich. Cały czas się szkolę, uczę i zdobywam wiedzę
+            na studiach, praktykach zawodowych czy szkoleniach. Służę pomocą
+            jeśli zmagasz się z problemami zdrowotnymi, z nadmierną lub za niską
+            masą ciała lub po prostu chcesz zmienić swoje nawyki żywieniowe.
           </p>
           <p className={styles["content__command"]}>
             Współpracując ze mną nie tylko{" "}
             <span className={styles["content__command--highlight"]}>
-              schudniesz
+              uzyskasz wymarzoną sylwetkę{" "}
             </span>{" "}
-            oraz zrobisz wymarzoną sylwetkę, ale również{" "}
+            ale również pokochasz swoje ciało{" "}
             <span className={styles["content__command--highlight"]}>
-              pokochasz swoje ciało
+              i poprawisz swoje samopoczucie!
             </span>{" "}
-            i poprawisz swoje samopoczucie!
           </p>
         </div>
         <div className={styles["person"]}>
@@ -71,29 +66,16 @@ export const About = () => {
             U mnie nie ma diety cud!
           </h1>
           <p className={styles["content__description"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            praesentium officiis iure ullam esse ipsa perspiciatis distinctio
-            harum dicta cum vel adipisci recusandae soluta deleniti, explicabo
-            perferendis quae est cumque maxime omnis voluptates? A, repudiandae
-            ut! Consequatur, saepe labore nemo quam aperiam, itaque pariatur
-            provident tenetur ex cum veniam recusandae alias consequuntur optio
-            eligendi quas dignissimos maiores id cupiditate reiciendis, magnam
-            explicabo? Ducimus vel impedit velit odio quaerat, illo inventore at
-            ut dolorem iure error tempore optio necessitatibus dignissimos
-            accusamus nostrum architecto assumenda doloribus sed minima?
-            Delectus ipsum sapiente expedita rerum nulla distinctio suscipit
-            explicabo vero voluptas possimus! Eum, error.
+            Jako dietetyk przeprowadzę Cię przez proces zmiany nawyków
+            żywieniowych bez magicznych sztuczek. Nauczę Cię jak jeść smacznie i
+            zdrowo, a kiedy pojawią się pierwsze efekty i w związku z tym
+            poprawi się Twoje samopoczucie pokażę Ci jak utrzymać wymarzoną
+            sylwetkę i upragniony styl życia.
           </p>
           <p className={styles["content__command"]}>
-            Współpracując ze mną nie tylko{" "}
             <span className={styles["content__command--highlight"]}>
-              schudniesz
+              ZMIANA NAWYKÓW ŻYWIENIOWYCH = ZMIANA STYLU ŻYCIA.
             </span>{" "}
-            oraz zrobisz wymarzoną sylwetkę, ale również{" "}
-            <span className={styles["content__command--highlight"]}>
-              pokochasz swoje ciało
-            </span>{" "}
-            i poprawisz swoje samopoczucie!
           </p>
 
           <div className={styles["content__buttons-group"]}>
