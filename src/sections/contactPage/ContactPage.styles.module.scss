@@ -84,11 +84,12 @@
 }
 
 .image {
-  width: 500px;
-  max-height: 550px;
+  // width: 500px;
+  // max-height: 550px;
+  width: 100%;
 
   @include mediaQ(md) {
-    width: 115%;
+    width: 1700px;
     display: flex;
     align-self: flex-end;
   }

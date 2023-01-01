@@ -1,4 +1,4 @@
-import imageOffertRef from "/assets/aleksandra_offert.png";
+import imageOffertRef from "/assets/contact.jpg";
 import styles from "./ContactPage.styles.module.scss";
 import { useForm } from "react-hook-form";
 import { ContactFormProps, emailPattern } from "../contact/Contact";
@@ -47,9 +47,10 @@ export const ContactPage = () => {
             Zapraszam do kontaktu
           </h5>
           <div className={styles["content__description"]}>
-            Chcesz zrobić pierwszy krok w kierunku sylwetki marzeń? Masz
-            pytania, wątpliwości jak schudnąć lub dorzucić więcej mięśni?
-            Śmiało, napisz do mnie! Odpowiem tak szybko, jak to możliwe.
+            Chciałbyś zrobić pierwszy krok w kierunku sylwetki marzeń? Poprawić
+            wyniki badań i stan swojego zdrowia? Masz pytania i wątpliwości jak
+            schudnąć lub przytyć? Śmiało, napisz do mnie! Odpowiem tak szybko,
+            jak to możliwe.
           </div>
         </div>
         <div className={styles["image"]}>
@@ -128,19 +129,6 @@ export const ContactPage = () => {
           <p className={styles["details__paragraph"]}>
             E-mail: aleksandra.kajstura@dietetyk-umami.pl
           </p>
-
-          <div
-            className="kcal-widget-container"
-            data-domain="https://fra1.digitaloceanspaces.com/prod-kcalmar/static/"
-            data-host="https://kcalmar.com"
-            data-id="81941"
-            data-href="https://kcalmar.com/dietetycy/raciborz/aleksandra-kajstura/"
-            data-color="color-light"
-            data-size="size-large"
-            data-content="content-description"
-          >
-            <a href="https://kcalmar.com/dietetycy/raciborz/aleksandra-kajstura/"></a>
-          </div>
         </div>
       </section>
     </main>

@@ -1,7 +1,7 @@
 import { CertificatesGallery } from "../../components/certificatesGallery/CertificatesGallery";
 import styles from "./About.styles.module.scss";
-import introductionImageReference from "/assets/introduction.png";
-import secondaryImageReference from "/assets/secondaryOla.jpg";
+import introductionImageReference from "/assets/about.png";
+import secondaryImageReference from "/assets/about-avocado.png";
 import { Icon } from "@iconify/react";
 
 export const About = () => {
