@@ -139,10 +139,6 @@
   &__form {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
-
-  &__details {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
 }
 
 .form {
@@ -167,5 +163,20 @@
     @include mediaQ(sm) {
       font-size: 2rem;
     }
+  }
+}
+
+.details {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+  padding: 3rem;
+
+  &__heading {
+    font-size: 4rem;
+    color: var(--c-primary);
+  }
+
+  &__paragraph {
+    padding: 0.3rem 0;
   }
 }

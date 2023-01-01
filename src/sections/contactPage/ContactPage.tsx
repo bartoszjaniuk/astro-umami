@@ -119,7 +119,29 @@ export const ContactPage = () => {
             </Button>
           </form>
         </div>
-        <div className={styles["contact__details"]}></div>
+        <div className={styles["details"]}>
+          <h3 className={styles["details__heading"]}>Formy kontaktu</h3>
+          <p className={styles["details__paragraph"]}>
+            UMAMI – Dietetyk Aleksandra Kajstura
+          </p>
+          <p className={styles["details__paragraph"]}>Tel. 570 498 067</p>
+          <p className={styles["details__paragraph"]}>
+            E-mail: aleksandra.kajstura@dietetyk-umami.pl
+          </p>
+
+          <div
+            className="kcal-widget-container"
+            data-domain="https://fra1.digitaloceanspaces.com/prod-kcalmar/static/"
+            data-host="https://kcalmar.com"
+            data-id="81941"
+            data-href="https://kcalmar.com/dietetycy/raciborz/aleksandra-kajstura/"
+            data-color="color-light"
+            data-size="size-large"
+            data-content="content-description"
+          >
+            <a href="https://kcalmar.com/dietetycy/raciborz/aleksandra-kajstura/"></a>
+          </div>
+        </div>
       </section>
     </main>
   );

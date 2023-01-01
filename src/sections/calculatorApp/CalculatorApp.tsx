@@ -25,6 +25,7 @@ import imgReadingReference from "/assets/reading.svg";
 import imgExamReference from "/assets/exams.svg";
 
 import { CalculatorAppData } from "./CalculatorApp.data";
+import { RoutePath } from "../../components/nav/AppRoute.enum";
 
 export const CalculatorApp = () => {
   const { activities, diets, goalText, goals } = CalculatorAppData;
@@ -34,6 +35,11 @@ export const CalculatorApp = () => {
     handleSubmit,
     formState: { errors, isValid, isSubmitting },
   } = useForm<CalculatorFormProps>({ mode: "onTouched" });
+
+  const description =
+    `CHCIAŁBYŚ OTRZYMAĆ INDYWIDUALNĄ DIETĘ I ZALECENIA ŻYWIENIOWE
+  PRZYGOTOWANE TYLKO DLA CIEBIE? NIE WAHAJ SIĘ I NAPISZ DO MNIE JUŻ
+  TERAZ!`.toLowerCase();
 
   const [calculations, setCalculations] = useState<CalculationProps>({
     calculatedBmi: 0,
@@ -177,6 +183,7 @@ export const CalculatorApp = () => {
                   options={activities}
                 />
               </div>
+
               <ErrorMessage
                 errors={errors}
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -226,6 +233,17 @@ export const CalculatorApp = () => {
                   {isSubmitting ? "Trwa wysyłanie wiadomości..." : "Oblicz"}
                 </Button>{" "}
               </div>
+              <span className={styles.important}>
+                {" "}
+                *{" "}
+                <a
+                  className={styles["move-into"]}
+                  href={`${RoutePath.KALKULATOR}/#aktywnosci`}
+                >
+                  sprawdź poniżej
+                </a>{" "}
+                do jakiego rodzaju aktywności w ciągu dnia się zaliczasz.
+              </span>
             </form>
             <div className={styles.notes}>
               <img
@@ -297,7 +315,7 @@ export const CalculatorApp = () => {
           alt="Warzywa na smoothie"
         />
         <h3 className={styles["aside-navigation__heading"]}>
-          Zobacz także dostępne diety:
+          Wybierz swój jadłospis:
         </h3>
         <ul className={styles["aside-navigation-list"]}>
           {diets.map((diet, index) => (
@@ -313,13 +331,20 @@ export const CalculatorApp = () => {
                 <span className={styles["aside-navigation-list__label"]}>
                   {diet.label}
                 </span>
-                <span className={styles["aside-navigation-list__kcal"]}>
-                  {diet.kcal} kcal
-                </span>
+
+                <a className={styles["link-button"]} href={RoutePath.MENUS}>
+                  Sprawdź
+                </a>
               </li>
             </a>
           ))}
         </ul>
+
+        <p className={styles["aside-navigation-list__paragraph"]}>
+          Chciałbyś otrzymać indywidualną dietę i zalecenia żywieniowe
+          przygotowane tylko dla Ciebie? <br /> Nie wahaj się i napisz do mnie
+          już teraz!
+        </p>
       </aside>
       <div className={styles["calculations"]}>
         <div className={styles["row"]}>
@@ -359,7 +384,7 @@ export const CalculatorApp = () => {
         </div>
       </div>
 
-      <div className={styles["details"]}>
+      <div className={styles["details"]} id="aktywnosci">
         <div className={styles["details__header"]}>
           <RunnerIcon height="64px" width="64px" />
           <p>Aktywności oraz ich intensywność</p>

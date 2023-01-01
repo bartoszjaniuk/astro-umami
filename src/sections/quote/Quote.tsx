@@ -1,5 +1,5 @@
 import styles from "./Quote.styles.module.scss";
-import imageRef from "/assets/pasta-home.jpg";
+import imageRef from "/assets/breakfast.jpg";
 
 export const Quote = () => {
   return (

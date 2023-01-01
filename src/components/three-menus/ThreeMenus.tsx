@@ -12,6 +12,7 @@ import { useModal } from "../../hooks/useModal";
 import { ModalProvider } from "../../providers/ModalProvider";
 import { Modal } from "../modal/Modal";
 import { Backdrop } from "../modal/Backdrop";
+import { RoutePath } from "../nav/AppRoute.enum";
 
 export const ThreeMenus = () => {
   const { ref, inView } = useInView({
@@ -40,6 +41,12 @@ export const ThreeMenus = () => {
             className={`${styles["isMobile"]} ${inView ? "scale-up" : ""}`}
           />
         </div>
+        <span>
+          Sprawdź, ile powinieneś spożywać kalorii w ciągu dnia, dzięki{" "}
+          <a className="link" href={RoutePath.KALKULATOR}>
+            kalkulatorowi kalorii!
+          </a>{" "}
+        </span>
         <LinkButton text="Zobacz więcej" navigateTo="/diety" />
       </article>
     </>

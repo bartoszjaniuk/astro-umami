@@ -1,9 +1,8 @@
 const diets = [
-  { label: "Dieta 1600 kcal ", link: "#", kcal: "1600" },
-  { label: "Miłośnik lasu", link: "#", kcal: "1800" },
-  { label: "Viking", link: "#", kcal: "2000" },
-  { label: "Człowiek z miasta", link: "#", kcal: "2500" },
-  { label: "Włoska robota", link: "#", kcal: "3000" },
+  { label: "Jadłospis 1600 kalorii", link: "#", kcal: "1600" },
+  { label: "Jadłospis 1800 kalorii", link: "#", kcal: "1800" },
+  { label: "Jadłospis 2000 kalorii", link: "#", kcal: "2000" },
+  { label: "Jadłospis 2200 kalorii", link: "#", kcal: "2500" },
 ];
 
 const activities = [
@@ -38,15 +37,15 @@ const activities = [
 
 const goals = [
   {
-    label: "utrata masy ciała",
+    label: "chcę schudnąć",
     value: -500,
   },
   {
-    label: "utrzymanie wagi",
+    label: "chcę utrzymać masę ciała",
     value: 0,
   },
   {
-    label: "przyrost masy ciała",
+    label: "chcę przytyć",
     value: 500,
   },
 ];

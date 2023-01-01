@@ -43,16 +43,16 @@ export const Footer = () => {
           <h3 className={styles["column__heading"]}>Oferta</h3>
           <ul className={styles["column-list"]}>
             <li className={styles["column-list__item"]}>
-              <a href={RoutePath.OFFER}>Porady dietetyczne</a>
+              <a href={RoutePath.OFFER}>Usługi</a>
             </li>
             <li className={styles["column-list__item"]}>
               <a href={RoutePath.MENUS}>Jadłospisy</a>
             </li>
             <li className={styles["column-list__item"]}>
-              <a href={RoutePath.PRICE_LIST}>Dieta Indywidualna</a>a
+              <a href={RoutePath.PRICE_LIST}>Dieta Indywidualna</a>
             </li>
             <li className={styles["column-list__item"]}>
-              <a href={RoutePath.KALKULATOR}>Kalkulator</a>
+              <a href={RoutePath.KALKULATOR}>Kalkulator kalorii</a>
             </li>
           </ul>
         </div>
