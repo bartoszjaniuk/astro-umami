@@ -1,31 +1,40 @@
-import React from "react";
+import { useModal } from "../../../hooks/useModal";
 import styles from "./DietCard.styles.module.scss";
-import imageRefPancakes from "/assets/pancakes.png";
-import { firstCard } from "../../../components/floating-card/FloatingCard.data";
 
-export const DietCard = () => {
+type DietCardProps = {
+  title: string;
+  opisy: string[];
+  img: string;
+};
+
+export const DietCard = ({ title, opisy, img }: DietCardProps) => {
+  const { chooseDiet, openModal } = useModal();
+
   return (
     <div className={styles["diet"]}>
       <div className={styles["col-left"]}>
-        <div className={styles["col-left__heading"]}>
-          <h3>Dieta 1600 KCAL</h3>
-        </div>
-
         <div className={styles["col-left__wrapper"]}>
           <div className={styles["col-left__inner"]}>
-            <img src={imageRefPancakes} alt="" />
+            <img src={img} alt="" />
           </div>
         </div>
 
         <div className={styles["col-left__footer"]}>
-          <button>Wybierz dietę</button>
+          <button
+            onClick={() => {
+              chooseDiet(title);
+              openModal();
+            }}
+          >
+            Wybierz dietę
+          </button>
         </div>
       </div>
       <div className={styles["col-right"]}>
-        <h3 className={styles["col-right__heading"]}>SERCE BOHATERA</h3>
+        <h3 className={styles["col-right__heading"]}>{title}</h3>
         <ul className={styles["col-right__list"]}>
-          {firstCard.details.opisy.map((v, index) => (
-            <li key={index}>{v}</li>
+          {opisy.map((opis, index) => (
+            <li key={index}>{opis}</li>
           ))}
         </ul>
       </div>

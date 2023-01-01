@@ -75,6 +75,7 @@
     text-align: center;
     color: white;
     position: absolute;
+    font-family: "Lato";
     top: 7rem;
     right: 0;
     left: 0;
@@ -154,6 +155,7 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+    font-family: "Lato";
   }
 
   @include mediaQ(md) {

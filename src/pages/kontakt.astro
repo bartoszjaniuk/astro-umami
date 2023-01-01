@@ -1,11 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Container } from "../components/container/Container";
-import { ContactPage } from "../sections/contactPage/ContactPage";
+import { ContactContainer } from "../containers/ContactContainer";
 ---
 
 <Layout title="UMAMI - Dietetyk Aleksandra Kajstura">
-  <Container>
-    <ContactPage client:load />
-  </Container>
+  <ContactContainer client:load />
 </Layout>

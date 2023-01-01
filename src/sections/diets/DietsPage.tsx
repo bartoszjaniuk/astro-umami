@@ -1,6 +1,10 @@
 import styles from "./DietsPage.styles.module.scss";
-import imageReference from "/assets/people.png";
-import { firstCard } from "../../components/floating-card/FloatingCard.data";
+import {
+  firstCard,
+  fourthCard,
+  secondCard,
+  thirdCard,
+} from "../../components/floating-card/FloatingCard.data";
 
 import imageRefPancakes from "/assets/pancakes.png";
 import { LinkButton } from "../../components/linkButton/LinkButton";
@@ -33,18 +37,28 @@ export const DietsPage = () => {
             navigateTo="/diety/#jadlospisy"
           />
         </div>
-
-        {/* <div className={styles["intro__image"]}>
-          <img
-            src={imageReference}
-            alt="Ilustracja ludzi. Utworzono przez pch.vector / Freepik"
-          />
-        </div> */}
       </section>
       <section className={styles.diets} id="jadlospisy">
-        <DietCard />
-        <DietCard />
-        <DietCard />
+        <DietCard
+          title={firstCard.title}
+          opisy={firstCard.details.opisy}
+          img={firstCard.backgroundUrl}
+        />
+        <DietCard
+          title={secondCard.title}
+          opisy={secondCard.details.opisy}
+          img={secondCard.backgroundUrl}
+        />
+        <DietCard
+          title={thirdCard.title}
+          opisy={thirdCard.details.opisy}
+          img={thirdCard.backgroundUrl}
+        />
+        <DietCard
+          title={fourthCard.title}
+          opisy={fourthCard.details.opisy}
+          img={fourthCard.backgroundUrl}
+        />
       </section>
     </main>
   );

@@ -1,5 +1,5 @@
 const diets = [
-  { label: "Serce bohatera", link: "#", kcal: "1600" },
+  { label: "Dieta 1600 kcal ", link: "#", kcal: "1600" },
   { label: "Miłośnik lasu", link: "#", kcal: "1800" },
   { label: "Viking", link: "#", kcal: "2000" },
   { label: "Człowiek z miasta", link: "#", kcal: "2500" },
