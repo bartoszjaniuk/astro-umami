@@ -19,16 +19,16 @@ export const DietsPage = () => {
         <div className={styles["background-shape--big"]}></div>
         <div className={styles["intro__heading"]}>
           <h2>
-            Osiągnij lepszą wagę, wymarzoną sylwetkę i doskonałe samopoczucie
-            pod okiem naszych dietetyków online.
+            Osiągnij wymarzoną sylwetkę i doskonałe samopoczucie pod okiem
+            wykwalifikowanego dietetyka.
           </h2>
         </div>
         <div className={styles["intro__subheading"]}>
           <p>
-            Dietetyk Umami to miejsce, gdzie codziennie rozprawiamy się ze złymi
-            kilogramami. To tutaj nasz zespół specjalistów pomoże Ci je zdrowo i
-            skutecznie poskromić. Tak jak lubisz. Bez wyrzeczeń, bez stresu, bez
-            efektu jo-jo.
+            Umami to miejsce, gdzie każdego dnia rozprawiam się ze złymi
+            nawykami żywieniowymi. W tym miejscu pomogę Ci je zdrowo i
+            skutecznie wdrożyć w życie. Tak jak lubisz. Bez wyrzeczeń, bez
+            stresu oraz bez efektu jo-jo.
           </p>
         </div>
         <div className={styles["intro__button"]}>
