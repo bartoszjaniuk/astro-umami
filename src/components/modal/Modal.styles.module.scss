@@ -1,3 +1,4 @@
+@import "../../styles/mixins";
 .modal {
   position: fixed;
   top: 50%;
@@ -15,5 +16,9 @@
     &:hover {
       cursor: pointer;
     }
+  }
+
+  @include mediaQ(sm) {
+    width: 90%;
   }
 }

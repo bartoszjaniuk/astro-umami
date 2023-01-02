@@ -36,11 +36,6 @@ export const CalculatorApp = () => {
     formState: { errors, isValid, isSubmitting },
   } = useForm<CalculatorFormProps>({ mode: "onTouched" });
 
-  const description =
-    `CHCIAŁBYŚ OTRZYMAĆ INDYWIDUALNĄ DIETĘ I ZALECENIA ŻYWIENIOWE
-  PRZYGOTOWANE TYLKO DLA CIEBIE? NIE WAHAJ SIĘ I NAPISZ DO MNIE JUŻ
-  TERAZ!`.toLowerCase();
-
   const [calculations, setCalculations] = useState<CalculationProps>({
     calculatedBmi: 0,
     goal: "0",
@@ -175,7 +170,7 @@ export const CalculatorApp = () => {
                 <CalculatorSelectInput
                   id="activity"
                   name="activity"
-                  label="aktywność"
+                  label="aktywność*"
                   placeholder="Aktywność"
                   register={register}
                   errors={errors}
@@ -285,14 +280,15 @@ export const CalculatorApp = () => {
             </div>
             <div className={styles["btn-group"]}>
               <div className={styles["recalculate-button"]}>
-                <Button
-                  onClick={() => setCalculations({ isCalculated: false })}
-                  className={styles["submit-button__content"]}
-                  type="button"
-                >
-                  <MessageIcon height="32px" width="32px" color="#ffffff" />
-                  Napisz do mnie
-                </Button>
+                <a href={RoutePath.CONTACT}>
+                  <Button
+                    className={styles["submit-button__content"]}
+                    type="button"
+                  >
+                    <MessageIcon height="32px" width="32px" color="#ffffff" />
+                    Napisz do mnie
+                  </Button>
+                </a>
               </div>
               <div className={styles["recalculate-button"]}>
                 <Button
