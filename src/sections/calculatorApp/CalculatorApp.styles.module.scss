@@ -472,6 +472,11 @@
     }
   }
 
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+
   @include mediaQ(sm) {
     padding: 0.5rem 0;
   }

@@ -280,7 +280,10 @@ export const CalculatorApp = () => {
             </div>
             <div className={styles["btn-group"]}>
               <div className={styles["recalculate-button"]}>
-                <a href={RoutePath.CONTACT}>
+                <a
+                  className={styles["recalculate-button__link"]}
+                  href={RoutePath.CONTACT}
+                >
                   <Button
                     className={styles["submit-button__content"]}
                     type="button"

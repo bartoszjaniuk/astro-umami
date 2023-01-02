@@ -4,7 +4,10 @@ import Layout from "../layouts/Layout.astro";
 import { CookiesPolitics } from "../sections/cookiesPolitics/CookiesPolitics";
 ---
 
-<Layout title="UMAMI - Dietetyk Aleksandra Kajstura">
+<Layout
+  title="UMAMI - Dietetyk Aleksandra Kajstura - Polityka cookies"
+  description="Drogi uzytkowniku Kiedy wchodzisz na strony naszych witryn, na dysku Twojego komputera mogą być zapisywane tzw. ciasteczka (ang. cookies), czyli niewielkie pliki tekstowe wysyłane przez nasz serwer albo serwisy, do których odwołujemy się w naszych witrynach, np. pokazując multimedia. Ciasteczka i podobne technologie używane są w witrynach internetowych przede wszystkim ze względu na wygodę użytkowników, m.in po to, by jak najlepiej dostosować treści i funkcje witryny do ich potrzeb i oczekiwań, a także w celach statystycznych."
+>
   <Container>
     <CookiesPolitics client:load />
   </Container>
