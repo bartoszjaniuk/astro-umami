@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 import styles from "./OffertItem.styles.module.scss";
 
@@ -30,6 +31,7 @@ export const OffertItem = ({
   const isTabWithLongText = isActive && activeTab === 1;
 
   const getResForTabWithLongText = (breakpoint: string) => {
+    if (breakpoint === "MONSTER") return 620;
     if (breakpoint === "VBIG") return 350;
     if (breakpoint === "BIG") return 380;
     if (breakpoint === "MEDIUM") return 450;
@@ -38,6 +40,7 @@ export const OffertItem = ({
   };
 
   const getResForText = (breakpoint: string) => {
+    if (breakpoint === "MONSTER") return 270;
     if (breakpoint === "VBIG") return 170;
     if (breakpoint === "BIG") return 170;
     if (breakpoint === "MEDIUM") return 190;
@@ -66,12 +69,7 @@ export const OffertItem = ({
         <div className={styles["panel__label--icon"]}>{icon}</div>
         <div className={styles["panel__label--title"]}>{label}</div>
         <div className={styles["panel__label--chevron"]}>
-          <img
-            src="https://centrumrespo.pl/wp-content/themes/centrumrespo/resources/offer/chevron-icon.svg"
-            alt=""
-            height="24"
-            width="24"
-          />
+          <Icon icon="mdi:chevron-down" />
         </div>
       </div>
       <div

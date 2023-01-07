@@ -14,6 +14,10 @@
   gap: 1rem;
   font-weight: 300;
 
+  @include mediaUp(monster) {
+    padding: 2.5rem;
+  }
+
   @include mediaQ(xxxl) {
     width: 17%;
   }
@@ -38,6 +42,12 @@
   &__icon {
     display: flex;
     justify-content: center;
+    svg {
+      @include mediaUp(monster) {
+        width: 9rem;
+        height: 9rem;
+      }
+    }
   }
   &__title {
     color: var(--c-primary);

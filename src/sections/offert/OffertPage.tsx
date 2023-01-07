@@ -81,7 +81,7 @@ export const OffertPage = () => {
             energii i polepszysz swoje samopoczucie oraz stan zdrowia!
           </div>
 
-          <LinkButton text="Sprawdź ofertę" navigateTo='/oferta/#moje-uslugi'  />
+          <LinkButton text="Sprawdź ofertę" navigateTo="/oferta/#moje-uslugi" />
         </div>
         <div className={styles["image"]}>
           <img src={imageOffertRef} alt="Aleksandra Kajstura" />
@@ -90,15 +90,15 @@ export const OffertPage = () => {
       <section className={styles["tags-strip"]}>
         <ul className={styles["tags-strip-list"]}>
           <li className={styles["tags-strip-list__item"]}>
-            <Icon icon="game-icons:talk" fontSize="2.7rem" />
+            <Icon icon="game-icons:talk" />
             Konsultacje dietetyczne online
           </li>
           <li className={styles["tags-strip-list__item"]}>
-            <Icon icon="game-icons:notebook" fontSize="2.7rem" />
+            <Icon icon="game-icons:notebook" />
             Indywidualny plan żywieniowy
           </li>
           <li className={styles["tags-strip-list__item"]}>
-            <Icon icon="game-icons:beech" fontSize="2.7rem" />
+            <Icon icon="game-icons:beech" />
             Edukacja żywieniowa
           </li>
         </ul>
@@ -106,7 +106,7 @@ export const OffertPage = () => {
 
       <section className={styles.plan}>
         <h2 className={styles["plan__heading"]}>Usługi</h2>
-        <p className={styles["plan__heading-secondary"]} id='moje-uslugi'>
+        <p className={styles["plan__heading-secondary"]} id="moje-uslugi">
           Nie wiesz co wybrać? Skontaktuj się ze mną i wszystko razem ustalimy.
         </p>
         <div className={styles["plan__content"]} role="tablist">
@@ -121,10 +121,13 @@ export const OffertPage = () => {
           ))}
         </div>
 
-     <div className={styles['plan__footer']}>
-     <LinkButton text="Sprawdź dostępne opcje współpracy" navigateTo='/cennik' isInverted />
-     </div>
-
+        <div className={styles["plan__footer"]}>
+          <LinkButton
+            text="Sprawdź dostępne opcje współpracy"
+            navigateTo="/cennik"
+            isInverted
+          />
+        </div>
       </section>
     </main>
   );

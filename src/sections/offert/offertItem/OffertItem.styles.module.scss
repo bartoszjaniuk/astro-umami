@@ -20,9 +20,21 @@
     user-select: none;
     width: 100%;
     min-height: 70px;
+    @include mediaUp(monster) {
+      align-items: center;
+      padding: 14px 32px;
+    }
     &--icon {
       flex-grow: 0;
       flex-shrink: 0;
+      svg {
+        width: 2rem;
+        height: 2rem;
+        @include mediaUp(monster) {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
     }
 
     &--title {
@@ -31,19 +43,32 @@
       font-weight: 400;
       line-height: 27px;
       width: 100%;
+
+      @include mediaUp(monster) {
+        font-size: 2.8rem;
+      }
     }
 
     &--chevron {
       flex-grow: 0;
       flex-shrink: 0;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        @include mediaUp(monster) {
+          width: 48px;
+          height: 48px;
+        }
+      }
     }
   }
 }
 
 .panel__content {
   background-color: #f7f7f7;
-  border-radius: 4;
-  font-size: 16px;
+  border-radius: 4px;
+  font-size: 1rem;
   font-weight: 400;
   left: 0;
   letter-spacing: -0.2px;
@@ -52,11 +77,20 @@
   overflow: hidden;
   position: absolute;
   white-space: pre-line;
+
+  @include mediaUp(monster) {
+    line-height: 3.5rem;
+    font-size: 2.2rem;
+  }
 }
 
 .panel__content[data-help-card-content-expanded="true"] {
   margin-top: 1rem;
-  max-height: 600px;
+  max-height: 800px;
+
+  @include mediaUp(monster) {
+    font-size: 2.2rem;
+  }
   padding: 1rem;
 
   .panel__label--title {

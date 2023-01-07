@@ -11,6 +11,11 @@
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px -6px;
 
+  @include mediaUp(monster) {
+    padding: 3rem 25rem;
+    min-height: 600px;
+  }
+
   @include mediaQ(xxxl) {
     padding: 1rem 5rem;
   }
@@ -54,10 +59,18 @@
   &__heading {
     font-size: 4rem;
     text-align: center;
+
+    @include mediaUp(monster) {
+      padding-top: 2rem;
+      font-size: 6.32rem;
+    }
   }
   &__subheading {
     font-size: 1.6rem;
     text-align: center;
+    @include mediaUp(monster) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -76,6 +89,11 @@
     padding-bottom: 0.5rem;
     padding: 0rem 10rem;
 
+    @include mediaUp(monster) {
+      font-size: 5rem;
+      padding: 0rem 25rem;
+    }
+
     @include mediaQ(xxxl) {
       padding: 0rem 5rem;
     }
@@ -88,6 +106,11 @@
     font-size: 1rem;
     text-align: center;
     padding: 0rem 10rem;
+
+    @include mediaUp(monster) {
+      font-size: 2.5rem;
+      padding: 0rem 25rem;
+    }
 
     @include mediaQ(xxxl) {
       padding: 0rem 5rem;
@@ -103,6 +126,10 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     padding: 4rem 10rem 4rem 10rem;
+
+    @include mediaUp(monster) {
+      padding: 4rem 25rem;
+    }
 
     @include mediaQ(xxxl) {
       padding: 3rem;
@@ -124,6 +151,10 @@
     gap: 0.5rem;
     align-items: center;
 
+    @include mediaUp(monster) {
+      padding: 4rem 25rem;
+    }
+
     padding: 4rem 10rem 4rem 10rem;
 
     @include mediaQ(xxxl) {
@@ -141,6 +172,10 @@
   }
 
   &__paragraph {
+    font-size: 1rem;
+    @include mediaUp(monster) {
+      font-size: 3rem;
+    }
     &--bold {
       font-weight: 600;
     }
@@ -156,10 +191,18 @@
     color: rgba(99, 99, 99, 0.581);
     display: flex;
     justify-content: center;
+
+    @include mediaUp(monster) {
+      font-size: 2.5rem;
+    }
   }
   &__heading {
     font-size: 2rem;
     text-align: center;
+
+    @include mediaUp(monster) {
+      font-size: 4rem;
+    }
   }
 
   &__price {
@@ -170,6 +213,10 @@
     font-size: 3rem;
     width: 100%;
     padding-bottom: 0.5rem;
+
+    @include mediaUp(monster) {
+      font-size: 6rem;
+    }
   }
 
   &__list {
@@ -178,6 +225,10 @@
   }
   &__list-item {
     padding: 0.2rem 0;
+
+    @include mediaUp(monster) {
+      font-size: 2.5rem;
+    }
   }
 
   &--active {
@@ -201,6 +252,11 @@
     padding-bottom: 0.5rem;
     padding: 0rem 10rem;
 
+    @include mediaUp(monster) {
+      font-size: 5rem;
+      padding: 0rem 25rem;
+    }
+
     @include mediaQ(xxxl) {
       padding: 0rem 5rem;
     }
@@ -213,6 +269,11 @@
     font-size: 1rem;
     text-align: center;
     padding: 0rem 10rem;
+
+    @include mediaUp(monster) {
+      font-size: 2.5rem;
+      padding: 0rem 25rem;
+    }
 
     @include mediaQ(xxxl) {
       padding: 0rem 5rem;
@@ -228,6 +289,9 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     padding: 4rem 10rem 4rem 10rem;
+    @include mediaUp(monster) {
+      padding: 4rem 25rem;
+    }
 
     @include mediaQ(xxxl) {
       padding: 1rem 5rem;
@@ -248,6 +312,9 @@
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+    @include mediaUp(monster) {
+      padding: 0rem 25rem;
+    }
 
     padding: 0rem 10rem;
 
@@ -261,6 +328,10 @@
   }
 
   &__paragraph {
+    font-size: 1rem;
+    @include mediaUp(monster) {
+      font-size: 3rem;
+    }
     &--bold {
       font-weight: 600;
     }
@@ -276,6 +347,10 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
+
+  @include mediaUp(monster) {
+    padding: 4rem 25rem;
+  }
 
   @include mediaQ(xxxl) {
     padding: 1rem 5rem;
@@ -305,11 +380,14 @@
   &__heading {
     font-size: 3rem;
     font-weight: 600;
+    @include mediaUp(monster) {
+      font-size: 6rem;
+    }
   }
   &__paragraph {
-    // background-color: rgba(255, 255, 255, 0.716);
     font-weight: 600;
-    // padding: 1rem;
-    // border: 1px solid 6px;
+    @include mediaUp(monster) {
+      font-size: 3rem;
+    }
   }
 }

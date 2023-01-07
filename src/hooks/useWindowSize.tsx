@@ -7,7 +7,7 @@ enum Breakpoints {
   lg = 1024,
   xxl = 1250,
   xxxl = 1536,
-  monster = 1920,
+  monster = 1930,
 }
 
 export const useWindowSize = () => {
@@ -16,8 +16,11 @@ export const useWindowSize = () => {
     innerWidth: 0,
   });
 
+  const isMonsterScreen = (screenWidth: number) =>
+    screenWidth >= Breakpoints.monster;
+
   const isVeryBigScreen = (screenWidth: number) =>
-    screenWidth >= Breakpoints.xxxl;
+    screenWidth >= Breakpoints.xxxl && screenWidth <= Breakpoints.monster;
   const isBigScreen = (screenWidth: number) =>
     screenWidth >= Breakpoints.lg && screenWidth <= Breakpoints.xxl;
   const isMediumScreen = (screenWidth: number) =>
@@ -28,6 +31,7 @@ export const useWindowSize = () => {
     screenWidth < Breakpoints.sm;
 
   const checkScreenSize = () => {
+    if (isMonsterScreen(windowSize.innerWidth)) return "MONSTER";
     if (isVeryBigScreen(windowSize.innerWidth)) return "VBIG";
     if (isBigScreen(windowSize.innerWidth)) return "BIG";
     if (isMediumScreen(windowSize.innerWidth)) return "MEDIUM";
@@ -54,6 +58,7 @@ export const useWindowSize = () => {
   }, []);
 
   useEffect(() => {
+    if (isMonsterScreen(windowSize.innerWidth)) setBreakpoint("MONSTER");
     if (isVeryBigScreen(windowSize.innerWidth)) setBreakpoint("VBIG");
     if (isBigScreen(windowSize.innerWidth)) setBreakpoint("BIG");
     if (isMediumScreen(windowSize.innerWidth)) setBreakpoint("MEDIUM");

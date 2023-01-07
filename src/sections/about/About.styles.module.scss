@@ -9,10 +9,13 @@
 .about {
   background-color: #fff;
   display: flex;
-  min-height: 80vh;
 
   padding: 5rem 10rem 0 10rem;
   gap: 2rem;
+
+  @include mediaUp(monster) {
+    padding: 5rem 25rem 0 25rem;
+  }
 
   @include mediaQ(xxxl) {
     padding: 5rem 5rem 0 5rem;
@@ -78,8 +81,12 @@
 }
 
 .content {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  width: 70%;
+  justify-content: center;
   @include mediaQ(lg) {
     width: 50%;
   }
@@ -92,6 +99,10 @@
     font-size: 3.5rem;
     padding: 2rem 0;
     color: var(--c-primary);
+
+    @include mediaUp(monster) {
+      font-size: 6.32rem;
+    }
 
     @include mediaQ(md) {
       font-size: 4rem;
@@ -109,6 +120,9 @@
     border-radius: 1.5rem;
     background-color: var(--c-secondary);
     padding: 0.5rem 1rem;
+    @include mediaUp(monster) {
+      font-size: 2.2rem;
+    }
 
     @include mediaQ(md) {
       font-size: 1.5rem;
@@ -122,6 +136,13 @@
     padding-top: 1.5rem;
     font-weight: 500;
     color: var(--c-primary);
+
+    @include mediaUp(monster) {
+      font-size: 2.4rem;
+
+      line-height: 3rem;
+    }
+
     @include mediaQ(md) {
       font-size: 2.5rem;
       padding: 2rem 0;
@@ -137,6 +158,11 @@
   }
 
   &__description {
+    @include mediaUp(monster) {
+      font-size: 2.4rem;
+      max-width: 90%;
+      line-height: 3rem;
+    }
     @include mediaQ(md) {
       font-size: 1.7rem;
     }
@@ -168,6 +194,11 @@
     transition: all 0.3s ease;
     border-radius: 0.3rem;
     width: 100%;
+
+    @include mediaUp(monster) {
+      font-size: 2.4rem;
+    }
+
     &:hover {
       background-color: white;
       color: var(--c-primary);
@@ -191,14 +222,13 @@
 }
 
 .person {
-  width: 50%;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 1rem;
+  align-items: flex-start;
+  width: 30%;
+  height: 600px;
   @include mediaQ(md) {
-    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px -6px;
   }
 
   &::before {
@@ -207,8 +237,8 @@
     left: 0;
     opacity: 0.65;
     content: "";
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     background-color: var(--c-secondary);
     padding-top: 6rem;
@@ -221,24 +251,25 @@
     right: 0;
     opacity: 1;
     content: "";
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     background-color: var(--c-primary);
   }
-  &__image {
-    // height: 100%;
-    width: 18.75rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     z-index: 10;
+  }
 
-    img {
-      width: 100%;
-      height: 100%;
+  @include mediaUp(monster) {
+    height: 900px;
+  }
 
-      // background-color: #fff;
-      // border-radius: 10rem;
-      // border: 2px solid var(--c-primary);
-    }
+  @include mediaQ(md) {
+    width: 100%;
   }
 
   &__heading {
@@ -285,6 +316,10 @@
   background-color: #fff;
 
   padding: 3rem 10rem 3rem 10rem;
+
+  @include mediaUp(monster) {
+    padding: 4rem 25rem 4rem 25rem;
+  }
 
   @include mediaQ(xxxl) {
     padding: 3rem 5rem 3rem 5rem;

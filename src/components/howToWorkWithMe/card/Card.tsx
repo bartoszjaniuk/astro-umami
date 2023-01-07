@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Card.styles.module.scss";
 
 type CardProps = {

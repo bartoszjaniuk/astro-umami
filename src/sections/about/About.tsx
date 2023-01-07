@@ -33,10 +33,7 @@ export const About = () => {
           </p>
         </div>
         <div className={styles["person"]}>
-          {/* <h2 className={styles["person__heading"]}>Aleksandra Kajstura</h2> */}
-          <div className={styles["person__image"]}>
-            <img src={introductionImageReference} alt="Aleksandra Kajstura" />
-          </div>
+          <img src={introductionImageReference} alt="Aleksandra Kajstura" />
         </div>
       </section>
       <div className={styles["tags-strip"]}>
