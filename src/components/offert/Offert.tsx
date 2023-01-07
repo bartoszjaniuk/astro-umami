@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Offert.styles.module.scss";
 import { useInView } from "react-intersection-observer";
 import introductionImgReference from "/assets/ola.png";
@@ -26,7 +25,7 @@ export const Offert = () => {
             Aleksandra Kajstura
           </h1>
           <h5 className={styles["introduction__heading--highlight"]}>
-            dyplomowany dietetyk online
+            dyplomowany dietetyk online racibórz
           </h5>
         </div>
         <p className={styles["introduction__content"]}>

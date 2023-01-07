@@ -84,8 +84,6 @@
 }
 
 .image {
-  // width: 500px;
-  // max-height: 550px;
   width: 100%;
 
   @include mediaQ(md) {
@@ -179,5 +177,18 @@
 
   &__paragraph {
     padding: 0.3rem 0;
+  }
+}
+
+.success-message {
+  margin-top: 1rem;
+  padding: 0.4rem;
+  border: 1px solid green;
+  color: green;
+  background-color: rgba(77, 235, 77, 0.243);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  @include mediaUp(monster) {
+    font-size: 1.9rem;
   }
 }

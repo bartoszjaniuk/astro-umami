@@ -33,7 +33,25 @@
   }
 }
 
+.form {
+  padding-bottom: 1rem;
+}
+
 .contact__form {
-  width: 1300px;
-  height: 750px;
+  @include mediaUp(monster) {
+    width: 1300px;
+    height: 750px;
+  }
+}
+
+.success-message {
+  padding: 0.4rem;
+  border: 1px solid green;
+  color: green;
+  background-color: rgba(77, 235, 77, 0.243);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  @include mediaUp(monster) {
+    font-size: 1.9rem;
+  }
 }

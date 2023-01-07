@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { useModal } from "../../hooks/useModal";
 import styles from "./Modal.styles.module.scss";
 import { Icon } from "@iconify/react";
@@ -10,6 +10,18 @@ import { ContactFormProps, emailPattern } from "../../sections/contact/Contact";
 
 export const Modal = () => {
   const { isModalOpen, closeModal, diet, chooseDiet } = useModal();
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  useEffect(() => {
+    if (isSuccess) {
+      setSuccessMessage("Wiadomość została wysłana.");
+      setTimeout(() => {
+        setSuccessMessage("");
+        setIsSuccess(false);
+      }, 3000);
+    }
+  }, [isSuccess]);
 
   const {
     reset,
@@ -38,7 +50,8 @@ export const Modal = () => {
           }),
         }
       );
-      await response.json();
+      const res = await response.json();
+      if (res.status === "success") setIsSuccess(true);
     } catch (error) {
       console.log(error);
     }
@@ -115,6 +128,9 @@ export const Modal = () => {
                 : "Wyślij wiadomość"}
             </Button>
           </form>
+          {successMessage && (
+            <p className={styles["success-message"]}>{successMessage}</p>
+          )}
         </div>
       </div>
     );

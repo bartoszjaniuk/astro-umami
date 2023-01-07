@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "../../components/button/Button";
 import { CheckBox } from "../../components/checkbox/Checkbox";
@@ -24,6 +25,19 @@ export const Contact = () => {
     formState: { errors, isValid, isSubmitting },
   } = useForm<ContactFormProps>({ mode: "all" });
 
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  useEffect(() => {
+    if (isSuccess) {
+      setSuccessMessage("Wiadomość została wysłana.");
+      setTimeout(() => {
+        setSuccessMessage("");
+        setIsSuccess(false);
+      }, 3000);
+    }
+  }, [isSuccess]);
+
   const onSubmit = async (formData: ContactFormProps) => {
     try {
       const response = await fetch(
@@ -42,6 +56,8 @@ export const Contact = () => {
         }
       );
       await response.json();
+      const res = await response.json();
+      if (res.status === "success") setIsSuccess(true);
     } catch (error) {
       console.log(error);
     }
@@ -132,6 +148,9 @@ export const Contact = () => {
                 : "Wyślij wiadomość"}
             </Button>
           </form>
+          {successMessage && (
+            <p className={styles["success-message"]}>{successMessage}</p>
+          )}
         </div>
       </div>
     </section>
