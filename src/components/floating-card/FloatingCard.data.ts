@@ -47,7 +47,7 @@ export const thirdCard = {
       "Dania wytrawne i na słodko",
       "Odpowiedni rozkład składników odżywczych",
       "5 posiłków dziennie",
-      "Dla aktywnych i pracujących fizyczni",
+      "Dla aktywnych i pracujących fizycznie",
     ],
   },
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ThreeMenus.styles.module.scss";
 import { FloatingCard } from "../floating-card/FloatingCard";
 import {
@@ -8,10 +7,6 @@ import {
 } from "../floating-card/FloatingCard.data";
 import { useInView } from "react-intersection-observer";
 import { LinkButton } from "../linkButton/LinkButton";
-import { useModal } from "../../hooks/useModal";
-import { ModalProvider } from "../../providers/ModalProvider";
-import { Modal } from "../modal/Modal";
-import { Backdrop } from "../modal/Backdrop";
 import { RoutePath } from "../nav/AppRoute.enum";
 
 export const ThreeMenus = () => {
@@ -41,12 +36,12 @@ export const ThreeMenus = () => {
             className={`${styles["isMobile"]} ${inView ? "scale-up" : ""}`}
           />
         </div>
-        <span>
+        <h5 className={styles["navigateTo"]}>
           Sprawdź, ile powinieneś spożywać kalorii w ciągu dnia, dzięki{" "}
           <a className="link" href={RoutePath.KALKULATOR}>
             kalkulatorowi kalorii!
           </a>{" "}
-        </span>
+        </h5>
         <LinkButton text="Zobacz więcej" navigateTo="/diety" />
       </article>
     </>

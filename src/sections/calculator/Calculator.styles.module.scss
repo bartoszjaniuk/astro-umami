@@ -40,6 +40,11 @@
     background-color: white;
   }
 
+  @include mediaUp(monster) {
+    min-height: 1000px;
+    padding: 2rem 25rem;
+  }
+
   @include mediaQ(xxxl) {
     padding: 1rem 5rem;
   }
@@ -82,10 +87,13 @@
     text-transform: uppercase;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     width: 100%;
-    text-align: center;
     font-size: 3.5rem;
     position: relative;
     z-index: 100;
+
+    @include mediaUp(monster) {
+      font-size: 4.5rem;
+    }
 
     @include mediaQ(xxl) {
       font-size: 3rem;
@@ -122,23 +130,15 @@
     }
   }
 
-  // &__button {
-  //   // font-size: 1rem;
-  //   // flex: 1;
-  //   // padding: 1rem 3rem;
-  //   @include mediaQ(md) {
-  //     font-size: 1.1rem;
-  //   }
-  //   @include mediaQ(sm) {
-  //     font-size: 1.2rem;
-  //   }
-  // }
-
   &__content {
     font-size: 1.2rem;
     font-weight: 300;
     position: relative;
     z-index: 10;
+
+    @include mediaUp(monster) {
+      font-size: 1.9rem;
+    }
 
     @include mediaQ(md) {
       padding: 1.5rem 0;
@@ -170,6 +170,11 @@
   &__img {
     min-width: 5rem;
     max-width: 30rem;
+
+    @include mediaUp(monster) {
+      min-width: 10rem;
+      max-width: 60rem;
+    }
 
     @include mediaQ(md) {
       min-width: 60%;
@@ -240,17 +245,23 @@
     border-color: var(--c-primary);
   }
   &--inverted {
-  color: var(--c-primary);
-  background-color: white;
-  border-color: 1px solid var(--c-primary);
+    color: var(--c-primary);
+    background-color: white;
+    border-color: 1px solid var(--c-primary);
 
-  &:hover {
-    background-color: var(--c-primary);
-    color: white;
-    border-color: white;
-  }
+    &:hover {
+      background-color: var(--c-primary);
+      color: white;
+      border-color: white;
+    }
   }
 }
 .link {
   width: 100%;
+  button {
+    font-size: 1rem;
+    @include mediaUp(monster) {
+      font-size: 2.2rem;
+    }
+  }
 }

@@ -1,7 +1,6 @@
 @import "../../styles//mixins";
 .container {
   position: relative;
-  // max-height: 1260px;
   min-height: 600px;
   padding: 1.5rem 10rem 0 10rem;
   z-index: 10;
@@ -61,6 +60,10 @@
     padding: 1.5rem 1.5rem 0 1.5rem;
   }
 
+  @include mediaUp(monster) {
+    padding: 3.5rem 25rem 0 25rem;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -95,6 +98,10 @@
     width: 100%;
   }
 
+  @include mediaUp(monster) {
+    gap: 2rem;
+  }
+
   &__heading {
     padding: 2rem 0;
     width: 100%;
@@ -102,19 +109,32 @@
     &--h2 {
       font-size: 4.32rem;
 
+      @include mediaUp(monster) {
+        font-size: 6.32rem;
+      }
+
       @include mediaQ(sm) {
         font-size: 4rem;
       }
     }
     &--highlight {
       font-size: 3rem;
+      @include mediaUp(monster) {
+        font-size: 4rem;
+      }
     }
   }
   &__content {
     font-size: 1.2rem;
-    line-height: 1.7rem;
+    line-height: 2rem;
     font-weight: 300;
     font-family: "Lato";
+
+    @include mediaUp(monster) {
+      font-size: 2.4rem;
+      max-width: 90%;
+      line-height: 3rem;
+    }
   }
   &__highlight {
     font-family: "Lato";
@@ -145,6 +165,10 @@
   background: var(--c-primary);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   height: 600px;
+
+  @include mediaUp(monster) {
+    height: 900px;
+  }
   @include mediaQ(md) {
     width: 40%;
     height: 100%;

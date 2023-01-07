@@ -1,3 +1,4 @@
+@import "../../styles/mixins";
 $sub-color: grey;
 
 $radius: 0.5rem;
@@ -11,11 +12,20 @@ $radius: 0.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  @include mediaUp(monster) {
+    font-size: 1.9rem;
+  }
 }
 .form-input {
   padding-right: 0.4rem;
-  width: 1.5em;
+  width: 1.5rem;
   height: 1.5rem;
+
+  @include mediaUp(monster) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 input[type="checkbox"] {
@@ -30,6 +40,9 @@ input[type="checkbox"] {
   color: red;
   font-size: 0.7rem;
   z-index: 10;
+  @include mediaUp(monster) {
+    font-size: 1.5rem;
+  }
 }
 
 ::-webkit-input-placeholder {

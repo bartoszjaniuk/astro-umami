@@ -10,6 +10,13 @@
   display: flex;
   align-items: center;
   padding: 1.5rem 10rem;
+  @include mediaUp(monster) {
+    font-size: 1.7rem;
+  }
+
+  @include mediaUp(monster) {
+    padding: 1.5rem 25rem;
+  }
 
   @include mediaQ(xxxl) {
     padding: 1.5rem;
@@ -26,6 +33,10 @@
   transition: all 0.3s ease;
   border-radius: 0.3rem;
   font-family: "Lato";
+  @include mediaUp(monster) {
+    font-size: 1.5rem;
+    padding: 1rem 1.8rem;
+  }
 
   background-color: var(--c-primary);
   color: white;
@@ -45,5 +56,8 @@
   transition: all 0.3s ease;
   &:hover {
     text-decoration: none;
+  }
+  @include mediaUp(monster) {
+    font-size: 1.7rem;
   }
 }

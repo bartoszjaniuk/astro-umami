@@ -2,9 +2,7 @@
 
 .card {
   background-color: rgba(255, 255, 255, 0.8);
-  // width: 16rem;
   flex: 1;
-
   border-radius: 3px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: transform 0.3s;
@@ -45,14 +43,21 @@
     color: var(--c-primary);
     font-size: 1.8rem;
     letter-spacing: 2px;
+
+    @include mediaUp(monster) {
+      font-size: 3.5rem;
+    }
+
     @include mediaQ(lg) {
       font-size: 1.7rem;
     }
   }
   &__description {
     text-align: center;
-    // font-family: "Lato";
     font-size: 1.2rem;
+    @include mediaUp(monster) {
+      font-size: 1.9rem;
+    }
 
     @include mediaQ(lg) {
       font-size: 1.2rem;

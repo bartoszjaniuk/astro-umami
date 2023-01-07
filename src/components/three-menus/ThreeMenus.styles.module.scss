@@ -1,6 +1,6 @@
 @import "../../styles//mixins";
 .container {
-  min-height: 1200px;
+  min-height: 75rem;
   padding: 3rem 10rem;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,11 @@
     &:last-child {
       gap: 3rem;
     }
+  }
+
+  @include mediaUp(monster) {
+    padding: 6rem 10rem;
+    min-height: 93.75rem;
   }
 
   &::after {
@@ -61,10 +66,12 @@
     align-items: center;
     justify-content: center;
 
-    // text-transform: uppercase;
-
     &--inner {
       font-size: 2.5rem;
+
+      @include mediaUp(monster) {
+        font-size: 4.2rem;
+      }
 
       text-transform: uppercase;
       font-weight: 700;
@@ -130,5 +137,13 @@
 
   @include mediaQ(md) {
     display: block;
+  }
+}
+
+.navigateTo {
+  font-size: 1rem;
+
+  @include mediaUp(monster) {
+    font-size: 1.7rem;
   }
 }

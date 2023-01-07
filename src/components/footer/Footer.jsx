@@ -28,18 +28,20 @@ export const Footer = () => {
           <ul className={styles["media-list"]}>
             <li className={styles["media-list__item"]}>
               <a
+                className={styles["media-list-link"]}
                 href="https://www.facebook.com/dietetyk.umami/"
                 target="_blank"
               >
-                <FacebookIcon width="24px" height="24px" color="white" />
+                <FacebookIcon color="white" />
               </a>
             </li>
             <li className={styles["media-list__item"]}>
               <a
+                className={styles["media-list-link"]}
                 href="https://www.instagram.com/dietetyk_umami/"
                 target="_blank"
               >
-                <InstagramIcon width="24px" height="24px" color="white" />
+                <InstagramIcon color="white" />
               </a>
             </li>
           </ul>

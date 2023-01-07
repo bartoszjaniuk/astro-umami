@@ -51,7 +51,6 @@ export const Modal = () => {
       <div className={styles.modal}>
         <Icon
           icon="mdi:close"
-          fontSize="1.5rem"
           className={styles["modal__close"]}
           onClick={closeModal}
         />

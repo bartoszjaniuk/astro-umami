@@ -16,6 +16,10 @@
     padding: 2rem 10rem 2rem 10rem;
     flex-wrap: wrap;
 
+    @include mediaUp(monster) {
+      padding: 4rem 25rem 4rem 25rem;
+    }
+
     @include mediaQ(xxxl) {
       padding: 1rem 5rem;
     }
@@ -42,6 +46,10 @@
     justify-content: space-between;
     padding: 0 10rem 0 10rem;
 
+    @include mediaUp(monster) {
+      padding: 0rem 25rem 0rem 25rem;
+    }
+
     @include mediaQ(xxxl) {
       padding: 0rem 5rem;
     }
@@ -60,15 +68,9 @@
   }
 }
 
-.logo {
-  width: 160px;
-  min-width: 160px;
-}
-
 .column {
   color: white;
   flex: 1;
-  // border: 1px solid white;
   border-radius: 7px;
   padding: 1.5rem;
   display: flex;
@@ -82,6 +84,10 @@
     font-family: "Lato";
     font-weight: 700;
     padding-bottom: 1rem;
+
+    @include mediaUp(monster) {
+      font-size: 2.2rem;
+    }
   }
 }
 
@@ -92,9 +98,18 @@
     font-weight: 500;
     padding: 0.3rem 0;
 
+    @include mediaUp(monster) {
+      font-size: 1.7rem;
+      font-weight: 300;
+    }
+
     a {
       text-decoration: none;
       color: #fff;
+      @include mediaUp(monster) {
+        font-size: 1.7rem;
+        font-weight: 300;
+      }
     }
   }
 
@@ -105,6 +120,10 @@
     border-radius: 4px;
     color: var(--c-primary);
     border-color: transparent;
+
+    @include mediaUp(monster) {
+      font-size: 1.7rem;
+    }
     &:hover {
       cursor: pointer;
     }
@@ -120,6 +139,19 @@
   }
 }
 
+.media-list-link {
+  padding: 0.6rem 0;
+  svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+    @include mediaUp(monster) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
 .copyright {
   color: #7f7f7f;
 
@@ -128,6 +160,10 @@
   padding: 1rem 0;
   display: flex;
   align-items: center;
+
+  @include mediaUp(monster) {
+    font-size: 1.7rem;
+  }
 
   @include mediaQ(sm) {
     justify-content: start;

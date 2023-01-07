@@ -13,12 +13,17 @@
   transition: all 0.3s ease;
   z-index: 10;
 
+  @include mediaUp(monster) {
+    font-size: 1.7rem;
+    padding: 1rem 1rem !important;
+  }
   @include mediaQ(xxl) {
     font-size: 0.9rem;
     min-width: 120px;
     padding: 0.5rem 0.1rem !important;
   }
-  &:hover{
+
+  &:hover {
     background: white;
     color: var(--c-primary);
     border: 1px solid var(--c-primary);

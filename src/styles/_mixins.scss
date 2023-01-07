@@ -5,13 +5,25 @@ $media: (
   lg: 1024px,
   xxl: 1250px,
   xxxl: 1536px,
-  monster: 1920px,
+  monster: 1930px,
 );
+
+// 3840 x 2160 pixel
 
 @mixin mediaQ($breakpoint) {
   @each $breakpoints, $size in $media {
     @if $breakpoint==$breakpoints {
       @media screen and (max-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin mediaUp($breakpoint) {
+  @each $breakpoints, $size in $media {
+    @if $breakpoint==$breakpoints {
+      @media screen and (min-width: $size) {
         @content;
       }
     }

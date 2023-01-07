@@ -137,5 +137,3 @@ export const Contact = () => {
     </section>
   );
 };
-// https://dribbble.com/shots/13667794-Mortgage-calculator
-// undraw- chilling

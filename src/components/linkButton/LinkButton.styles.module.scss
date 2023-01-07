@@ -11,6 +11,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 0.3rem;
+
+  @include mediaUp(monster) {
+    font-size: 2.2rem;
+    padding: 1.5rem 2rem;
+  }
+
   &:hover {
     transform: skewY(1deg) scale(1.1);
     background-color: white;

@@ -1,15 +1,17 @@
 @import "../../styles//mixins";
 .container {
   height: 100%;
-  min-height: 800px;
   position: relative;
 }
 
 .wrapper {
   background-color: #fff;
-  min-height: 450px;
 
   padding: 1rem 10rem 2rem 10rem;
+
+  @include mediaUp(monster) {
+    padding: 3rem 25rem 2rem 25rem;
+  }
 
   @include mediaQ(xxxl) {
     padding: 5rem;
@@ -36,10 +38,17 @@
     font-size: 3rem;
     padding: 1rem 0;
 
+    @include mediaUp(monster) {
+      font-size: 4.5rem;
+    }
+
     @include mediaQ(sm) {
       font-size: 2.8rem;
     }
     &--small {
+      @include mediaUp(monster) {
+        font-size: 2rem;
+      }
       font-size: 1rem;
       font-weight: 600;
       padding: 0.5rem 0;
@@ -58,6 +67,10 @@
 
   &__paragraph {
     padding: 0.5rem 0;
+
+    @include mediaUp(monster) {
+      font-size: 2rem;
+    }
   }
 
   &__list {
@@ -70,6 +83,9 @@
       color: var(--c-primary);
       transition: all 0.3s ease;
       font-weight: 500;
+      @include mediaUp(monster) {
+        font-size: 2rem;
+      }
       &:hover {
         font-weight: 700;
       }
