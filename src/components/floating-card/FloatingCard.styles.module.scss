@@ -17,7 +17,7 @@
 
   &__side {
     font-size: 2rem;
-    height: 700px;
+    height: 600px;
 
     transition: all 1s ease;
     position: absolute;
@@ -31,6 +31,7 @@
 
     @include mediaUp(monster) {
       font-size: 4rem;
+      height: 700px;
     }
 
     &--front {
