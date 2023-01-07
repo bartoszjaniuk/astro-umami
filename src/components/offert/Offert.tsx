@@ -22,9 +22,9 @@ export const Offert = () => {
         }`}
       >
         <div className={styles["introduction__heading"]}>
-          <h2 className={styles["introduction__heading--h2"]}>
+          <h1 className={styles["introduction__heading--h2"]}>
             Aleksandra Kajstura
-          </h2>
+          </h1>
           <h5 className={styles["introduction__heading--highlight"]}>
             dyplomowany dietetyk online
           </h5>

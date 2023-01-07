@@ -12,6 +12,9 @@ export const Footer = () => {
         <div className={styles["column"]}>
           <h3 className={styles["column__heading"]}>Kontakt</h3>
           <ul className={styles["column-list"]}>
+            <li className={styles["column-list__item"]}>
+              Żorska 1, 47-400 Racibórz
+            </li>
             <li className={styles["column-list__item"]}>Numer telefonu</li>
             <li className={styles["column-list__item"]}>+ 48 570 498 067</li>
             <li className={styles["column-list__item"]}>
