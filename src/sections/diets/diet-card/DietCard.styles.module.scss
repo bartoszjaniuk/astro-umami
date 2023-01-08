@@ -8,6 +8,10 @@
   min-height: 430px;
   font-family: "Lato";
 
+  @include mediaUp(monster) {
+    min-height: 630px;
+  }
+
   @include mediaQ(xxl) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -23,6 +27,10 @@
   padding: 1rem;
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
+
+  @include mediaUp(monster) {
+    width: 500px;
+  }
 
   @include mediaQ(xxxl) {
     width: 250px;
@@ -50,8 +58,10 @@
     transform: translateY(-50%);
     background-color: #fff;
     border-radius: 100%;
-    // border: 3px solid #fff;
     z-index: 10;
+    @include mediaUp(monster) {
+      height: 450px;
+    }
 
     @include mediaQ(xxxl) {
       height: 200px;
@@ -101,6 +111,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mediaUp(monster) {
+      padding: 1rem 0;
+    }
+
     button {
       padding: 0.5rem 2rem;
       border-radius: 2px;
@@ -113,6 +127,11 @@
 
       background-color: var(--c-primary);
       color: white;
+
+      @include mediaUp(monster) {
+        font-size: 3rem;
+        padding: 1rem 2.5rem;
+      }
 
       &:hover {
         color: var(--c-primary);
@@ -130,11 +149,20 @@
   flex-direction: column;
   justify-content: space-around;
 
+  @include mediaUp(monster) {
+    justify-content: center;
+    gap: 4rem;
+  }
+
   &__heading {
     font-size: 2rem;
     font-weight: 300;
     border-radius: 1rem;
     color: var(--c-primary);
+
+    @include mediaUp(monster) {
+      font-size: 4rem;
+    }
   }
   &__list {
     list-style: none;
@@ -146,6 +174,10 @@
       font-size: 1.2rem;
       padding: 0.7rem;
       font-weight: 300;
+
+      @include mediaUp(monster) {
+        font-size: 2.4rem;
+      }
     }
   }
 }

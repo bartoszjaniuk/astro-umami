@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react";
 import { OffertItem } from "./offertItem/OffertItem";
 import { useState } from "react";
 import { LinkButton } from "../../components/linkButton/LinkButton";
-import { RoutePath } from "../../components/nav/AppRoute.enum";
 
 const panels = [
   {

@@ -97,7 +97,7 @@ export const CalculatorApp = () => {
                   type="radio"
                   name="sex"
                   value="1"
-                  label={<ManIcon width="50px" height="50px" />}
+                  label={<ManIcon className={styles["radio-inputs__icon"]} />}
                   register={register}
                   errors={errors}
                   rules={{ required: "Pole jest wymagane" }}
@@ -107,7 +107,7 @@ export const CalculatorApp = () => {
                   type="radio"
                   name="sex"
                   value="0"
-                  label={<WomanIcon width="50px" height="50px" />}
+                  label={<WomanIcon className={styles["radio-inputs__icon"]} />}
                   register={register}
                   errors={errors}
                   rules={{
@@ -220,8 +220,7 @@ export const CalculatorApp = () => {
                 >
                   {!isSubmitting && (
                     <CalculatorIcon
-                      height="32px"
-                      width="32px"
+                      className={styles["icon-size"]}
                       color="#ffffff"
                     />
                   )}
@@ -253,7 +252,7 @@ export const CalculatorApp = () => {
           <div className={styles["calculator__calculated"]}>
             <div className={styles["calculated__heading"]}>
               <div className={styles["calculated__heading__inner"]}>
-                <TargetIcon height="64px" width="64px" />
+                <TargetIcon className={styles["icon-size-big"]} />
                 <h3 className={styles["calculated__heading--h3"]}>Twój cel:</h3>
               </div>
               <p className={styles["calculated__heading--result"]}>
@@ -263,7 +262,7 @@ export const CalculatorApp = () => {
             </div>
             <div className={styles["calculated__result"]}>
               <div className={styles["calculated__heading__inner"]}>
-                <BrainIcon width="64px" height="64px" />
+                <BrainIcon className={styles["icon-size-big"]} />
                 <h3 className={styles["calculated__heading--h3"]}>Wynik: </h3>
               </div>
               <span className={styles["calculated__heading--result"]}>
@@ -288,7 +287,10 @@ export const CalculatorApp = () => {
                     className={styles["submit-button__content"]}
                     type="button"
                   >
-                    <MessageIcon height="32px" width="32px" color="#ffffff" />
+                    <MessageIcon
+                      className={styles["icon-size"]}
+                      color="#ffffff"
+                    />
                     Napisz do mnie
                   </Button>
                 </a>
@@ -299,7 +301,10 @@ export const CalculatorApp = () => {
                   className={styles["submit-button__content"]}
                   type="button"
                 >
-                  <CalculatorIcon height="32px" width="32px" color="#ffffff" />
+                  <CalculatorIcon
+                    className={styles["icon-size"]}
+                    color="#ffffff"
+                  />
                   Oblicz ponownie
                 </Button>
               </div>
@@ -348,7 +353,7 @@ export const CalculatorApp = () => {
       <div className={styles["calculations"]}>
         <div className={styles["row"]}>
           <div className={styles["row__heading"]}>
-            <MessageIcon height="64px" width="64px" />
+            <MessageIcon className={styles["icon-size-big"]} />
             <h4 className={styles["row__title"]}>
               Całkowita Przemiana Materii (CPM)
             </h4>
@@ -370,7 +375,7 @@ export const CalculatorApp = () => {
         </div>
         <div className={styles["row"]}>
           <div className={styles["row__heading"]}>
-            <CalculatorIcon height="64px" width="64px" />
+            <CalculatorIcon className={styles["icon-size-big"]} />
             <h4 className={styles["row__title"]}>Wzór</h4>
           </div>
 
@@ -385,7 +390,7 @@ export const CalculatorApp = () => {
 
       <div className={styles["details"]} id="aktywnosci">
         <div className={styles["details__header"]}>
-          <RunnerIcon height="64px" width="64px" />
+          <RunnerIcon className={styles["icon-size-big"]} />
           <p>Aktywności oraz ich intensywność</p>
         </div>
         <table className={styles["table-resp"]}>

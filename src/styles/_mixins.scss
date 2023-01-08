@@ -33,6 +33,11 @@ $media: (
 @mixin mainRWD {
   padding: 5rem 10rem 0 10rem;
   gap: 2rem;
+
+  @include mediaUp(monster) {
+    padding: 5rem 25rem 0 25rem;
+  }
+
   @include mediaQ(xxxl) {
     padding: 5rem 5rem 0 5rem;
   }
@@ -58,6 +63,11 @@ $media: (
 @mixin secondaryRWD {
   padding: 0rem 10rem 0 10rem;
   gap: 2rem;
+
+  @include mediaUp(monster) {
+    padding: 0rem 25rem 3rem 25rem;
+  }
+
   @include mediaQ(xxxl) {
     padding: 0rem 5rem 0 5rem;
   }

@@ -1,17 +1,9 @@
-import React from "react";
 import type { IconProps } from "../Icon.types";
 
-export const ManIcon = ({
-  width,
-  height,
-  className,
-  color = "#57463c",
-}: IconProps) => {
+export const ManIcon = ({ className, color = "#57463c" }: IconProps) => {
   return (
     <svg
       className={className}
-      width={width}
-      height={height}
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 512 512"

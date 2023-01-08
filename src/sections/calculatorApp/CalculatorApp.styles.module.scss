@@ -1,4 +1,4 @@
-@import "../../styles//mixins";
+@import "../../styles/mixins";
 
 .container {
   height: 100%;
@@ -6,6 +6,10 @@
   position: relative;
 
   padding: 5rem 10rem 0 10rem;
+
+  @include mediaUp(monster) {
+    padding: 5rem 25rem 0 25rem;
+  }
 
   @include mediaQ(xxxl) {
     padding: 1rem 5rem;
@@ -65,6 +69,11 @@
     font-size: 2rem;
     z-index: 10;
     background-color: #fff;
+
+    @include mediaUp(monster) {
+      font-size: 4.6rem;
+    }
+
     @include mediaQ(xxxl) {
       padding: 1rem 2rem;
     }
@@ -101,6 +110,11 @@
     gap: 0.5rem;
     padding: 1rem 0;
     font-family: "Lato";
+
+    @include mediaUp(monster) {
+      font-size: 2.6rem;
+    }
+
     @include mediaQ(sm) {
       flex-direction: column;
       align-items: flex-start;
@@ -115,12 +129,19 @@
       font-family: "Lato";
       font-weight: 300;
       font-size: 1.6rem;
+      @include mediaUp(monster) {
+        font-size: 3.2rem;
+      }
     }
 
     &--h3 {
       font-size: 1.6rem;
       color: var(--c-primary);
       font-weight: 500;
+
+      @include mediaUp(monster) {
+        font-size: 3.2rem;
+      }
     }
   }
 
@@ -184,6 +205,10 @@
     background-color: #fff;
     gap: 1rem;
     padding: 1rem;
+
+    @include mediaUp(monster) {
+      font-size: 2.6rem;
+    }
   }
 
   &__short-desc {
@@ -191,6 +216,10 @@
     color: #fff;
     padding: 1rem;
     font-weight: 600;
+
+    @include mediaUp(monster) {
+      font-size: 2.4rem;
+    }
   }
 
   &__title {
@@ -199,10 +228,17 @@
     font-size: 1.6rem;
     color: var(--c-primary);
     font-weight: 500;
+
+    @include mediaUp(monster) {
+      font-size: 3.2rem;
+    }
   }
 
   &__content {
     padding: 1rem;
+    @include mediaUp(monster) {
+      font-size: 2.2rem;
+    }
   }
   &__pattern {
     padding: 1rem;
@@ -210,6 +246,10 @@
       padding: 2rem;
       border: 1px solid var(--c-primary);
       font-size: 1.4rem;
+
+      @include mediaUp(monster) {
+        font-size: 2.8rem;
+      }
     }
   }
 
@@ -219,11 +259,9 @@
 }
 
 .form {
-  // border: 1px solid blue;
   margin-top: 1.5rem;
   padding-bottom: 3rem;
   background-color: white;
-  // height: 100%;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -264,7 +302,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // padding: 1rem;
     padding-right: 36px;
   }
 
@@ -282,6 +319,16 @@
     padding: 1rem 0;
   }
 
+  &__icon {
+    width: 50px;
+    height: 50px;
+
+    @include mediaUp(monster) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
   &__left {
     width: 135px;
     min-height: 40px;
@@ -289,6 +336,11 @@
     padding: 0 20px;
     font-size: 1.2rem;
     font-weight: 500;
+
+    @include mediaUp(monster) {
+      font-size: 2.4rem;
+      width: 270px;
+    }
 
     @include mediaQ(sm) {
       padding: 0;
@@ -309,7 +361,6 @@
     width: 100%;
     max-height: 250px;
     object-fit: cover;
-    // border-bottom: 2rem solid var(--c-primary);
   }
 
   &__heading {
@@ -318,6 +369,10 @@
     font-size: 1.7rem;
     color: var(--c-primary);
     font-family: "Lato";
+
+    @include mediaUp(monster) {
+      font-size: 3.4rem;
+    }
   }
 }
 
@@ -350,6 +405,10 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     z-index: 1;
+
+    @include mediaUp(monster) {
+      padding: 2rem;
+    }
   }
 
   &__count {
@@ -371,6 +430,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mediaUp(monster) {
+      font-size: 2.5rem;
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__label {
@@ -380,6 +445,11 @@
     text-transform: uppercase;
 
     font-weight: 500;
+    font-family: "Lato";
+
+    @include mediaUp(monster) {
+      font-size: 2rem;
+    }
   }
 
   &__kcal {
@@ -397,6 +467,11 @@
     padding: 0.5rem 1.5rem;
     color: var(--c-primary);
     font-size: 1.3rem;
+
+    @include mediaUp(monster) {
+      font-size: 2.6rem;
+      padding: 2rem 1.5rem;
+    }
   }
 }
 
@@ -415,6 +490,10 @@
     display: flex;
     align-items: center;
     font-weight: 500;
+
+    @include mediaUp(monster) {
+      font-size: 3rem;
+    }
   }
 }
 .btn-group {
@@ -438,6 +517,10 @@
     padding: 1rem 0.1rem !important;
     font-size: 1.2rem;
 
+    @include mediaUp(monster) {
+      font-size: 2.4rem;
+    }
+
     &:hover {
       svg {
         background: transparent !important;
@@ -453,6 +536,10 @@
 
 .important {
   padding: 1rem 1rem 0rem 2rem;
+
+  @include mediaUp(monster) {
+    font-size: 2.4rem;
+  }
 }
 .recalculate-button {
   width: 100%;
@@ -627,6 +714,9 @@
 }
 
 .table-resp {
+  @include mediaUp(monster) {
+    font-size: 2.4rem;
+  }
   thead {
     text-align: left;
     color: white;
@@ -670,4 +760,27 @@
 
   border-radius: 8px;
   text-decoration: none;
+
+  @include mediaUp(monster) {
+    font-size: 2rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+.icon-size {
+  width: 32px;
+  height: 32px;
+  @include mediaUp(monster) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.icon-size-big {
+  width: 64px;
+  height: 64px;
+  @include mediaUp(monster) {
+    width: 90px;
+    height: 90px;
+  }
 }

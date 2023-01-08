@@ -9,6 +9,10 @@ $radius: 0.5rem;
   min-height: 40px;
   line-height: 40px;
   padding: 0 20px;
+  @include mediaUp(monster) {
+    width: 270px;
+  }
+
   @include mediaQ(sm) {
     padding: 0;
     width: 110px;
@@ -45,6 +49,12 @@ $radius: 0.5rem;
   font-family: "Lato";
   border-radius: 3px;
 
+  @include mediaUp(monster) {
+    font-size: 2.4rem;
+    max-width: 450px;
+    padding-left: 0.4rem;
+  }
+
   &:hover {
     border-color: var(--c-secondary);
   }
@@ -56,11 +66,18 @@ $radius: 0.5rem;
 .form-label {
   font-size: 1.2rem;
   font-weight: 500;
+
+  @include mediaUp(monster) {
+    font-size: 2.4rem;
+  }
 }
 .error-message {
   color: red;
   font-size: 0.7rem;
   z-index: 10;
+  @include mediaUp(monster) {
+    font-size: 1.9rem;
+  }
 }
 
 .my-1 {
