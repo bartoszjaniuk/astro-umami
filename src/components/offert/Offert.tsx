@@ -24,9 +24,9 @@ export const Offert = () => {
           <h1 className={styles["introduction__heading--h2"]}>
             Aleksandra Kajstura
           </h1>
-          <h5 className={styles["introduction__heading--highlight"]}>
+          <h2 className={styles["introduction__heading--highlight"]}>
             dyplomowany dietetyk online racibórz
-          </h5>
+          </h2>
         </div>
         <p className={styles["introduction__content"]}>
           Nazywam się Aleksandra Kajstura, jestem dietetykiem z miasta Racibórz

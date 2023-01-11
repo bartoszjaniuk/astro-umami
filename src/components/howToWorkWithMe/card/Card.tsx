@@ -10,7 +10,7 @@ export const Card = ({ icon, title, description }: CardProps) => {
   return (
     <div className={styles.card}>
       <div className={styles["card__icon"]}>{icon}</div>
-      <h3 className={styles["card__title"]}>{title}</h3>
+      <h4 className={styles["card__title"]}>{title}</h4>
       <p className={styles["card__description"]}>{description}</p>
     </div>
   );

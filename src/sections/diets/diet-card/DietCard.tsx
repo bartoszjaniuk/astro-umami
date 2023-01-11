@@ -15,7 +15,7 @@ export const DietCard = ({ title, opisy, img }: DietCardProps) => {
       <div className={styles["col-left"]}>
         <div className={styles["col-left__wrapper"]}>
           <div className={styles["col-left__inner"]}>
-            <img src={img} alt="" />
+            <img src={img} alt="Karta z dietą" />
           </div>
         </div>
 

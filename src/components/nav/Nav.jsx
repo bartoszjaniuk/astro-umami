@@ -79,6 +79,7 @@ export const Nav = ({ currentPath }) => {
           className={styles["nav-icon"]}
           href="https://www.facebook.com/dietetyk.umami/"
           target="_blank"
+          aria-label="Facebook"
         >
           <FacebookIcon />
         </a>
@@ -86,6 +87,7 @@ export const Nav = ({ currentPath }) => {
           className={styles["nav-icon"]}
           href="https://www.instagram.com/dietetyk_umami/"
           target="_blank"
+          aria-label="Instagram"
         >
           <InstagramIcon />
         </a>

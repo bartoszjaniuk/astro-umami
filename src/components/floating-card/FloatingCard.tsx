@@ -24,13 +24,13 @@ export const FloatingCard = ({
         <div className={`${styles["card__picture"]}`} style={styledPicture}>
           &nbsp;
         </div>
-        <h4 className={styles["card__heading"]}>
+        <h3 className={styles["card__heading"]}>
           <span
             className={`${styles["card__heading-span"]} ${styles["card__heading-span--1"]}`}
           >
             {card.title}
           </span>
-        </h4>
+        </h3>
         <div className={styles["card__details"]}>
           <ul>
             {card.details.opisy.map((detail, index) => (

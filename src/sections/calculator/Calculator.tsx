@@ -36,6 +36,7 @@ export const Calculator = () => {
         <img
           className={styles["picture__img"]}
           src="assets/personWithPhone.svg"
+          alt="osoba z telefonem"
         />
         <span className={styles["picture__circle"]} />
         <span className={styles["picture__circle--medium"]} />
