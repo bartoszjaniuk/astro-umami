@@ -61,7 +61,7 @@ export const PriceList = () => {
             <span className={styles["card__price"]}>150 zł</span>
             <ul className={styles["card__list"]}>
               <li className={styles["card__list-item"]}>
-                Koszt każdej wizyty to 100 zł
+                Koszt każdej kolejnej wizyty kontrolnej to 100 zł
               </li>
               <li className={styles["card__list-item"]}>
                 Przed wizytą prześlę do Ciebie dzienniczek żywieniowy, który
@@ -242,7 +242,7 @@ export const PriceList = () => {
             <span className={styles["card__price"]}>200 zł</span>
             <ul className={styles["card__list"]}>
               <li className={styles["card__list-item"]}>
-                Koszt każdej kolejnej konsultacji to 150 zł
+                Koszt każdej kolejnej wizyty kontrolnej to 150 zł
               </li>
               <li className={styles["card__list-item"]}>
                 Przed wizytą prześlę do was dzienniczek żywieniowy do
