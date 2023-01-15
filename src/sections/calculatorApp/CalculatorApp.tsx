@@ -30,6 +30,7 @@ import { RoutePath } from "../../components/nav/AppRoute.enum";
 export const CalculatorApp = () => {
   const { activities, diets, goalText, goals } = CalculatorAppData;
   const {
+    getValues,
     reset,
     register,
     handleSubmit,
@@ -114,6 +115,9 @@ export const CalculatorApp = () => {
                     required: "Pole jest wymagane",
                   }}
                 />
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  - wybierz
+                </p>
               </div>
               <CalculatorInput
                 id="weight"
@@ -315,7 +319,7 @@ export const CalculatorApp = () => {
       <aside className={styles["aside-navigation"]}>
         <img
           className={styles["aside-navigation__image"]}
-          src="https://cdn.pixabay.com/photo/2016/11/19/11/38/avocado-1838785_960_720.jpg"
+          src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           alt="Warzywa na smoothie"
         />
         <h3 className={styles["aside-navigation__heading"]}>

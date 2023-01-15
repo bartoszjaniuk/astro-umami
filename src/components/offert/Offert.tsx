@@ -25,7 +25,7 @@ export const Offert = () => {
             Aleksandra Kajstura
           </h1>
           <h2 className={styles["introduction__heading--highlight"]}>
-            dyplomowany dietetyk online racibórz
+            dyplomowany dietetyk online
           </h2>
         </div>
         <p className={styles["introduction__content"]}>
@@ -33,10 +33,11 @@ export const Offert = () => {
           zadbać o siebie i zacząć prowadzić zdrowy styl życia krok po kroku.
           Jestem absolwentką Uniwersytetu Opolskiego, a dalszą naukę kontynuuję
           w Wyższej Szkole Biznesu i Nauk o Zdrowiu w Łodzi na studiach
-          magisterskich. Cały czas się szkolę, uczę i zdobywam wiedzę na
-          studiach, praktykach zawodowych czy szkoleniach. Służę pomocą jeśli
-          zmagasz się z problemami zdrowotnymi, z nadmierną lub za niską masą
-          ciała lub po prostu chcesz zmienić swoje nawyki żywieniowe.
+          magisterskich. Na co dzień mieszkam na śląsku, w mieście Racibórz.
+          Cały czas się szkolę, uczę i zdobywam wiedzę na studiach, praktykach
+          zawodowych czy szkoleniach. Służę pomocą jeśli zmagasz się z
+          problemami zdrowotnymi, z nadmierną lub za niską masą ciała lub po
+          prostu chcesz zmienić swoje nawyki żywieniowe.
         </p>
         <LinkButton text="Dowiedz się więcej" navigateTo={RoutePath.ABOUT} />
       </div>
