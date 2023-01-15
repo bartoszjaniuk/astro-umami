@@ -16,7 +16,7 @@ export const cards = [
   {
     title: "KONTAKT",
     description:
-      "Napisz do mnie lub zadzwoń, umówimy się na pierwszą konsultację. Wyślę do Ciebie dzienniczek i wywiad żywieniowy do wypełnienia, który musisz odesłać do mnie przynajmniej 24h przed wizytą. Jeśli posiadasz, wyniki badań krwi również je wyślij.",
+      "Napisz do mnie lub zadzwoń, umówimy się na pierwszą konsultację. Wyślę Ci dostęp do platformy kcalmar.pl gdzie wypełnisz wywiad żywieniowy. Musisz go wypełnić przynajmniej 24h przed wizytą. Jeśli posiadasz, wyniki badań krwi również je wyślij do mnie na maila.",
     icon: <LaptopContactIcon width="80px" height="80px" color="#d2bfa3" />,
   },
   // {

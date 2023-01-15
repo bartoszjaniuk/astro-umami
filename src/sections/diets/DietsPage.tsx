@@ -33,7 +33,7 @@ export const DietsPage = () => {
         </div>
         <div className={styles["intro__button"]}>
           <LinkButton
-            text="Sprawdź jadłospisy"
+            text="Sprawdź gotowe jadłospisy"
             navigateTo="/diety/#jadlospisy"
           />
         </div>

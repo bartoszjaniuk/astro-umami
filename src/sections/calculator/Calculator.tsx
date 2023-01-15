@@ -5,13 +5,13 @@ export const Calculator = () => {
     <section className={styles.container}>
       <div className={styles["description"]}>
         <h3 className={styles["description__heading"]}>
-          Która{" "}
+          Jaka{" "}
           <span className={styles["description__heading--highlight"]}>
-            dieta
+            kaloryczność
           </span>{" "}
-          będzie <br /> dla Ciebie{" "}
+          będzie dla Ciebie{" "}
           <span className={styles["description__heading--highlight"]}>
-            idealna?
+            odpowiednia?
           </span>
         </h3>
         <p className={styles["description__content"]}>

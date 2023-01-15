@@ -64,8 +64,9 @@ export const PriceList = () => {
                 Koszt każdej kolejnej wizyty kontrolnej to 100 zł
               </li>
               <li className={styles["card__list-item"]}>
-                Przed wizytą prześlę do Ciebie dzienniczek żywieniowy, który
-                będziesz musiał/a wypełnić.
+                Przed wizytą wyślę Ci dostęp do platformy kcalmar.pl gdzie
+                wypełnisz wywiad żywieniowy oraz wprowadzisz swoje dane przed
+                pierwszą wizytą.
               </li>
             </ul>
           </div>
@@ -245,8 +246,9 @@ export const PriceList = () => {
                 Koszt każdej kolejnej wizyty kontrolnej to 150 zł
               </li>
               <li className={styles["card__list-item"]}>
-                Przed wizytą prześlę do was dzienniczek żywieniowy do
-                wypełnienia i wysłania przed pierwszą wizytą.
+                Przed wizytą prześlę wam dostęp do platformy kcalmar.pl gdzie
+                wypełnisz wywiad żywieniowy oraz wprowadzisz swoje dane przed
+                pierwszą wizytą.
               </li>
             </ul>
           </div>
