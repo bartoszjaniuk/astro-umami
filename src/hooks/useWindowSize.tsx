@@ -66,7 +66,7 @@ export const useWindowSize = () => {
     if (isVerySmallScreen(windowSize.innerWidth)) setBreakpoint("VSMALL");
   }, [windowSize.innerWidth]);
 
-  return { breakpoint };
+  return { breakpoint, windowSize };
 };
 
 const getWindowSize = () => {

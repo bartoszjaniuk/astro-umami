@@ -10,9 +10,11 @@ import { Button } from "../button/Button";
 import { MessageIcon } from "../icons/message-icon/MessageIcon";
 import { CalculatorIcon } from "../icons/calculator-icon/CalculatorIcon";
 import imgReference from "/assets/umami-logo.jpg";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 export const Nav = ({ currentPath }) => {
   const $isMenuOpen = useStore(isMenuOpen);
+  const { windowSize } = useWindowSize();
 
   return (
     <nav className={styles.nav}>
@@ -51,6 +53,19 @@ export const Nav = ({ currentPath }) => {
               </a>
             </li>
           ))}
+          {windowSize.innerWidth > 0 && windowSize.innerWidth <= 900 && (
+            <li
+              className={`${styles["nav-list__item"]} ${
+                currentPath === `/kalkulator`
+                  ? styles["nav-list__item--active"]
+                  : ""
+              }`}
+            >
+              <a className={styles["nav-list__link"]} href="/kalkulator">
+                KALKULATOR
+              </a>
+            </li>
+          )}
         </ul>
       </div>
 
