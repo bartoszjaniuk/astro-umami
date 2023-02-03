@@ -29,7 +29,7 @@ const { title, description } = Astro.props;
         fetch("https://umami-get-mailed.onrender.com/api/v1/app/init", {
           method: "POST",
         });
-      }, 6 * 1000);
+      }, 15 * 60 * 1000);
     </script>
   </head>
   <body>
@@ -110,7 +110,5 @@ const { title, description } = Astro.props;
     </style>
     <CookieContainer client:load />
     <Footer />
-
   </body>
 </html>
-
