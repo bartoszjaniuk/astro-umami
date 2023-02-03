@@ -102,5 +102,12 @@ const { title, description } = Astro.props;
     </style>
     <CookieContainer client:load />
     <Footer />
+    <script>
+      setInterval(() => {
+        fetch("https://umami-get-mailed.onrender.com/api/v1/app/init", {
+          method: "POST",
+        });
+      }, 15 * 60 * 1000);
+    </script>
   </body>
 </html>

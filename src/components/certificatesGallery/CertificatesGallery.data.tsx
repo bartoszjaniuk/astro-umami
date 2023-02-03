@@ -9,15 +9,15 @@ import certificate7Ref from "/assets/certificates/Certyfikat7.jpg";
 import certificate8Ref from "/assets/certificates/Certyfikat8.jpg";
 import certificate9Ref from "/assets/certificates/Certyfikat9.jpg";
 import certificate10Ref from "/assets/certificates/Certyfikat10.jpg";
-import certificate11Ref from "/assets/certificates/Certyfikat11.jpg";
+// import certificate11Ref from "/assets/certificates/Certyfikat11.jpg";
 import certificate12Ref from "/assets/certificates/Certyfikat12.jpg";
 import certificate13Ref from "/assets/certificates/Certyfikat13.jpg";
 import certificate14Ref from "/assets/certificates/Certyfikat14.jpg";
+import certificate15Ref from "/assets/certificates/Certyfikat15.png";
 
 export const certificatesList = [
   { path: certificate0Ref, alt: "Certyfikat" },
   { path: certificate1Ref, alt: "Certyfikat" },
-  { path: certificate2Ref, alt: "Certyfikat" },
   { path: certificate2Ref, alt: "Certyfikat" },
   { path: certificate3Ref, alt: "Certyfikat" },
   { path: certificate4Ref, alt: "Certyfikat" },
@@ -27,8 +27,10 @@ export const certificatesList = [
   { path: certificate8Ref, alt: "Certyfikat" },
   { path: certificate9Ref, alt: "Certyfikat" },
   { path: certificate10Ref, alt: "Certyfikat" },
-  { path: certificate11Ref, alt: "Certyfikat" },
+  // { path: certificate11Ref, alt: "Certyfikat" },
   { path: certificate12Ref, alt: "Certyfikat" },
   { path: certificate13Ref, alt: "Certyfikat" },
   { path: certificate14Ref, alt: "Certyfikat" },
+  { path: certificate14Ref, alt: "Certyfikat" },
+  { path: certificate15Ref, alt: "Certyfikat" },
 ];
