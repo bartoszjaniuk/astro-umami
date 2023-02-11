@@ -137,7 +137,11 @@
     }
 
     @include mediaQ(sm) {
-      font-size: 2rem;
+      font-size: 2.5rem;
+
+      word-break: break-word;
+
+      text-align: center;
     }
   }
 }

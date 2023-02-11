@@ -45,6 +45,10 @@
   &__quote {
     font-size: 3rem;
     font-weight: 600;
+
+    @include mediaQ(sm) {
+      font-size: 2rem;
+    }
   }
 
   &__content {

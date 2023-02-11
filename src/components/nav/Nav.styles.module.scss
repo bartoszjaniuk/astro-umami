@@ -35,6 +35,7 @@
   &__inner {
     padding-right: 2rem;
     @include mediaQ(md) {
+      padding-right: 0;
       display: flex;
       justify-content: space-between;
       width: 100%;
