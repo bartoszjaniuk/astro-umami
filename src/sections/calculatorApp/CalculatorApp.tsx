@@ -93,31 +93,41 @@ export const CalculatorApp = () => {
             <form onSubmit={handleSubmit(calculateBMI)} className={styles.form}>
               <div className={styles["radio-inputs"]}>
                 <div className={styles["radio-inputs__left"]}>Płeć:</div>
-                <CalculatorRadioInput
-                  id="man"
-                  type="radio"
-                  name="sex"
-                  value="1"
-                  label={<ManIcon className={styles["radio-inputs__icon"]} />}
-                  register={register}
-                  errors={errors}
-                  rules={{ required: "Pole jest wymagane" }}
-                />
-                <CalculatorRadioInput
-                  id="woman"
-                  type="radio"
-                  name="sex"
-                  value="0"
-                  label={<WomanIcon className={styles["radio-inputs__icon"]} />}
-                  register={register}
-                  errors={errors}
-                  rules={{
-                    required: "Pole jest wymagane",
-                  }}
-                />
-                <p style={{ display: "flex", alignItems: "center" }}>
-                  - wybierz
-                </p>
+                <div style={{ display: "flex" }}>
+                  <CalculatorRadioInput
+                    id="man"
+                    type="radio"
+                    name="sex"
+                    value="1"
+                    label={<ManIcon className={styles["radio-inputs__icon"]} />}
+                    register={register}
+                    errors={errors}
+                    rules={{ required: "Pole jest wymagane" }}
+                  />
+                  <CalculatorRadioInput
+                    id="woman"
+                    type="radio"
+                    name="sex"
+                    value="0"
+                    label={
+                      <WomanIcon className={styles["radio-inputs__icon"]} />
+                    }
+                    register={register}
+                    errors={errors}
+                    rules={{
+                      required: "Pole jest wymagane",
+                    }}
+                  />
+                  <p
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      fontWeight: "600",
+                    }}
+                  >
+                    - wybierz płeć
+                  </p>
+                </div>
               </div>
               <CalculatorInput
                 id="weight"

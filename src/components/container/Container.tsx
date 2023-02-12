@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { ModalProvider } from "../../providers/ModalProvider";
 
 type ContainerProps = {
@@ -6,6 +6,12 @@ type ContainerProps = {
 };
 
 export const Container = ({ children }: ContainerProps) => {
+  useEffect(() => {
+    fetch("https://umami-get-mailed.onrender.com/api/v1/app/init", {
+      method: "POST",
+    });
+  }, []);
+
   return (
     <ModalProvider>
       <div
