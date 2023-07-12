@@ -1,3 +1,4 @@
+import React from "react";
 import { LinkButton } from "../../components/linkButton/LinkButton";
 import { RoutePath } from "../../components/nav/AppRoute.enum";
 import styles from "./PriceList.styles.module.scss";
@@ -107,8 +108,8 @@ export const PriceList = () => {
           />
         </div>
       </section>
-
-      <section
+      {/* TODO: DISABLED SECTION */}
+      {/* <section
         className={`${styles["first-visit"]} ${styles["first-visit--inverted"]}`}
       >
         <h4 className={styles["first-visit__heading"]}>Pakiety indywidualne</h4>
@@ -183,7 +184,7 @@ export const PriceList = () => {
             text="Umów się na wizytę"
           />
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.showcase}>
         <div className={styles["showcase__background"]}>
@@ -289,8 +290,8 @@ export const PriceList = () => {
           />
         </div>
       </section>
-
-      <section className={styles["individual"]}>
+      {/* TODO: DISABLED SECTION */}
+      {/* <section className={styles["individual"]}>
         <h4 className={styles["individual__heading"]}>Pakiety dla par</h4>
         <p className={styles["individual__subheading"]}>
           Podczas pierwszej konsultacji przyjrzymy się Waszym celom i ustalimy
@@ -366,7 +367,7 @@ export const PriceList = () => {
             text="Umów się na wizytę"
           />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
