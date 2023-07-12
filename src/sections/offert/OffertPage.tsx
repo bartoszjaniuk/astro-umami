@@ -49,7 +49,7 @@ const panels = [
     label: "Dieta dla kobiet w ciąży i mam",
     icon: <Icon fontSize="2.3rem" icon="game-icons:baby-bottle" />,
     content:
-      "Zadbamy o wasze zdrowie jedząc tak, aby dostarczyć Wam wszelkich niezbędnych składników odżywczych – zarówno w okresie ciąży, jak i laktacji. Rozwiejesz wątpliwości co do szkodliwych produktów oraz wpływu Twojej diety na samopoczucie i zdrowie Twojego dziecka. Dowiesz się też, jak utrzymać zdrową wagę i wrócić do formy jako młoda mama.",
+      "Zadbam o wasze zdrowie jedząc tak, aby dostarczyć Wam wszelkich niezbędnych składników odżywczych – zarówno w okresie ciąży, jak i laktacji. Rozwiejesz wątpliwości co do szkodliwych produktów oraz wpływu Twojej diety na samopoczucie i zdrowie Twojego dziecka. Dowiesz się też, jak utrzymać zdrową wagę i wrócić do formy jako młoda mama.",
   },
   {
     label: "Dieta dla par",

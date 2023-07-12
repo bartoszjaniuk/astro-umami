@@ -197,8 +197,8 @@ export const PriceList = () => {
           Dieta online bez wychodzenia z domu
         </h5>
         <p className={styles["showcase__paragraph"]}>
-          W zapracowanym świecie trudno zadbać o siebie. Dlatego przygotowaliśmy
-          dla naszych klientów wygodną opcję diety i konsultacji online.
+          W zapracowanym świecie trudno zadbać o siebie. Dlatego przygotowałam
+          dla moich pacjentów wygodną opcję diety i konsultacji online.
         </p>
         <LinkButton
           navigateTo={RoutePath.OFFER}
