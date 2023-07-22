@@ -15,6 +15,10 @@ import certificate14Ref from "/assets/certificates/Certyfikat14.jpg";
 import certificate15Ref from "/assets/certificates/Certyfikat15.png";
 import certificate16Ref from "/assets/certificates/Certyfikat16.png";
 import certificate17Ref from "/assets/certificates/Certyfikat17.jpg";
+import certificate18Ref from "/assets/certificates/Certyfikat18.jpg";
+import certificate19Ref from "/assets/certificates/Certyfikat19.jpg";
+import certificate20Ref from "/assets/certificates/Certyfikat20.jpg";
+import certificate21Ref from "/assets/certificates/Certyfikat21.jpg";
 
 export const certificatesList = [
   { path: certificate0Ref, alt: "Certyfikat" },
@@ -34,4 +38,8 @@ export const certificatesList = [
   { path: certificate15Ref, alt: "Certyfikat" },
   { path: certificate16Ref, alt: "Certyfikat" },
   { path: certificate17Ref, alt: "Certyfikat" },
+  { path: certificate18Ref, alt: "Certyfikat" },
+  { path: certificate19Ref, alt: "Certyfikat" },
+  { path: certificate20Ref, alt: "Certyfikat" },
+  { path: certificate21Ref, alt: "Certyfikat" },
 ];
