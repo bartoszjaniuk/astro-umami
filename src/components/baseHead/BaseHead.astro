@@ -3,9 +3,9 @@ import "../../styles/styles.scss";
 import umamiLogo from "/assets/umami-logo.jpeg";
 
 export interface Props {
-  title: string;
-  description: string;
-  image?: string;
+	title: string;
+	description: string;
+	image?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -19,8 +19,8 @@ const { title, description, image = umamiLogo } = Astro.props;
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta
-  name="keywords"
-  content="dietetyk online, dietetyk racibórz, dietetyk umami, aleksandra kajstura, obliczenie zapotrzebowania, dieta, jadłospis"
+	name="keywords"
+	content="dietetyk online, dietetyk racibórz, dietetyk umami, aleksandra kajstura janiuk, obliczenie zapotrzebowania, dieta, jadłospis"
 />
 
 <meta property="og:type" content="website" />

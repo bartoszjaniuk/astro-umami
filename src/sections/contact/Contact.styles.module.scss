@@ -1,343 +1,343 @@
 @import "../../styles//mixins";
 
 .container {
-  min-height: 800px;
-  z-index: 10;
-  padding: 5rem 10rem 5rem 10rem;
-  background-color: white;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+	min-height: 800px;
+	z-index: 10;
+	padding: 5rem 10rem 5rem 10rem;
+	background-color: white;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 
-  position: relative;
+	position: relative;
 
-  @include mediaUp(monster) {
-    padding: 10rem 25rem;
-  }
+	@include mediaUp(monster) {
+		padding: 10rem 25rem;
+	}
 
-  @include mediaQ(xxxl) {
-    padding: 5rem 5rem;
-  }
+	@include mediaQ(xxxl) {
+		padding: 5rem 5rem;
+	}
 
-  @include mediaQ(xxl) {
-    padding: 0 1.5rem 5rem 1.5rem;
-  }
+	@include mediaQ(xxl) {
+		padding: 0 1.5rem 5rem 1.5rem;
+	}
 
-  @include mediaQ(lg) {
-    padding: 0 1.5rem 5rem 1.5rem;
-  }
+	@include mediaQ(lg) {
+		padding: 0 1.5rem 5rem 1.5rem;
+	}
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 4rem;
-  z-index: 30;
-  @include mediaQ(xxl) {
-    padding-top: 3rem;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 4rem;
+	z-index: 30;
+	@include mediaQ(xxl) {
+		padding-top: 3rem;
+	}
 
-  @include mediaQ(md) {
-    gap: 1rem;
-  }
-  &__heading-one {
-    font-size: 3rem;
-    font-weight: 300;
-    color: var(--c-primary);
+	@include mediaQ(md) {
+		gap: 1rem;
+	}
+	&__heading-one {
+		font-size: 3rem;
+		font-weight: 300;
+		color: var(--c-primary);
 
-    @include mediaUp(monster) {
-      font-size: 4.5rem;
-    }
+		@include mediaUp(monster) {
+			font-size: 4.5rem;
+		}
 
-    @include mediaQ(md) {
-      padding-top: 2rem;
-      text-align: center;
-    }
-  }
-  &__heading-two {
-    font-size: 1.2rem;
-    font-weight: 500;
+		@include mediaQ(md) {
+			padding-top: 2rem;
+			text-align: center;
+		}
+	}
+	&__heading-two {
+		font-size: 1.2rem;
+		font-weight: 500;
 
-    @include mediaUp(monster) {
-      font-size: 1.9rem;
-    }
-  }
+		@include mediaUp(monster) {
+			font-size: 1.9rem;
+		}
+	}
 }
 
 .container-inner {
-  background-color: #f7f7f7;
-  width: 100%;
-  height: 100%;
-  min-height: 450px;
-  display: flex;
-  border-radius: 6px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background-color: #f7f7f7;
+	width: 100%;
+	height: 100%;
+	min-height: 450px;
+	display: flex;
+	border-radius: 6px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-  @include mediaQ(sm) {
-    flex-direction: column;
-  }
+	@include mediaQ(sm) {
+		flex-direction: column;
+	}
 
-  &__image-container {
-    flex: 2;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid rgba(99, 99, 99, 0.2);
+	&__image-container {
+		flex: 2;
+		background-color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-right: 1px solid rgba(99, 99, 99, 0.2);
 
-    z-index: 10;
+		z-index: 10;
 
-    &__image {
-      background-color: white;
-      border-radius: 6px;
-      z-index: 20;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 1rem;
+		&__image {
+			background-color: white;
+			border-radius: 6px;
+			z-index: 20;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 1rem;
 
-      width: 70%;
-      height: auto;
-    }
-  }
+			width: 70%;
+			height: auto;
+		}
+	}
 
-  &__form-container {
-    flex: 3;
-    background-color: white;
-  }
+	&__form-container {
+		flex: 3;
+		background-color: white;
+	}
 }
 
 .form {
-  padding: 3rem;
-  background-color: white;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
+	padding: 3rem;
+	background-color: white;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
 
-  @include mediaQ(sm) {
-    padding: 1.5rem;
-  }
+	@include mediaQ(sm) {
+		padding: 1.5rem;
+	}
 
-  &__heading {
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-    z-index: 10;
-    color: var(--c-primary);
+	&__heading {
+		font-size: 3rem;
+		display: flex;
+		justify-content: center;
+		padding: 2rem 0;
+		z-index: 10;
+		color: var(--c-primary);
 
-    @include mediaUp(monster) {
-      font-size: 4rem;
-    }
+		@include mediaUp(monster) {
+			font-size: 4rem;
+		}
 
-    @include mediaQ(sm) {
-      font-size: 2.5rem;
+		@include mediaQ(sm) {
+			font-size: 2.5rem;
 
-      word-break: break-word;
+			word-break: break-word;
 
-      text-align: center;
-    }
-  }
+			text-align: center;
+		}
+	}
 }
 
 .input {
-  display: flex;
-  flex-direction: column-reverse;
-  position: relative;
-  padding-top: 1.5rem;
-  & + .input {
-    margin-top: 1.5rem;
-  }
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	& + .input {
+		margin-top: 1.5rem;
+	}
 }
 
 .input-label {
-  color: #8597a3;
-  position: absolute;
-  top: 1.5rem;
-  transition: 0.25s ease;
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: 0.25s ease;
 }
 
 .input-field {
-  border: 0;
-  z-index: 1;
-  background-color: transparent;
-  border-bottom: 2px solid #eee;
-  font: inherit;
-  font-size: 1.125rem;
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee;
+	font: inherit;
+	font-size: 1.125rem;
 
-  @include mediaUp(monster) {
-    font-size: 1.825rem;
-  }
-  padding: 0.25rem 0;
-  &:focus,
-  &:valid {
-    outline: 0;
-    border-bottom-color: #6658d3;
-    & + .input-label {
-      color: #6658d3;
-      transform: translateY(-1.5rem);
-    }
-  }
+	@include mediaUp(monster) {
+		font-size: 1.825rem;
+	}
+	padding: 0.25rem 0;
+	&:focus,
+	&:valid {
+		outline: 0;
+		border-bottom-color: #6658d3;
+		& + .input-label {
+			color: #6658d3;
+			transform: translateY(-1.5rem);
+		}
+	}
 }
 
 .submit-button {
-  width: 200px;
-  height: 50px;
+	width: 200px;
+	height: 50px;
 }
 
 .background-shape {
-  position: absolute;
-  top: -15%;
-  right: 85%;
-  width: 10rem;
-  height: 10rem;
-  z-index: 1;
+	position: absolute;
+	top: -15%;
+	right: 85%;
+	width: 10rem;
+	height: 10rem;
+	z-index: 1;
 
-  border-radius: 100rem;
+	border-radius: 100rem;
 
-  border: 1px solid var(--c-secondary);
-  &::before {
-    position: absolute;
+	border: 1px solid var(--c-primary);
+	&::before {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 98%;
-    height: 98%;
+		width: 98%;
+		height: 98%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-primary);
+		border-radius: 100rem;
 
-    @include mediaQ(sm) {
-      border-radius: 0;
-      top: 0;
-      left: 0;
-      border-bottom-right-radius: 10rem;
-    }
-  }
+		@include mediaQ(sm) {
+			border-radius: 0;
+			top: 0;
+			left: 0;
+			border-bottom-right-radius: 10rem;
+		}
+	}
 
-  @include mediaQ(sm) {
-    border-radius: 0;
-    top: 0;
-    left: 0;
-    border-bottom-right-radius: 10rem;
-    width: 8rem;
-    height: 8rem;
-  }
+	@include mediaQ(sm) {
+		border-radius: 0;
+		top: 0;
+		left: 0;
+		border-bottom-right-radius: 10rem;
+		width: 8rem;
+		height: 8rem;
+	}
 }
 
 .background-shape--very-small {
-  position: absolute;
-  top: 20%;
-  right: 85%;
-  width: 2rem;
-  height: 2rem;
-  z-index: 1;
-  border-radius: 100rem;
-  border: 1px solid var(--c-secondary);
-  &::after {
-    position: absolute;
+	position: absolute;
+	top: 20%;
+	right: 85%;
+	width: 2rem;
+	height: 2rem;
+	z-index: 1;
+	border-radius: 100rem;
+	border: 1px solid var(--c-primary);
+	&::after {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 88%;
-    height: 88%;
+		width: 88%;
+		height: 88%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
-  }
-  @include mediaQ(sm) {
-    display: none;
-  }
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-primary);
+		border-radius: 100rem;
+	}
+	@include mediaQ(sm) {
+		display: none;
+	}
 }
 
 .background-shape--small {
-  position: absolute;
-  top: 0;
-  right: 10%;
-  width: 4rem;
-  height: 4rem;
-  z-index: 1;
-  border-radius: 100rem;
-  border: 1px solid var(--c-secondary);
-  &::after {
-    position: absolute;
+	position: absolute;
+	top: 0;
+	right: 10%;
+	width: 4rem;
+	height: 4rem;
+	z-index: 1;
+	border-radius: 100rem;
+	border: 1px solid var(--c-primary);
+	&::after {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 98%;
-    height: 98%;
+		width: 98%;
+		height: 98%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
-  }
-  @include mediaQ(sm) {
-    top: 5%;
-    right: 5%;
-  }
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-primary);
+		border-radius: 100rem;
+	}
+	@include mediaQ(sm) {
+		top: 5%;
+		right: 5%;
+	}
 }
 
 .background-shape--medium {
-  position: absolute;
-  bottom: 5%;
-  right: 65%;
-  width: 10rem;
-  height: 10rem;
-  z-index: 1;
-  border-radius: 100rem;
-  border: 1px solid var(--c-secondary);
-  &::after {
-    position: absolute;
-    content: "";
-    width: 98%;
-    height: 98%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
-    @include mediaQ(sm) {
-      border-radius: 0;
-      bottom: 0;
-      left: 0;
-      border-top-right-radius: 100px;
-      width: 95%;
-      height: 95%;
-    }
-  }
-  @include mediaQ(sm) {
-    border-radius: 0;
-    bottom: 0;
-    left: 0;
-    border-top-right-radius: 100px;
-    width: 5rem;
-    height: 5rem;
-  }
+	position: absolute;
+	bottom: 5%;
+	right: 65%;
+	width: 10rem;
+	height: 10rem;
+	z-index: 1;
+	border-radius: 100rem;
+	border: 1px solid var(--c-primary);
+	&::after {
+		position: absolute;
+		content: "";
+		width: 98%;
+		height: 98%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-primary);
+		border-radius: 100rem;
+		@include mediaQ(sm) {
+			border-radius: 0;
+			bottom: 0;
+			left: 0;
+			border-top-right-radius: 100px;
+			width: 95%;
+			height: 95%;
+		}
+	}
+	@include mediaQ(sm) {
+		border-radius: 0;
+		bottom: 0;
+		left: 0;
+		border-top-right-radius: 100px;
+		width: 5rem;
+		height: 5rem;
+	}
 }
 
 .success-message {
-  margin-top: 1rem;
-  padding: 0.4rem;
-  border: 1px solid green;
-  color: green;
-  background-color: rgba(77, 235, 77, 0.243);
-  border-radius: 4px;
-  font-size: 0.8rem;
-  @include mediaUp(monster) {
-    font-size: 1.9rem;
-  }
+	margin-top: 1rem;
+	padding: 0.4rem;
+	border: 1px solid green;
+	color: green;
+	background-color: rgba(77, 235, 77, 0.243);
+	border-radius: 4px;
+	font-size: 0.8rem;
+	@include mediaUp(monster) {
+		font-size: 1.9rem;
+	}
 }

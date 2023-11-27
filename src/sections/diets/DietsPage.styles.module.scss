@@ -1,245 +1,245 @@
 @import "../../styles/mixins";
 
 .container {
-  height: 100%;
-  min-height: 1000px;
-  position: relative;
+	height: 100%;
+	min-height: 1000px;
+	position: relative;
 }
 
 .intro {
-  position: relative;
-  background-color: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px -6px;
-  z-index: 10;
+	position: relative;
+	background-color: #fff;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px -6px;
+	z-index: 10;
 
-  &__heading {
-    font-size: 3rem;
-    @include mainRWD;
-    display: flex;
-    justify-content: center;
-    z-index: 20;
+	&__heading {
+		font-size: 3rem;
+		@include mainRWD;
+		display: flex;
+		justify-content: center;
+		z-index: 20;
 
-    @include mediaUp(monster) {
-      font-size: 6.32rem;
-    }
+		@include mediaUp(monster) {
+			font-size: 6.32rem;
+		}
 
-    h2 {
-      font-weight: 300;
-      text-align: center;
-      max-width: 860px;
-      font-size: 3rem;
-      @include mediaUp(monster) {
-        max-width: 1460px;
-        font-size: 6.32rem;
-      }
+		h2 {
+			font-weight: 300;
+			text-align: center;
+			max-width: 860px;
+			font-size: 3rem;
+			@include mediaUp(monster) {
+				max-width: 1460px;
+				font-size: 6.32rem;
+			}
 
-      @include mediaQ(sm) {
-        font-size: 2.3rem;
-      }
-    }
-  }
+			@include mediaQ(sm) {
+				font-size: 2.3rem;
+			}
+		}
+	}
 
-  &__subheading {
-    @include secondaryRWD;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    z-index: 20;
+	&__subheading {
+		@include secondaryRWD;
+		padding-top: 1rem;
+		display: flex;
+		justify-content: center;
+		z-index: 20;
 
-    p {
-      max-width: 965px;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 400;
-      @include mediaUp(monster) {
-        font-size: 2.4rem;
-        max-width: 1460px;
-      }
-    }
-  }
+		p {
+			max-width: 965px;
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 400;
+			@include mediaUp(monster) {
+				font-size: 2.4rem;
+				max-width: 1460px;
+			}
+		}
+	}
 
-  &__button {
-    @include secondaryRWD;
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+	&__button {
+		@include secondaryRWD;
+		display: flex;
+		justify-content: center;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 
-    button {
-      color: white;
-      background-color: var(--c-primary);
-      padding: 1rem 3rem;
-      border-radius: 2px;
-      border: 1px solid transparent;
-      font-size: 1.2rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border-radius: 0.3rem;
+		button {
+			color: white;
+			background-color: var(--c-primary);
+			padding: 1rem 3rem;
+			border-radius: 2px;
+			border: 1px solid transparent;
+			font-size: 1.2rem;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			border-radius: 0.3rem;
 
-      @include mediaUp(monster) {
-        font-size: 2.7rem;
-      }
+			@include mediaUp(monster) {
+				font-size: 2.7rem;
+			}
 
-      &:hover {
-        transform: skewY(1deg) scale(1.1);
-        background-color: white;
-        color: var(--c-primary);
-        border-color: var(--c-primary);
-      }
+			&:hover {
+				transform: skewY(1deg) scale(1.1);
+				background-color: white;
+				color: var(--c-primary);
+				border-color: var(--c-primary);
+			}
 
-      @include mediaQ(md) {
-        padding: 1.5rem 3rem;
-        font-size: 1.8rem;
-      }
+			@include mediaQ(md) {
+				padding: 1.5rem 3rem;
+				font-size: 1.8rem;
+			}
 
-      @include mediaQ(md) {
-        padding: 1rem 3rem;
-        font-size: 1.2rem;
-      }
-    }
-  }
+			@include mediaQ(md) {
+				padding: 1rem 3rem;
+				font-size: 1.2rem;
+			}
+		}
+	}
 
-  &__image {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10%;
-    width: 900px;
-    z-index: 10;
+	&__image {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 10%;
+		width: 900px;
+		z-index: 10;
 
-    @include mediaQ(lg) {
-      width: 100%;
-    }
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+		@include mediaQ(lg) {
+			width: 100%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
 .background-shape {
-  position: absolute;
-  top: 20%;
-  right: 90%;
-  width: 10rem;
-  height: 10rem;
-  z-index: 1;
+	position: absolute;
+	top: 20%;
+	right: 90%;
+	width: 10rem;
+	height: 10rem;
+	z-index: 1;
 
-  border-radius: 100rem;
+	border-radius: 100rem;
 
-  border: 1px solid var(--c-secondary);
-  &::before {
-    position: absolute;
+	border: 1px solid var(--c-primary);
+	&::before {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 98%;
-    height: 98%;
+		width: 98%;
+		height: 98%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-primary);
+		border-radius: 100rem;
 
-    @include mediaQ(sm) {
-      border-radius: 0;
-      top: 0;
-      left: 0;
-      border-bottom-right-radius: 10rem;
-    }
-  }
+		@include mediaQ(sm) {
+			border-radius: 0;
+			top: 0;
+			left: 0;
+			border-bottom-right-radius: 10rem;
+		}
+	}
 
-  @include mediaQ(sm) {
-    border-radius: 0;
-    top: 0;
-    left: 0;
-    border-bottom-right-radius: 10rem;
-    width: 8rem;
-    height: 8rem;
-  }
+	@include mediaQ(sm) {
+		border-radius: 0;
+		top: 0;
+		left: 0;
+		border-bottom-right-radius: 10rem;
+		width: 8rem;
+		height: 8rem;
+	}
 }
 
 .background-shape--big {
-  position: absolute;
-  top: 20%;
-  left: 80%;
-  width: 20rem;
-  height: 20rem;
-  z-index: 1;
+	position: absolute;
+	top: 20%;
+	left: 80%;
+	width: 20rem;
+	height: 20rem;
+	z-index: 1;
 
-  border-radius: 100rem;
-  border: 1px solid var(--c-secondary);
+	border-radius: 100rem;
+	border: 1px solid var(--c-primary);
 
-  @include mediaQ(xxxl) {
-    width: 10rem;
-    height: 10rem;
-  }
+	@include mediaQ(xxxl) {
+		width: 10rem;
+		height: 10rem;
+	}
 
-  @include mediaQ(lg) {
-    top: 0%;
-  }
-  @include mediaQ(md) {
-    left: 50%;
-  }
+	@include mediaQ(lg) {
+		top: 0%;
+	}
+	@include mediaQ(md) {
+		left: 50%;
+	}
 
-  &::before {
-    position: absolute;
+	&::before {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 98%;
-    height: 98%;
+		width: 98%;
+		height: 98%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-primary);
+		border-radius: 100rem;
 
-    @include mediaQ(sm) {
-      border-radius: 0;
-      top: 0;
-      left: 0;
-      border-bottom-right-radius: 10rem;
-    }
-  }
+		@include mediaQ(sm) {
+			border-radius: 0;
+			top: 0;
+			left: 0;
+			border-bottom-right-radius: 10rem;
+		}
+	}
 
-  @include mediaQ(sm) {
-    border-radius: 0;
-    top: 0;
-    left: 0;
-    border-bottom-right-radius: 10rem;
-    width: 8rem;
-    height: 8rem;
-  }
+	@include mediaQ(sm) {
+		border-radius: 0;
+		top: 0;
+		left: 0;
+		border-bottom-right-radius: 10rem;
+		width: 8rem;
+		height: 8rem;
+	}
 }
 
 .diets {
-  padding: 5rem 10rem 5rem 10rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+	padding: 5rem 10rem 5rem 10rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 2rem;
 
-  @include mediaUp(monster) {
-    padding: 5rem 25rem;
-  }
+	@include mediaUp(monster) {
+		padding: 5rem 25rem;
+	}
 
-  @include mediaQ(xxxl) {
-    padding: 1rem 5rem;
-  }
+	@include mediaQ(xxxl) {
+		padding: 1rem 5rem;
+	}
 
-  @include mediaQ(xxl) {
-    padding: 5rem 1.5rem 5rem 1.5rem;
-  }
+	@include mediaQ(xxl) {
+		padding: 5rem 1.5rem 5rem 1.5rem;
+	}
 
-  @include mediaQ(lg) {
-    padding: 5rem 1.5rem 5rem 1.5rem;
-    grid-template-columns: 1fr;
-  }
+	@include mediaQ(lg) {
+		padding: 5rem 1.5rem 5rem 1.5rem;
+		grid-template-columns: 1fr;
+	}
 
-  @include mediaQ(md) {
-    padding-top: 5rem;
-  }
+	@include mediaQ(md) {
+		padding-top: 5rem;
+	}
 }

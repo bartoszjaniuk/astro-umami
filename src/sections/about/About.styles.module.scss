@@ -1,497 +1,497 @@
 @import "../../styles//mixins";
 
 .container {
-  height: 100%;
-  min-height: 800px;
-  position: relative;
+	height: 100%;
+	min-height: 800px;
+	position: relative;
 }
 
 .about {
-  background-color: #fff;
-  display: flex;
+	background-color: #fff;
+	display: flex;
 
-  padding: 5rem 10rem 0 10rem;
-  gap: 2rem;
+	padding: 5rem 10rem 0 10rem;
+	gap: 2rem;
 
-  @include mediaUp(monster) {
-    padding: 5rem 25rem 0 25rem;
-  }
+	@include mediaUp(monster) {
+		padding: 5rem 25rem 0 25rem;
+	}
 
-  @include mediaQ(xxxl) {
-    padding: 5rem 5rem 0 5rem;
-  }
+	@include mediaQ(xxxl) {
+		padding: 5rem 5rem 0 5rem;
+	}
 
-  @include mediaQ(xxl) {
-    padding: 1.5rem 1.5rem 0 1.5rem;
-  }
+	@include mediaQ(xxl) {
+		padding: 1.5rem 1.5rem 0 1.5rem;
+	}
 
-  @include mediaQ(lg) {
-    padding: 1.5rem 1.5rem 0 1.5rem;
-  }
+	@include mediaQ(lg) {
+		padding: 1.5rem 1.5rem 0 1.5rem;
+	}
 
-  @include mediaQ(md) {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 3rem 1.5rem 0 1.5rem;
-  }
+	@include mediaQ(md) {
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 3rem 1.5rem 0 1.5rem;
+	}
 
-  @include mediaQ(sm) {
-    padding: 5rem 1.5rem 5rem 1.5rem;
-  }
+	@include mediaQ(sm) {
+		padding: 5rem 1.5rem 5rem 1.5rem;
+	}
 
-  &--cd {
-    background-color: #f7f7f7;
-    min-height: 100%;
-  }
+	&--cd {
+		background-color: #f7f7f7;
+		min-height: 100%;
+	}
 }
 
 .tags-strip {
-  background-color: var(--c-primary);
-  height: 85px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include mediaQ(md) {
-    height: 220px;
-    align-items: flex-start;
-    justify-content: start;
-    padding-left: 1.5rem;
-  }
+	background-color: var(--c-primary);
+	height: 85px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include mediaQ(md) {
+		height: 220px;
+		align-items: flex-start;
+		justify-content: start;
+		padding-left: 1.5rem;
+	}
 }
 
 .tags-strip-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  @include mediaQ(md) {
-    flex-direction: column;
-    height: 100%;
-  }
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	@include mediaQ(md) {
+		flex-direction: column;
+		height: 100%;
+	}
 
-  &__item {
-    color: #fff;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+	&__item {
+		color: #fff;
+		font-size: 1.4rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
 }
 
 .content {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  padding-bottom: 2rem;
-  width: 70%;
-  justify-content: center;
-  @include mediaQ(lg) {
-    width: 50%;
-  }
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	padding-bottom: 2rem;
+	width: 70%;
+	justify-content: center;
+	@include mediaQ(lg) {
+		width: 50%;
+	}
 
-  @include mediaQ(md) {
-    width: 100%;
-    padding-top: 1.5rem;
-  }
-  &__heading {
-    font-size: 3.5rem;
-    padding: 2rem 0;
-    color: var(--c-primary);
+	@include mediaQ(md) {
+		width: 100%;
+		padding-top: 1.5rem;
+	}
+	&__heading {
+		font-size: 3.5rem;
+		padding: 2rem 0;
+		color: var(--c-primary);
 
-    @include mediaUp(monster) {
-      font-size: 6.32rem;
-    }
+		@include mediaUp(monster) {
+			font-size: 6.32rem;
+		}
 
-    @include mediaQ(md) {
-      font-size: 4rem;
-      padding: 1rem 0;
-    }
+		@include mediaQ(md) {
+			font-size: 4rem;
+			padding: 1rem 0;
+		}
 
-    @include mediaQ(sm) {
-      font-size: 2.2rem;
-      padding: 1rem 0;
-    }
-  }
-  &__profession {
-    color: var(--c-primary);
-    font-weight: 600;
-    border-radius: 1.5rem;
-    background-color: var(--c-secondary);
-    padding: 0.5rem 1rem;
-    @include mediaUp(monster) {
-      font-size: 2.2rem;
-    }
+		@include mediaQ(sm) {
+			font-size: 2.2rem;
+			padding: 1rem 0;
+		}
+	}
+	&__profession {
+		color: #fff;
+		font-weight: 600;
+		border-radius: 1.5rem;
+		background-color: var(--c-primary);
+		padding: 0.5rem 1rem;
+		@include mediaUp(monster) {
+			font-size: 2.2rem;
+		}
 
-    @include mediaQ(md) {
-      font-size: 1.5rem;
-    }
-    @include mediaQ(sm) {
-      font-size: 1rem;
-    }
-  }
+		@include mediaQ(md) {
+			font-size: 1.5rem;
+		}
+		@include mediaQ(sm) {
+			font-size: 1rem;
+		}
+	}
 
-  &__command {
-    padding-top: 1.5rem;
-    font-weight: 500;
-    color: var(--c-primary);
+	&__command {
+		padding-top: 1.5rem;
+		font-weight: 500;
+		color: var(--c-primary);
 
-    @include mediaUp(monster) {
-      font-size: 2.4rem;
+		@include mediaUp(monster) {
+			font-size: 2.4rem;
 
-      line-height: 3rem;
-    }
+			line-height: 3rem;
+		}
 
-    @include mediaQ(md) {
-      font-size: 2.5rem;
-      padding: 2rem 0;
-      text-align: center;
-    }
+		@include mediaQ(md) {
+			font-size: 2.5rem;
+			padding: 2rem 0;
+			text-align: center;
+		}
 
-    @include mediaQ(sm) {
-      font-size: 1.5rem;
-    }
-    &--highlight {
-      font-weight: 900;
-    }
-  }
+		@include mediaQ(sm) {
+			font-size: 1.5rem;
+		}
+		&--highlight {
+			font-weight: 900;
+		}
+	}
 
-  &__description {
-    @include mediaUp(monster) {
-      font-size: 2.4rem;
-      max-width: 90%;
-      line-height: 3rem;
-    }
-    @include mediaQ(md) {
-      font-size: 1.7rem;
-    }
-    @include mediaQ(md) {
-      font-size: 1.2rem;
-    }
-  }
+	&__description {
+		@include mediaUp(monster) {
+			font-size: 2.4rem;
+			max-width: 90%;
+			line-height: 3rem;
+		}
+		@include mediaQ(md) {
+			font-size: 1.7rem;
+		}
+		@include mediaQ(md) {
+			font-size: 1.2rem;
+		}
+	}
 
-  &__buttons-group {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    padding-bottom: 12rem;
-    padding-top: 4rem;
-    @include mediaQ(sm) {
-      flex-direction: column;
-    }
-  }
+	&__buttons-group {
+		display: flex;
+		gap: 1rem;
+		width: 100%;
+		padding-bottom: 12rem;
+		padding-top: 4rem;
+		@include mediaQ(sm) {
+			flex-direction: column;
+		}
+	}
 
-  &__button {
-    color: white;
-    background-color: var(--c-primary);
-    padding: 1rem 2rem;
-    border-radius: 2px;
-    border: 1px solid transparent;
-    font-size: 1.2rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 0.3rem;
-    width: 100%;
+	&__button {
+		color: white;
+		background-color: var(--c-primary);
+		padding: 1rem 2rem;
+		border-radius: 2px;
+		border: 1px solid transparent;
+		font-size: 1.2rem;
+		font-weight: 500;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		border-radius: 0.3rem;
+		width: 100%;
 
-    @include mediaUp(monster) {
-      font-size: 2.4rem;
-    }
+		@include mediaUp(monster) {
+			font-size: 2.4rem;
+		}
 
-    &:hover {
-      background-color: white;
-      color: var(--c-primary);
-      border-color: var(--c-primary);
-    }
-    &--inverted {
-      color: var(--c-primary);
-      background-color: white;
-      border-color: 1px solid var(--c-primary);
+		&:hover {
+			background-color: white;
+			color: var(--c-primary);
+			border-color: var(--c-primary);
+		}
+		&--inverted {
+			color: var(--c-primary);
+			background-color: white;
+			border-color: 1px solid var(--c-primary);
 
-      &:hover {
-        background-color: var(--c-primary);
-        color: white;
-        border-color: white;
-      }
-    }
-  }
-  &__link {
-    width: 100%;
-  }
+			&:hover {
+				background-color: var(--c-primary);
+				color: white;
+				border-color: white;
+			}
+		}
+	}
+	&__link {
+		width: 100%;
+	}
 }
 
 .person {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  width: 30%;
-  height: 600px;
-  @include mediaQ(md) {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px -6px;
-  }
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 30%;
+	height: 600px;
+	@include mediaQ(md) {
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px -6px;
+	}
 
-  &::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0.65;
-    content: "";
-    width: 80%;
-    height: 80%;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background-color: var(--c-secondary);
-    padding-top: 6rem;
-  }
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		opacity: 0.45;
+		content: "";
+		width: 80%;
+		height: 80%;
+		border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+		background-color: var(--c-primary);
+		padding-top: 6rem;
+	}
 
-  &::after {
-    padding-top: 6rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-    content: "";
-    width: 80%;
-    height: 80%;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background-color: var(--c-primary);
-  }
+	&::after {
+		padding-top: 6rem;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		opacity: 1;
+		content: "";
+		width: 80%;
+		height: 80%;
+		border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+		background-color: var(--c-primary);
+	}
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    z-index: 10;
-  }
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		z-index: 10;
+	}
 
-  @include mediaUp(monster) {
-    height: 900px;
-  }
+	@include mediaUp(monster) {
+		height: 900px;
+	}
 
-  @include mediaQ(md) {
-    width: 100%;
-  }
+	@include mediaQ(md) {
+		width: 100%;
+	}
 
-  &__heading {
-    padding: 2rem 0;
-    font-size: 2rem;
-    color: var(--c-primary);
-    border-radius: 1.5rem;
-  }
+	&__heading {
+		padding: 2rem 0;
+		font-size: 2rem;
+		color: var(--c-primary);
+		border-radius: 1.5rem;
+	}
 }
 
 .person-secondary {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 1rem;
-  @include mediaQ(md) {
-    width: 100%;
-  }
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 1rem;
+	@include mediaQ(md) {
+		width: 100%;
+	}
 
-  &__image {
-    height: 100%;
-    z-index: 10;
+	&__image {
+		height: 100%;
+		z-index: 10;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 
-      border-radius: 30rem;
-    }
-  }
+			border-radius: 30rem;
+		}
+	}
 
-  &__heading {
-    padding: 2rem 0;
-    font-size: 2rem;
-    color: var(--c-primary);
-    border-radius: 1.5rem;
-  }
+	&__heading {
+		padding: 2rem 0;
+		font-size: 2rem;
+		color: var(--c-primary);
+		border-radius: 1.5rem;
+	}
 }
 
 .certificates {
-  background-color: #fff;
+	background-color: #fff;
 
-  padding: 3rem 10rem 3rem 10rem;
+	padding: 3rem 10rem 3rem 10rem;
 
-  @include mediaUp(monster) {
-    padding: 4rem 25rem 4rem 25rem;
-  }
+	@include mediaUp(monster) {
+		padding: 4rem 25rem 4rem 25rem;
+	}
 
-  @include mediaQ(xxxl) {
-    padding: 3rem 5rem 3rem 5rem;
-  }
+	@include mediaQ(xxxl) {
+		padding: 3rem 5rem 3rem 5rem;
+	}
 
-  @include mediaQ(xxl) {
-    padding: 3rem 1.5rem 3rem 1.5rem;
-  }
+	@include mediaQ(xxl) {
+		padding: 3rem 1.5rem 3rem 1.5rem;
+	}
 
-  @include mediaQ(lg) {
-    padding: 3rem 1.5rem 3rem 1.5rem;
-  }
+	@include mediaQ(lg) {
+		padding: 3rem 1.5rem 3rem 1.5rem;
+	}
 
-  @include mediaQ(md) {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 1.5rem 3rem 1.5rem;
-  }
+	@include mediaQ(md) {
+		display: flex;
+		flex-direction: column;
+		padding: 3rem 1.5rem 3rem 1.5rem;
+	}
 
-  @include mediaQ(sm) {
-    padding: 3rem 1.5rem 3rem 1.5rem;
-  }
+	@include mediaQ(sm) {
+		padding: 3rem 1.5rem 3rem 1.5rem;
+	}
 
-  &__heading {
-    font-size: 3.5rem;
-    padding-bottom: 2rem;
-    color: var(--c-primary);
+	&__heading {
+		font-size: 3.5rem;
+		padding-bottom: 2rem;
+		color: var(--c-primary);
 
-    @include mediaQ(md) {
-      font-size: 4rem;
-    }
+		@include mediaQ(md) {
+			font-size: 4rem;
+		}
 
-    @include mediaQ(sm) {
-      font-size: 2.2rem;
-    }
-  }
+		@include mediaQ(sm) {
+			font-size: 2.2rem;
+		}
+	}
 }
 
 .background-shape {
-  position: absolute;
-  top: 20%;
-  right: 90%;
-  width: 10rem;
-  height: 10rem;
-  z-index: 1;
+	position: absolute;
+	top: 20%;
+	right: 90%;
+	width: 10rem;
+	height: 10rem;
+	z-index: 1;
 
-  border-radius: 100rem;
+	border-radius: 100rem;
 
-  border: 1px solid var(--c-secondary);
-  &::before {
-    position: absolute;
+	border: 1px solid var(--c-secondary);
+	&::before {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 98%;
-    height: 98%;
+		width: 98%;
+		height: 98%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-secondary);
+		border-radius: 100rem;
 
-    @include mediaQ(sm) {
-      border-radius: 0;
-      top: 0;
-      left: 0;
-      border-bottom-right-radius: 10rem;
-    }
-  }
+		@include mediaQ(sm) {
+			border-radius: 0;
+			top: 0;
+			left: 0;
+			border-bottom-right-radius: 10rem;
+		}
+	}
 
-  @include mediaQ(sm) {
-    border-radius: 0;
-    top: 0;
-    left: 0;
-    border-bottom-right-radius: 10rem;
-    width: 8rem;
-    height: 8rem;
-  }
+	@include mediaQ(sm) {
+		border-radius: 0;
+		top: 0;
+		left: 0;
+		border-bottom-right-radius: 10rem;
+		width: 8rem;
+		height: 8rem;
+	}
 }
 
 .background-shape--very-small {
-  position: absolute;
-  top: 20%;
-  right: 85%;
-  width: 2rem;
-  height: 2rem;
-  z-index: 1;
-  border-radius: 100rem;
-  border: 1px solid var(--c-secondary);
-  &::after {
-    position: absolute;
+	position: absolute;
+	top: 20%;
+	right: 85%;
+	width: 2rem;
+	height: 2rem;
+	z-index: 1;
+	border-radius: 100rem;
+	border: 1px solid var(--c-secondary);
+	&::after {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 88%;
-    height: 88%;
+		width: 88%;
+		height: 88%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
-  }
-  @include mediaQ(sm) {
-    display: none;
-  }
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-secondary);
+		border-radius: 100rem;
+	}
+	@include mediaQ(sm) {
+		display: none;
+	}
 }
 
 .background-shape--small {
-  position: absolute;
-  top: 0;
-  right: 10%;
-  width: 4rem;
-  height: 4rem;
-  z-index: 1;
-  border-radius: 100rem;
-  border: 1px solid var(--c-secondary);
-  &::after {
-    position: absolute;
+	position: absolute;
+	top: 0;
+	right: 10%;
+	width: 4rem;
+	height: 4rem;
+	z-index: 1;
+	border-radius: 100rem;
+	border: 1px solid var(--c-secondary);
+	&::after {
+		position: absolute;
 
-    content: "";
+		content: "";
 
-    width: 98%;
-    height: 98%;
+		width: 98%;
+		height: 98%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
-  }
-  @include mediaQ(sm) {
-    top: 5%;
-    right: 5%;
-  }
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-secondary);
+		border-radius: 100rem;
+	}
+	@include mediaQ(sm) {
+		top: 5%;
+		right: 5%;
+	}
 }
 
 .background-shape--medium {
-  position: absolute;
-  bottom: 5%;
-  right: 65%;
-  width: 10rem;
-  height: 10rem;
-  z-index: 1;
-  border-radius: 100rem;
-  border: 1px solid var(--c-secondary);
-  &::after {
-    position: absolute;
-    content: "";
-    width: 98%;
-    height: 98%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c-secondary);
-    border-radius: 100rem;
-    @include mediaQ(sm) {
-      border-radius: 0;
-      bottom: 0;
-      left: 0;
-      border-top-right-radius: 100px;
-      width: 95%;
-      height: 95%;
-    }
-  }
-  @include mediaQ(sm) {
-    border-radius: 0;
-    bottom: 0;
-    left: 0;
-    border-top-right-radius: 100px;
-    width: 5rem;
-    height: 5rem;
-  }
+	position: absolute;
+	bottom: 5%;
+	right: 65%;
+	width: 10rem;
+	height: 10rem;
+	z-index: 1;
+	border-radius: 100rem;
+	border: 1px solid var(--c-secondary);
+	&::after {
+		position: absolute;
+		content: "";
+		width: 98%;
+		height: 98%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--c-secondary);
+		border-radius: 100rem;
+		@include mediaQ(sm) {
+			border-radius: 0;
+			bottom: 0;
+			left: 0;
+			border-top-right-radius: 100px;
+			width: 95%;
+			height: 95%;
+		}
+	}
+	@include mediaQ(sm) {
+		border-radius: 0;
+		bottom: 0;
+		left: 0;
+		border-top-right-radius: 100px;
+		width: 5rem;
+		height: 5rem;
+	}
 }
