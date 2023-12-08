@@ -380,6 +380,7 @@
 	&__heading {
 		font-size: 3rem;
 		font-weight: 600;
+
 		@include mediaUp(monster) {
 			font-size: 6rem;
 		}
@@ -388,6 +389,22 @@
 		font-weight: 600;
 		@include mediaUp(monster) {
 			font-size: 3rem;
+		}
+		&--size {
+			padding: 0rem 10rem;
+
+			@include mediaUp(monster) {
+				font-size: 5rem;
+				padding: 0rem 25rem;
+			}
+
+			@include mediaQ(xxxl) {
+				padding: 0rem 5rem;
+			}
+
+			@include mediaQ(xxl) {
+				padding: 0rem 1.5rem;
+			}
 		}
 	}
 }

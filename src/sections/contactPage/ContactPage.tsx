@@ -6,6 +6,10 @@ import { Input } from "../../components/input/Input";
 import { CheckBox } from "../../components/checkbox/Checkbox";
 import { Button } from "../../components/button/Button";
 import { useState, useEffect } from "react";
+import { InstagramIcon } from "../../components/icons/instagram-icon/InstagramIcon";
+import { FacebookIcon } from "../../components/icons/facebook-icon/FacebookIcon";
+import { TiktokIcon } from "../../components/icons/tiktok-icon/TiktokIcon";
+import imgReference from "/assets/akademia_fitness.png";
 
 export const ContactPage = () => {
 	const {
@@ -146,10 +150,56 @@ export const ContactPage = () => {
 					</p>
 					<p className={styles["details__paragraph"]}>Tel. 570 498 067</p>
 					<p className={styles["details__paragraph"]}>
-						E-mail: dietetyk@dietetyk-umami.pl
+						<a
+							className={styles["details__link"]}
+							href="mailto:aleksandra@dietetyk-umami.pl"
+						>
+							E-mail: aleksandra@dietetyk-umami.pl
+						</a>
 					</p>
+
+					<div className={styles["socials"]}>
+						{socalMedia.map((social, index) => (
+							<p key={index} className={styles["details__paragraph"]}>
+								<a className={styles["details__link"]} href={social.title}>
+									{social.icon}
+								</a>
+							</p>
+						))}
+					</div>
+
+					<a style={{ paddingTop: "1rem" }} href="https://akademia-fitness.eu">
+						<img src={imgReference} alt="logo" />
+					</a>
 				</div>
 			</section>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.232427245804!2d18.20260967706767!3d50.08193507152423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47116805a0be8eb5%3A0xe8362cb409eec0ef!2sAkademia%20Fitness%20(Ocicka)!5e0!3m2!1sen!2spl!4v1702029427976!5m2!1sen!2spl"
+				width="100%"
+				height="650"
+				style={{ border: 0 }}
+				allowFullScreen
+				loading="lazy"
+				referrerPolicy="no-referrer-when-downgrade"
+			></iframe>
 		</main>
 	);
 };
+
+const socalMedia = [
+	{
+		title: "Facebook",
+		icon: <FacebookIcon width="30px" height="30px" />,
+		link: "https://www.facebook.com/dietetyk.umami/",
+	},
+	{
+		title: "Instagram",
+		icon: <InstagramIcon width="30px" height="30px" />,
+		link: "https://www.instagram.com/dietetyk_umami/",
+	},
+	{
+		title: "TikTok",
+		icon: <TiktokIcon width="30px" height="30px" />,
+		link: "https://www.tiktok.com/@dietetyk.umami?_t=8hvXiAd94i0&_r=1",
+	},
+];

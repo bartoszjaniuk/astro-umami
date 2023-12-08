@@ -87,6 +87,7 @@
 	opacity: 0;
 	display: flex;
 	align-items: start;
+	justify-content: center;
 	flex-direction: column;
 	padding-bottom: 2rem;
 	width: 70%;
@@ -112,14 +113,15 @@
 		width: 100%;
 
 		&--h2 {
-			font-size: 4.32rem;
+			font-size: 3.32rem;
+			color: var(--c-primary);
 
 			@include mediaUp(monster) {
-				font-size: 6.32rem;
+				font-size: 4.32rem;
 			}
 
 			@include mediaQ(sm) {
-				font-size: 4rem;
+				font-size: 3rem;
 			}
 		}
 		&--highlight {
@@ -128,15 +130,20 @@
 				font-size: 4rem;
 			}
 		}
+		&--bold {
+			font-weight: 900;
+			color: var(--c-primary);
+		}
 	}
 	&__content {
-		font-size: 1.2rem;
-		line-height: 2rem;
+		font-size: 2rem;
+		line-height: 3rem;
 		font-weight: 300;
 		font-family: "Lato";
+		max-width: 600px;
 
 		@include mediaUp(monster) {
-			font-size: 2.4rem;
+			font-size: 2.6rem;
 			max-width: 90%;
 			line-height: 3rem;
 		}

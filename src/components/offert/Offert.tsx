@@ -24,22 +24,18 @@ export const Offert = () => {
 			>
 				<div className={styles["introduction__heading"]}>
 					<h1 className={styles["introduction__heading--h2"]}>
-						Aleksandra Kajstura-Janiuk
+						Cześć! Nazywam się
 					</h1>
-					<h2 className={styles["introduction__heading--highlight"]}>
-						dyplomowany dietetyk online
+					<h2
+						className={`${styles["introduction__heading--h2"]}
+							${styles["introduction__heading--bold"]}`}
+					>
+						Aleksandra Kajstura-Janiuk
 					</h2>
 				</div>
 				<p className={styles["introduction__content"]}>
-					Nazywam się Aleksandra Kajstura-Janiuk, jestem dietetykiem i nauczę
-					Cię jak zadbać o siebie i zacząć prowadzić zdrowy styl życia krok po
-					kroku. Jestem absolwentką Uniwersytetu Opolskiego, a dalszą naukę
-					kontynuuję w Wyższej Szkole Biznesu i Nauk o Zdrowiu w Łodzi na
-					studiach magisterskich. Na co dzień mieszkam na śląsku, w mieście
-					Racibórz. Cały czas się szkolę, uczę i zdobywam wiedzę na studiach,
-					praktykach zawodowych czy szkoleniach. Służę pomocą jeśli zmagasz się
-					z problemami zdrowotnymi, z nadmierną lub za niską masą ciała lub po
-					prostu chcesz zmienić swoje nawyki żywieniowe.
+					Zdrowy styl życia, zrównoważona dieta i trochę aktywności fizycznej -
+					klucz do Twojej wymarzonej sylwetki!
 				</p>
 				<LinkButton text="Dowiedz się więcej" navigateTo={RoutePath.ABOUT} />
 			</div>

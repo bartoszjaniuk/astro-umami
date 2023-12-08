@@ -70,14 +70,17 @@ export const OffertPage = () => {
 		<main className={styles.offert}>
 			<section className={styles.introduction}>
 				<div className={styles["content"]}>
-					<h2 className={styles["content__heading"]}>DIETA ONLINE.</h2>
+					<h2 className={styles["content__heading"]}>
+						WSPÓŁPRACA DIETETYCZNA.
+					</h2>
 					<h5 className={styles["content__heading--secondary"]}>
-						Zrób pierwszy krok juz dziś, nie jutro.
+						Zrób pierwszy krok już dziś, nie jutro.
 					</h5>
 					<div className={styles["content__description"]}>
-						Pomogę Ci schudnąć bez wyrzeczeń nawet jeśli zmagasz się z jakimiś
-						problemami zdrowotnymi. Dzięki mojej pomocy będziesz mieć więcej
-						energii i polepszysz swoje samopoczucie oraz stan zdrowia!
+						Pomogę Ci poprawić swoją sylwetkę i samopoczucie bez wielkich
+						wyrzeczeń, nawet jeśli zmagasz się z jakimiś problemami zdrowotnymi.
+						Dzięki mojej pomocy będziesz mieć więcej energii i polepszysz swoje
+						samopoczucie oraz stan zdrowia!
 					</div>
 
 					<LinkButton text="Sprawdź ofertę" navigateTo="/oferta/#moje-uslugi" />
@@ -90,7 +93,7 @@ export const OffertPage = () => {
 				<ul className={styles["tags-strip-list"]}>
 					<li className={styles["tags-strip-list__item"]}>
 						<Icon icon="game-icons:talk" />
-						Konsultacje dietetyczne online
+						Konsultacje dietetyczne
 					</li>
 					<li className={styles["tags-strip-list__item"]}>
 						<Icon icon="game-icons:notebook" />
