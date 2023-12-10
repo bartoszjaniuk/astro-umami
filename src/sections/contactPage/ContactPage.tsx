@@ -10,6 +10,8 @@ import { InstagramIcon } from "../../components/icons/instagram-icon/InstagramIc
 import { FacebookIcon } from "../../components/icons/facebook-icon/FacebookIcon";
 import { TiktokIcon } from "../../components/icons/tiktok-icon/TiktokIcon";
 import imgReference from "/assets/akademia_fitness.png";
+import profileImageReference from "/assets/aleksandra_offert.png";
+import { Icon } from "@iconify/react";
 
 export const ContactPage = () => {
 	const {
@@ -144,19 +146,41 @@ export const ContactPage = () => {
 					)}
 				</div>
 				<div className={styles["details"]}>
-					<h3 className={styles["details__heading"]}>Formy kontaktu</h3>
-					<p className={styles["details__paragraph"]}>
-						UMAMI – Dietetyk Aleksandra Kajstura-Janiuk
-					</p>
-					<p className={styles["details__paragraph"]}>Tel. 570 498 067</p>
-					<p className={styles["details__paragraph"]}>
-						<a
-							className={styles["details__link"]}
-							href="mailto:aleksandra@dietetyk-umami.pl"
-						>
-							E-mail: aleksandra@dietetyk-umami.pl
-						</a>
-					</p>
+					<h3 className={styles["details__heading"]}>Dietetyk Umami</h3>
+					<div className={styles.person}>
+						<picture className={styles["person__photo"]}>
+							<img
+								className={styles["person__img"]}
+								src={profileImageReference}
+								alt="Aleksandra Kajstura-Janiuk zdjęcie profilowe"
+							/>
+						</picture>
+						<p className={styles["details__paragraph"]}>
+							Aleksandra Kajstura-Janiuk
+						</p>
+					</div>
+					<div className={styles["details__box"]}>
+						<Icon icon="mdi:cellphone" width={25} color="#57463c" />
+
+						<p className={styles["details__paragraph"]}>570 498 067</p>
+					</div>
+
+					<div className={styles["details__box"]}>
+						<Icon icon="mdi:email" width={25} color="#57463c" />
+						<p className={styles["details__paragraph"]}>
+							<a
+								className={styles["details__link"]}
+								href="mailto:aleksandra@dietetyk-umami.pl"
+							>
+								aleksandra@dietetyk-umami.pl
+							</a>
+						</p>
+					</div>
+
+					<h3 className={styles.collaboration}>Współpracuję z:</h3>
+					<a style={{ paddingTop: "1rem" }} href="https://akademia-fitness.eu">
+						<img src={imgReference} alt="logo" />
+					</a>
 
 					<div className={styles["socials"]}>
 						{socalMedia.map((social, index) => (
@@ -167,10 +191,6 @@ export const ContactPage = () => {
 							</p>
 						))}
 					</div>
-
-					<a style={{ paddingTop: "1rem" }} href="https://akademia-fitness.eu">
-						<img src={imgReference} alt="logo" />
-					</a>
 				</div>
 			</section>
 			<iframe

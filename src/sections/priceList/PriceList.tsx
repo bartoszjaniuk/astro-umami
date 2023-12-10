@@ -56,9 +56,7 @@ export const PriceList = () => {
 						</ul>
 					</div>
 					<div className={`${styles.card} ${styles["card--active"]}`}>
-						<h5 className={styles["card__heading"]}>
-							Pierwsza konsultacja online
-						</h5>
+						<h5 className={styles["card__heading"]}>Pierwsza konsultacja</h5>
 						<span className={styles["card__price"]}>150 zł</span>
 						<ul className={styles["card__list"]}>
 							<li className={styles["card__list-item"]}>
@@ -93,7 +91,7 @@ export const PriceList = () => {
 				<div className={styles["first-visit__footer"]}>
 					<p className={styles["first-visit__paragraph"]}>
 						Wizyta może zostać przeprowadzona w dogodnej dla Ciebie formie
-						(WhatsApp, Facebook, MS Teams itp.)
+						(WhatsApp, Facebook, MS Teams itp.) lub stacjonarnie.
 					</p>
 					<p
 						className={`${styles["first-visit__paragraph"]} ${styles["first-visit__paragraph--bold"]}`}
