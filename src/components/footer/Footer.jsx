@@ -49,7 +49,7 @@ export const Footer = () => {
 						<li className={styles["media-list__item"]}>
 							<a
 								className={styles["media-list-link"]}
-								href="https://www.instagram.com/dietetyk_umami/"
+								href="https://www.tiktok.com/@dietetyk.umami?_t=8oILTb37kQ4&_r=1"
 								target="_blank"
 							>
 								<TiktokIcon color="white" />

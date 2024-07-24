@@ -185,7 +185,7 @@ export const ContactPage = () => {
 					<div className={styles["socials"]}>
 						{socalMedia.map((social, index) => (
 							<p key={index} className={styles["details__paragraph"]}>
-								<a className={styles["details__link"]} href={social.title}>
+								<a className={styles["details__link"]} href={social.link}>
 									{social.icon}
 								</a>
 							</p>
