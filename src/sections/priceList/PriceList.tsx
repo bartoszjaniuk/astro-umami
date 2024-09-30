@@ -15,13 +15,11 @@ export const PriceList = () => {
 					src={imageRef}
 					alt="Picture shows drawn vegetables. Designed by veraholera / Freepik"
 				/>
-				<h2 className={styles["introduction__heading"]}>
-					Poradnia Dietetyczna
-				</h2>
+				<h2 className={styles["introduction__heading"]}>Gabinet Dietetyczny</h2>
 				<h5 className={styles["introduction__subheading"]}>
-					Wszystkie wizyty łączą w sobie poradę dietetyczną, elementy motywacji,{" "}
-					<br />
-					pracy z procesem zmiany, uzyskania trwałego efektu <br />i zadowolenia
+					Wszystkie wizyty łączą w sobie porady dietetyczne, elementy motywacji,
+					edukację żywieniową, <br />
+					pracę z procesem zmiany, uzyskanie trwałego efektu <br />i zadowolenia
 					z siebie.
 				</h5>
 			</section>
@@ -61,11 +59,6 @@ export const PriceList = () => {
 						<ul className={styles["card__list"]}>
 							<li className={styles["card__list-item"]}>
 								Koszt każdej kolejnej wizyty kontrolnej to 100 zł
-							</li>
-							<li className={styles["card__list-item"]}>
-								Przed wizytą wyślę Ci dostęp do platformy kcalmar.pl gdzie
-								wypełnisz wywiad żywieniowy oraz wprowadzisz swoje dane przed
-								pierwszą wizytą.
 							</li>
 						</ul>
 					</div>
@@ -245,11 +238,6 @@ export const PriceList = () => {
 						<ul className={styles["card__list"]}>
 							<li className={styles["card__list-item"]}>
 								Koszt każdej kolejnej wizyty kontrolnej to 150 zł
-							</li>
-							<li className={styles["card__list-item"]}>
-								Przed wizytą prześlę wam dostęp do platformy kcalmar.pl gdzie
-								wypełnisz wywiad żywieniowy oraz wprowadzisz swoje dane przed
-								pierwszą wizytą.
 							</li>
 						</ul>
 					</div>

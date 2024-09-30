@@ -90,11 +90,15 @@ export const Footer = () => {
 						</li>
 					</ul>
 				</div>
+				<p>
+					Dietetyk kliniczny i psychodietetyk. Dietetyk Racibórz i online.
+					Indywidualny jadłospis dopasowany do Twoich potrzeb.
+				</p>
 			</div>
 
 			<div className={styles["footer__bottom"]}>
 				<span className={`${styles.copyright} ${styles["copyright--first"]}`}>
-					© 2022 Dietetyk Umami
+					© 2022 Gabinet Dietetyczny UMAMI
 				</span>
 				<div className={styles.rights}>
 					<span className={styles.copyright}>

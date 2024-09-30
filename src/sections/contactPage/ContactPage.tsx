@@ -65,15 +65,16 @@ export const ContactPage = () => {
 			<section className={styles.introduction}>
 				<div className={styles["content"]}>
 					<h2 className={styles["content__heading"]}>KONTAKT</h2>
-					<h5 className={styles["content__heading--secondary"]}>
-						Zapraszam do kontaktu
-					</h5>
+
 					<div className={styles["content__description"]}>
 						Chciałbyś zrobić pierwszy krok w kierunku sylwetki marzeń? Poprawić
 						wyniki badań i stan swojego zdrowia? Masz pytania i wątpliwości jak
 						schudnąć lub przytyć? Śmiało, napisz do mnie! Odpowiem tak szybko,
 						jak to możliwe.
 					</div>
+					<h5 className={styles["content__heading--secondary"]}>
+						Zapraszam do kontaktu
+					</h5>
 				</div>
 				<div className={styles["image"]}>
 					<img src={imageOffertRef} alt="Aleksandra Kajstura-Janiuk" />
@@ -146,7 +147,9 @@ export const ContactPage = () => {
 					)}
 				</div>
 				<div className={styles["details"]}>
-					<h3 className={styles["details__heading"]}>Dietetyk Umami</h3>
+					<h3 className={styles["details__heading"]}>
+						Gabinet Dietetyczny UMAMI
+					</h3>
 					<div className={styles.person}>
 						<picture className={styles["person__photo"]}>
 							<img
@@ -156,7 +159,7 @@ export const ContactPage = () => {
 							/>
 						</picture>
 						<p className={styles["details__paragraph"]}>
-							Aleksandra Kajstura-Janiuk
+							mgr Aleksandra Kajstura-Janiuk
 						</p>
 					</div>
 					<div className={styles["details__box"]}>

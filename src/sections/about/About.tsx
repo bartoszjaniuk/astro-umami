@@ -9,19 +9,21 @@ export const About = () => {
 		<main className={styles.container}>
 			<section className={styles.about}>
 				<div className={styles["content"]} id="wyksztalcenie">
-					<span className={styles["content__profession"]}>DIETETYK</span>
+					<span className={styles["content__profession"]}>
+						DIETETYK KLINICZNY I PSYCHODIETETYK
+					</span>
 					<h1 className={styles["content__heading"]}>
-						Aleksandra Kajstura-Janiuk
+						mgr Aleksandra Kajstura-Janiuk
 					</h1>
 					<p className={styles["content__description"]}>
-						Nazywam się Aleksandra Kajstura-Janiuk, jestem dietetykiem i nauczę
-						Cię jak zadbać o siebie i zacząć prowadzić zdrowy styl życia krok po
-						kroku. Jestem absolwentką Uniwersytetu Opolskiego, a dalszą naukę
-						kontynuuję w Wyższej Szkole Biznesu i Nauk o Zdrowiu w Łodzi na
-						studiach magisterskich. Cały czas się szkolę, uczę i zdobywam wiedzę
-						na studiach, praktykach zawodowych czy szkoleniach. Służę pomocą
-						jeśli zmagasz się z problemami zdrowotnymi, z nadmierną lub za niską
-						masą ciała lub po prostu chcesz zmienić swoje nawyki żywieniowe.
+						Nazywam się Aleksandra Kajstura-Janiuk, jestem dietetykiem
+						klinicznym i psychodietetykiem. Nauczę Cię jak zadbać o siebie oraz
+						zacząć prowadzić zdrowy styl życia krok po kroku. Jestem absolwentką
+						Uniwersytetu Opolskiego oraz Wyższej Szkole Biznesu i Nauk o Zdrowiu
+						w Łodzi. Cały czas się szkolę, uczę i zdobywam wiedzę na kursach czy
+						szkoleniach. Służę pomocą jeśli zmagasz się z problemami
+						zdrowotnymi, z nadmierną lub za niską masą ciała lub po prostu
+						chcesz zmienić swoje nawyki żywieniowe.
 					</p>
 					<p className={styles["content__command"]}>
 						Współpracując ze mną nie tylko{" "}
@@ -71,11 +73,11 @@ export const About = () => {
 						U mnie nie ma diety cud!
 					</h1>
 					<p className={styles["content__description"]}>
-						Jako dietetyk przeprowadzę Cię przez proces zmiany nawyków
-						żywieniowych bez magicznych sztuczek. Nauczę Cię jak jeść smacznie i
-						zdrowo, a kiedy pojawią się pierwsze efekty i w związku z tym
-						poprawi się Twoje samopoczucie pokażę Ci jak utrzymać wymarzoną
-						sylwetkę i upragniony styl życia.
+						Jako dietetyk kliniczny i psychodietetyk przeprowadzę Cię przez
+						proces zmiany nawyków żywieniowych bez magicznych sztuczek. Nauczę
+						Cię jak jeść smacznie i zdrowo, a kiedy pojawią się pierwsze efekty
+						i w związku z tym poprawi się Twoje samopoczucie pokażę Ci jak
+						utrzymać wymarzoną sylwetkę i upragniony styl życia.
 					</p>
 					<p className={styles["content__command"]}>
 						<span className={styles["content__command--highlight"]}>

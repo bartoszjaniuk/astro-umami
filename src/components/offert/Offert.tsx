@@ -30,7 +30,7 @@ export const Offert = () => {
 						className={`${styles["introduction__heading--h2"]}
 							${styles["introduction__heading--bold"]}`}
 					>
-						Aleksandra Kajstura-Janiuk
+						mgr Aleksandra Kajstura-Janiuk
 					</h2>
 				</div>
 				<p className={styles["introduction__content"]}>

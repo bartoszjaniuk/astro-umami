@@ -16,7 +16,7 @@ export const cards = [
 	{
 		title: "KONTAKT",
 		description:
-			"Napisz do mnie lub zadzwoń, umówimy się na pierwszą konsultację stacjonarnie lub online. Wyślę Ci dostęp do platformy kcalmar.pl gdzie wypełnisz wywiad żywieniowy. Musisz go wypełnić przynajmniej 24h przed wizytą. Jeśli posiadasz, wyniki badań krwi również je wyślij do mnie na maila.",
+			"Napisz do mnie lub zadzwoń, umówimy się na pierwszą konsultację stacjonarnie lub online. Jeśli posiadasz, wyniki badań krwi również je wyślij do mnie na maila.",
 		icon: <LaptopContactIcon width="80px" height="80px" color="#d2bfa3" />,
 	},
 	// {
