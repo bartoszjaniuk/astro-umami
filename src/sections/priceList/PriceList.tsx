@@ -58,6 +58,18 @@ export const PriceList = () => {
 						<span className={styles["card__price"]}>150 zł</span>
 						<ul className={styles["card__list"]}>
 							<li className={styles["card__list-item"]}>
+								<li className={styles["card__list-item"]}>
+									Wywiad zdrowotny i żywieniowy
+								</li>
+								<li className={styles["card__list-item"]}>
+									Pomiar na analizatorze składu masy ciała
+								</li>
+								<li className={styles["card__list-item"]}>
+									Omówienie dotychczasowej diety i błędów żywieniowych.
+								</li>
+								<li className={styles["card__list-item"]}>
+									Edukacja żywieniowa i indywidualne zalecenia.
+								</li>
 								Koszt każdej kolejnej wizyty kontrolnej to 100 zł
 							</li>
 						</ul>
@@ -235,7 +247,20 @@ export const PriceList = () => {
 							Pierwsza konsultacja dla pary
 						</h5>
 						<span className={styles["card__price"]}>200 zł</span>
+
 						<ul className={styles["card__list"]}>
+							<li className={styles["card__list-item"]}>
+								Wywiad zdrowotny i żywieniowy
+							</li>
+							<li className={styles["card__list-item"]}>
+								Pomiar na analizatorze składu masy ciała
+							</li>
+							<li className={styles["card__list-item"]}>
+								Omówienie dotychczasowej diety i błędów żywieniowych.
+							</li>
+							<li className={styles["card__list-item"]}>
+								Edukacja żywieniowa i indywidualne zalecenia.
+							</li>
 							<li className={styles["card__list-item"]}>
 								Koszt każdej kolejnej wizyty kontrolnej to 150 zł
 							</li>

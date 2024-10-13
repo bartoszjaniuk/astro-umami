@@ -1,4 +1,5 @@
 import certificate0Ref from "/assets/certificates/Certyfikat0.jpg";
+import dyplom2 from "/assets/certificates/dyplom.jpg";
 import certificate1Ref from "/assets/certificates/Certyfikat1.jpg";
 import certificate2Ref from "/assets/certificates/Certyfikat2.jpg";
 import certificate3Ref from "/assets/certificates/Certyfikat3.jpg";
@@ -21,15 +22,22 @@ import certificate20Ref from "/assets/certificates/Certyfikat20.jpg";
 import certificate21Ref from "/assets/certificates/Certyfikat21.jpg";
 import certificate22Ref from "/assets/certificates/Certyfikat22.jpg";
 import certificate23Ref from "/assets/certificates/Certyfikat23.jpg";
-import certificate24Ref from "/assets/certificates/Certyfikat24.jpg";
 import certificate25Ref from "/assets/certificates/Certyfikat25.jpg";
 import certificate26Ref from "/assets/certificates/Certyfikat26.jpg";
 import certificate27Ref from "/assets/certificates/Certyfikat27.jpg";
 import certificate28Ref from "/assets/certificates/Certyfikat28.jpg";
 import certificate29Ref from "/assets/certificates/Certyfikat29.jpg";
+import certificate30Ref from "/assets/certificates/Certyfikat30.jpg";
+import certificate31Ref from "/assets/certificates/Certyfikat31.jpg";
+import certificate32Ref from "/assets/certificates/Certyfikat32.jpg";
+import certificate33Ref from "/assets/certificates/Certyfikat33.jpg";
 
 export const certificatesList = [
-	{ path: certificate0Ref, alt: "Certyfikat" },
+	{
+		path: certificate0Ref,
+		alt: "Dyplom ukokończnia studiów pierwszego stopnia",
+	},
+	{ path: dyplom2, alt: "Dyplom ukokończnia studiów drugiego stopnia" },
 	{ path: certificate1Ref, alt: "Certyfikat" },
 	{ path: certificate2Ref, alt: "Certyfikat" },
 	{ path: certificate3Ref, alt: "Certyfikat" },
@@ -52,10 +60,13 @@ export const certificatesList = [
 	{ path: certificate21Ref, alt: "Certyfikat" },
 	{ path: certificate22Ref, alt: "Certyfikat" },
 	{ path: certificate23Ref, alt: "Certyfikat" },
-	{ path: certificate24Ref, alt: "Certyfikat" },
 	{ path: certificate25Ref, alt: "Certyfikat" },
 	{ path: certificate26Ref, alt: "Certyfikat" },
 	{ path: certificate27Ref, alt: "Certyfikat" },
 	{ path: certificate28Ref, alt: "Certyfikat" },
 	{ path: certificate29Ref, alt: "Certyfikat" },
+	{ path: certificate30Ref, alt: "Certyfikat" },
+	{ path: certificate31Ref, alt: "Certyfikat" },
+	{ path: certificate32Ref, alt: "Certyfikat" },
+	{ path: certificate33Ref, alt: "Certyfikat" },
 ];
